@@ -1,4 +1,3 @@
-#set par(leading: .65em)
 = Valvole Cardiache
   == Apertura e chiusura delle valvole
     L'apertura tra ogni atrio e il suo ventricolo è regolata da
@@ -9,10 +8,10 @@
     corde sono inserite su estensioni di muscolo ventricolare simili a 
     montagnole, note come muscoli papillari [_papilla_,bottoncino]. Questi muscoli danno stabilità alle corde tendinee, ma non sono in grado di aprire e chiudere attivamente le valvole AV. Le valvole si aprono o chiudono passivamente quando vengono spinte dal sangue che scorre.
 
-    Fonte: Silverthorn pag. 422-423
+    (Fonte: Silverthorn pag. 422-423)
 
-
-
+    #align(center, image("/immagini/cuore_valvole.png", width: 70%))
+    #pagebreak()
   == Funzione cardiaca
   #let im0 = image("/immagini/immagine_cuore.png", width: 80%)
   #let im1 = image("/immagini/grafico_pressioni_ciclo_cardiaco.png", width: 110%)
@@ -53,7 +52,7 @@
       
     + *Anomalie congenite*
       - Il difetto più comune è una valvola aortica deformata, con due foglietti invece di tre (valvola bicuspide).
-  
+  #pagebreak()
   == Patologie (TODO!)
 
 
@@ -69,6 +68,13 @@
     
       Costituita da materiali metallici, ceramici e polimerici.
 
+    ==== Svantaggi
+      - *Rumore* simile al ticchettare di un orologio.
+    
+    ==== Vantaggi
+      - *Durata* maggiore delle biologiche
+
+
     === Carbonio Pirolitico
       Trattamento per protesi meccaniche per cui è previsto il contatto con il sangue. Permette di avere una superficie biocompatibile, si ha comunque la necessità di trattare il paziente con farmaci anti-coagulanti (vitamina K).
       Si ottiene tramite il *CVD* (Chemical Vapor Deposition).
@@ -79,17 +85,25 @@
       
       È sostanziale la caratteristica di isotropia del materiale, ovvero l'omogeneità delle proprietà meccaniche in tutte le direzioni.
 
-      Questo materiale viene utilizzato come rivestimento della valvola cardiaca. Il rivestimento viene eseguito all'interno di un forno, detto *forno di letto fluido*, in un atmosfera composta da 2 gas: l'*elio*, gas inerte che permette la *pirolisi* (combustione in assenza di agenti ossidanti), e un idrocarburo gassoso da cui poter strappare gli atomi di carbonio.
+      Questo materiale viene utilizzato come rivestimento della valvola cardiaca. Il rivestimento viene eseguito all'interno di un forno, detto *forno di letto fluido*, in un atmosfera composta da 2 gas: l'*elio*, gas inerte che permette la *pirolisi* (combustione in assenza di agenti ossidanti), permette inoltre di regolare il risultato del rivestimento regolando la composizione dei 2 gas, e un idrocarburo gassoso da cui poter strappare gli atomi di carbonio.
       #align(
         center, image("/immagini/pyrolitic_carbon_manifacturing.png", width: 60%
         )
       )
       
-      Per strappare gli atomi di carbonio è necessaria una grande forza,, viene infatti impiegata una temperatura tra i 1000°C e i 2400°C.
+      Per strappare gli atomi di carbonio è necessaria una grande forza, viene impiegata una temperatura tra i 1000°C e i 2400°C.
 
-    #box(height: 1.0em)
 
     === Valvole Biologiche
       Le valvole cardiache biologiche hanno una struttura interna metallica che sostiene fa da scheletro al materiale biologico con cui è realizzata la valvola.
 
-      Il tessuto con cui viene realizzata può essere autologo (del paziente stesso). 
+      Il tessuto con cui viene realizzata può essere *autologo* (del paziente stesso), di *orgine animale* (pericardio bovino, valvola porcina). 
+
+    ==== Svantaggi
+      - *Rumore* simile al ticchettare di un orologio.
+    
+    ==== Vantaggi
+      - *Durata* maggiore delle biologiche
+
+    
+    
