@@ -1,11 +1,16 @@
 // CONFIGURATION
 
+
 #set text(lang: "it")
 #set text(region: "it")
-#set text(font: "New Computer Modern", size: 14pt)
+#set text(font: "New Computer Modern", size: 15pt)
 #set page(paper: "a4", margin: (x: 1.8cm, y: 1.5cm))
 #set par(justify: true, leading: 0.52em)
 
+#let fs_1 = 27pt
+#let fs_2 = 7*fs_1/8
+#let fs_3 = 6*fs_1/8
+#let fs_4 = 5*fs_1/8
 
 // CONTENTS STYLING
 #show outline.entry.where(level: 1): it => {
@@ -33,22 +38,30 @@
 
 #show heading.where(level: 1): it => {
   set align(left)
-  set text(25pt, weight: "regular")
+  set text(fs_1, weight: "regular")
   v(0cm) + strong(it) + v(1cm)
   
 }
     //H2
 #show heading.where(level: 2): it => {
   set align(center)
-  set text(20pt, weight: "regular")
-  v(1cm) + strong(it) + v(1cm)
+  set text(fs_2, weight: "regular")
+  v(1cm) + strong(it) + v(.5cm)
   
 }
     //H3
 #show heading.where(level: 3): it => {
   set align(center)
-  set text(15pt, weight: "regular")
-  v(1cm) + strong(it) + v(.3cm)
+  set text(fs_3, weight: "regular")
+  v(.5cm) + strong(it) + v(.0cm)
+  
+}
+
+    //H4
+#show heading.where(level: 4): it => {
+  set align(center)
+  set text(fs_4, weight: "regular")
+  v(.3cm) + strong(it) + v(.3cm)
   
 }
 
@@ -71,5 +84,4 @@
 
 #include "capitoli/00Introduzione.typ"
 #include "capitoli/01ValvoleCardiache.typ"
-
 #include "capitoli/02ProtesiVascolari.typ"
