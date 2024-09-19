@@ -1,15 +1,21 @@
+
+
 = Valvole Cardiache
   == Apertura e chiusura delle valvole
     L'apertura tra ogni atrio e il suo ventricolo è regolata da
-    una valvola atrioventricolare (AV) (Figura 14.5C). La valvola AV è 
-    formata da lembi sottili di tessuto unito alla base a un anello di 
-    tessuto connettivo. I lembi sono lievemente ispessiti ai margini e 
-    sono connessi al lato ventricolare attraverso tendini ricchi di collagene, le corde tendinee (Figura 14.7a,c). La maggior parte delle corde tendinee si salda ai margini dei lembi delle valvole. Le estremità opposte delle 
-    corde sono inserite su estensioni di muscolo ventricolare simili a 
-    montagnole, note come *muscoli papillari* [_papilla_,bottoncino]. #underline("Questi muscoli danno stabilità alle corde tendinee, ma non sono in grado di aprire e chiudere attivamente le valvole AV. Le valvole si aprono o chiudono passivamente quando vengono spinte dal sangue che scorre.")
+    una valvola atrioventricolare (AV). La valvola AV è 
+    formata da lembi sottili di tessuto unito alla base
+    a un anello di tessuto connettivo. I lembi sono lievemente
+    ispessiti ai margini e sono connessi al lato ventricolare 
+    attraverso tendini ricchi di collagene, le corde tendinee. 
+    La maggior parte delle corde tendinee si salda ai margini 
+    dei lembi delle valvole. Le estremità opposte delle corde 
+    sono inserite su estensioni di muscolo ventricolare simili a 
+    montagnole, note come *muscoli papillari*. 
+    #underline("Questi muscoli danno stabilità alle corde tendinee, ma non sono in grado di aprire e chiudere attivamente le valvole AV. Le valvole si aprono o chiudono passivamente quando vengono spinte dal sangue che scorre.")
 
     ===== Fonte 
-    Estratto da: Silverthorn "Fisiologia umana. Un'approccio integrato" pag. 422-423 (libro del corso)
+    Silverthorn "Fisiologia umana. Un'approccio integrato" pag. 422-423 (libro del corso)
 
     #align(center, image("/immagini/cuore_valvole.png", width: 65%))
     #pagebreak()
@@ -28,6 +34,7 @@
     
     #align(center, image("/immagini/valvola_aortica00.png", width: 60%))
 
+  #pagebreak()
   == Criticità
     Le valvole non devono avere reflusso, cioè devono impedire lo scorrimento del sangue nel verso opposto, se questo non avviene, il ventricolo cercherà comunque di aumentare la pressione per vincere quella aortica ed aprire la valvola, si richiederà al cuore uno sforzo maggiore perchè dovrà aumentare la pressione mentre perde volume, si avrà quindi una perdita di eiezione, la ejection fraction sarà minore.
 
@@ -53,14 +60,23 @@
       
     + *Anomalie congenite*
       - Il difetto più comune è una valvola aortica deformata, con due foglietti invece di tre (valvola bicuspide).
-  #pagebreak()
 
+  == TAVI
+  È l'acronimo di Trans-Aortic-Valve-Implantation, è una procedura chirurgica attraverso il quale si sostituisce una valvola malata, con una valvola meccanica o biologica.
 
   == Tipologie di valvole cardiache
     === Valvole Meccaniche
       Sono costituite da una struttura principale su cui sono vincolati degli organi mobili che permettono la chiusura e la apertura. È costituita da materiali *metallici o polimerici* per quanto riguarda la struttura interna che fa da sostegno.
 
-      
+      === Componenti
+      ==== Alloggiamento
+      - È solo metallico: Ti6Al4V o lega di a base di cobalto, rivestimento di carbonio pirolitico
+
+      ==== Occlusore
+      - 
+       
+      - Esempio materiale metallico: Ti6Al4V
+      - Esempio materiale polimerico: pet Dacron
       #{
       let img0 = image("/immagini/valvola_meccanica_moderna.png", width: 50%)
       let img1 = image("/immagini/valvola_meccanica_moderna01.png", width: 100%)
@@ -75,42 +91,47 @@
     }
 
 
-    === Carbonio Pirolitico
+    === Rivestimento di Carbonio Pirolitico
+
 
       Permette di avere una superficie biocompatibile, si ha comunque la necessità di trattare il paziente con farmaci anti-coagulanti (vitamina K).
-      Si ottiene tramite il *CVD* (Chemical Vapor Deposition).
+      Si ottiene tramite il *CVD* (Chemical Vapor Deposition) oppure il *PVD* (Physical Vapor Deposition).
       
-      Questo materiale ha una composizione mista delle due forme del carbonio, *la grafite* o grafene (struttura amorfa) e *il diamante* (struttura cristallina), come per i polimeri si può avere una composizione parziale delle due forme. 
-
-      La composizione mista si ottiene facendo legare in modo covalente alcuni strati di grafene.
-      
-      È sostanziale la caratteristica di isotropia del materiale, ovvero l'omogeneità delle proprietà meccaniche in tutte le direzioni.
+      Questo materiale ha delle caratteristiche miste delle due forme del carbonio cristallino, *la grafite* e *il diamante*, come per i polimeri si può avere una composizione parziale di struttura cristallina e amorfa. 
 
       ==== Metodo: Forno a letto fluido
+        Questo processo viene utilizzato per ottenere carbonio pirolitico, anche chiamato Carbonio Low Temperature Isotropic (LTI), a partire da un idrocarburo gassoso.
+
         Il rivestimento viene eseguito all'interno di un forno, detto *forno di letto fluido*, in un atmosfera composta da 2 gas: l'*elio*, gas inerte che permette la *pirolisi* (combustione in assenza di agenti ossidanti), permette inoltre di regolare il risultato del rivestimento regolando la composizione dei 2 gas, e un idrocarburo gassoso da cui poter strappare gli atomi di carbonio.
         #align(
           center, image("/immagini/pyrolitic_carbon_manifacturing.png", width: 60%
           )
         )
         
-        Per strappare gli atomi di carbonio è necessaria una grande forza, viene impiegata una temperatura tra i 1000°C e i 2400°C. Per ovvie ragioni i polimerici non sono adatti.
+        Per strappare gli atomi di carbonio è necessaria una temperatura tra i 1000°C e i 2400°C. Per ovvie ragioni i polimerici non sono adatti a questo trattamento.
 
       ==== Metodo: Sputtering catodico
-        Trattamento a basse temperature e pressioni(vuoto) adatto sia a materiale *metallico* che *polimerico*.
+        Trattamento a basse temperature e pressioni(vuoto) adatto sia a materiale *metallico* che *polimerico*. Utilizza il carbonio pirolitico per rivestire una superficie di interesse, es: valvola protesica.
 
         Il processo consiste di 3 elementi:
-        - *Anodo*: filamento da cui proviene il fascio di elettroni.
-        - *Catodo*: pezzo fatto di carbonio, fa da sorgente di materiale.
-        - *Pezzo da rivestire*
+        - *Ambiente controllato*: camera a pressione inferiore a quella atmosferica, in cui l'unico gas presente è l'Argon (contiene l'anodo e il catodo). 
+        - *Anodo*: pezzo da rivestire.
+        - *Catodo*: pezzo fatto di carbonio pirolitico, fa da sorgente di materiale.
 
-        ===== Descrizione del processo
-          A causa di un'elevata differenza di potenziale tra anodo e catodo, si genera un fascio di elettroni che si dirigono verso il catodo. Gli elettroni impattando sulla superficie di carbonio pirolitico provocano un distacco di particelle di carbonio pirolitico. Queste collidono con il pezzo da rivestire andando a formare il rivestimento superficiale.
 
+        ===== Descrizione del processo di sputtering
+          La differenza di potenziale ionizza l'argon, i cationi di Argon impattano sul catodo(venendo attratti) l'impatto genera una cascata di collisioni, in seguito questo può causare una espulsione di un atomo del catodo. Questo è il processo di *sputtering*. L'atomo che viene emesso si appiccica sulla superficie dell'anodo(come? boh). 
+
+        (da wikipedia) https://en.wikipedia.org/wiki/Sputtering
+    
 
     === Valvole Biologiche
-      Le valvole cardiache biologiche hanno una struttura interna metallica che sostiene fa da scheletro al materiale biologico con cui è realizzata la valvola.
+      Le valvole cardiache biologiche hanno una struttura interna metallica che sostiene il materiale biologico con cui è realizzata la valvola.
 
-      Il tessuto con cui viene realizzata può essere *autologo* (del paziente stesso), di *orgine animale* (pericardio bovino, valvola porcina). 
+      Il tessuto con cui viene realizzata può essere *autologo* (del paziente stesso), di *orgine animale* (pericardio bovino, valvola porcina).
+
+      Nel caso di valvola di origine animale, il tessuto viene decellularizzato per evitare l'attivazione del sistema immunitario.
+
 
     === Biologiche vs Meccaniche
 
@@ -121,8 +142,6 @@
         *Per le biologiche* secondo le linee guida è necessario solamente per un breve periodo post-operazione (3-6 mesi), in assenza di controindicazioni.
     
         #let coag_terapy_link = "https://www.escardio.org/Journals/E-Journal-of-Cardiology-Practice/Volume-20/prosthetic-heart-valves-part-2-antithrombotic-management"
-
-        #v(1cm)
 
         ===== Fonte 
           #link(coag_terapy_link)[European Society of Cardiology Website: "Prosthetic heart valves: Part 2 - Antithrombotic management"]
