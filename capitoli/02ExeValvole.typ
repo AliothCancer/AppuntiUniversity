@@ -41,16 +41,8 @@ $
 - $p_1 $: pressione a valle della valvola
 - $p_2 $: pressione a monte della valvola
 
-\
-Poichè $rho$ è costante del sangue (1003 kg/m³) si ha:
-$
-  sqrt(2/1003). = 51.6 sqrt("cm"^2 / (s^2 dot "mmHg")) 
-$
 
-
-- $Q_"peak"$: va messa in *m³/s*
-- Pressioni: vanno messe in *mmHg*
-
+#pagebreak()
 === Analisi dimensionale EOA
 $
 

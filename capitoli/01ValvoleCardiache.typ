@@ -17,7 +17,7 @@
     ===== Fonte 
     Silverthorn "Fisiologia umana. Un'approccio integrato" pag. 422-423 (libro del corso)
 
-    #align(center, image("/immagini/cuore_valvole.png", width: 65%))
+    #align(center, image("/immagini/cuore_valvole.png", width: 60%))
     #pagebreak()
   == Funzione cardiaca
   #let im0 = image("/immagini/immagine_cuore.png", width: 80%)
@@ -62,7 +62,7 @@
       - Il difetto più comune è una valvola aortica deformata, con due foglietti invece di tre (valvola bicuspide).
 
   == TAVI
-  È l'acronimo di Trans-Aortic-Valve-Implantation, è una procedura chirurgica attraverso il quale si sostituisce una valvola malata, con una valvola meccanica o biologica.
+  È l'acronimo di Transcatheter-Aortic-Valve-Implantation, è una tecnica della cardiologia interventistica che permette l'impianto della valvola aortica (meccanica o biologica) con approccio percutaneo in alternativa alla sostituzione con intervento cardiochirurgico.
 
   == Tipologie di valvole cardiache
     === Valvole Meccaniche
@@ -130,7 +130,7 @@
 
       Il tessuto con cui viene realizzata può essere *autologo* (del paziente stesso), di *orgine animale* (pericardio bovino, valvola porcina).
 
-      Nel caso di valvola di origine animale, il tessuto viene decellularizzato per evitare l'attivazione del sistema immunitario.
+      Nel caso di valvola di origine animale, il tessuto viene decellularizzato e trattato con gluteraldeide per evitare l'attivazione del sistema immunitario. La valvola biologica viene poi ripopolata dalle cellule dell'organismo ospitante.
 
 
     === Biologiche vs Meccaniche
