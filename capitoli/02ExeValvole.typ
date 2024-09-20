@@ -51,8 +51,21 @@ $
 - $Q_"peak"$: va messa in *m³/s*
 - Pressioni: vanno messe in *mmHg*
 
+=== Analisi dimensionale EOA
 $
-"Analisi dimensionale EOA" \
-m^3/s dot (m/s)^(-1) = m^3/s dot s/m = m^2
 
+= m^3/s / (sqrt(2/(1000"Kg"/m^3) dot cancel("mmHg") dot 133"Pa"/cancel("mmHg"))) \ = m^3/s dot 1/sqrt(0.266N/cancel(m^2) dot m^cancel(3) / "Kg") \ = m^3/s dot 1/(0.516 sqrt(cancel(N) dot m / ((cancel(N) dot s^2) / m)))\ = m^3/s dot 1/(0.516 sqrt( m^2 / (s^2)))\ = 1/0.516 dot (m^2 dot cancel(m))/cancel(s) dot cancel(s)/cancel(m) \ = m^2
+\ \ \ \ \
+"EOA" = (Q (L/s) dot 10^4 "cm"^2/m^2) / (516L/s/(m^2sqrt("mmHg")) dot sqrt(Delta p ("mmHg")))  
 $
+
+=== Formula Definitiva EOA
+$
+\
+"EOA" = 10^4/516 (Q) / (sqrt(Delta p))  arrow "cm"^2
+$
+
+#align(center, [
+  - Q : $L/s$
+- $Delta p$ :  mmHg
+])
