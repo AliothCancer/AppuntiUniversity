@@ -16,8 +16,8 @@
 
 
 
-  #include "capitoli/01ValvoleCardiache.typ"
-  #include "capitoli/02ExeValvole.typ"
-  #include "capitoli/03ProtesiVascolari.typ"
+  #include "capitoli_dispositivi/01ValvoleCardiache.typ"
+  #include "capitoli_dispositivi/02ExeValvole.typ"
+  #include "capitoli_dispositivi/03ProtesiVascolari.typ"
 
 ]

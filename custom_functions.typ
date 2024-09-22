@@ -1,12 +1,16 @@
 
 #let definition(name, content) = {
+  /* Custom formatter for a definition
+  also work as a tag for definition
+  */
+  let tag = "#def"
   let name = text(
     strong(
-      text("Def ", fill: blue)+ "-- " + name
+      text(tag, fill: red)+ " -- " + name
     ),
     18pt
   )
-  let name = text(name, fill: luma(34.26%))
+  let name = text(name, fill: blue)
   let content = text(
     content,
     rgb("#000000"),
