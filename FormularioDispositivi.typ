@@ -1,5 +1,5 @@
 #import "style.typ": apply_style
-#import "custom_functions.typ": definition
+#import "custom_functions.typ": def
 
 
 #let title = align(center)[

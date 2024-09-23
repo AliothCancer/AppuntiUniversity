@@ -2,7 +2,7 @@
 
 = Esercitazione: Valvole
 
-#definition[Effective Orifice Area][
+#def[Effective Orifice Area][
   È la sezione efficace/effettiva della valvola, si usa per valutare il grado di ostruzione che la valvola provoca.
 
   Si possono confrontare valvole dello stesso diametro per capire quale è migliore. Un EOA più grande implica più basse cadute di pressione e quindi a perdite energetiche minori. 

@@ -1,5 +1,5 @@
 
-#let definition(name, content) = {
+#let def(name, content) = {
   /* Custom formatter for a definition
   also work as a tag for definition
   */

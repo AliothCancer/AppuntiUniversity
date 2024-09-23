@@ -15,7 +15,7 @@
     #underline("Questi muscoli danno stabilità alle corde tendinee, ma non sono in grado di aprire e chiudere attivamente le valvole AV. Le valvole si aprono o chiudono passivamente quando vengono spinte dal sangue che scorre.")
 
     ===== Fonte 
-    Silverthorn "Fisiologia umana. Un'approccio integrato" pag. 422-423 (libro del corso)
+    Silverthorn "Fisiologia umana. Un'approccio integrato" pag. 422-423 (libro del corso di fisiologia)
 
     #align(center, image("/immagini/cuore_valvole.png", width: 60%))
     #pagebreak()
