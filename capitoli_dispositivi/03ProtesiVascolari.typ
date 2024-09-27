@@ -34,5 +34,5 @@ vascolare* non più in grado di trasportare correttamente il sangue.]
     Siccome il flusso è di tipo pulsatile, l'elasticità del vaso ha il compito di trasmettere l'impulso pressorio attraverso una dilatazione locale del vaso.
   ]
   
-  L'impianto di una protesi vascolare modifica la compliance del vaso, modificando quindi la caduta di pressione a valle e quindi anche il flusso.
+  L'impianto di una protesi vascolare modifica la compliance del vaso poichè la compliance è una caratteristica data dalle proprietà meccaniche del vaso, in particolare è data dalla geometria e dal materiale, modifica quindi la caduta di pressione a valle e quindi anche il flusso.
 
