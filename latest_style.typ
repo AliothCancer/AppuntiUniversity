@@ -38,10 +38,16 @@
       // H1
 
   #show heading.where(level: 1): it => {
-    set align(left)
     pagebreak()
-    set text(fs_1, weight: "regular")
-    v(0cm) + strong(it) + v(1cm)
+    set align(left)
+    set par(justify: true, leading: 0.52em)
+    set text(fs_1, weight: "bold",
+    number-type: "old-style",
+    )
+    rect(smallcaps(underline(it)) + v(1cm), fill: rgb("#ddd5f3"),height: 1.2em,
+    radius: .5cm,
+    
+    )
     
   }
       //H2
@@ -79,6 +85,7 @@
 #let custom_style=[
   #set heading(numbering: "1.1")
 #show heading.where(level:1): it => {
+  pagebreak()
   set align(center)
   v(2em)
   ellipse(it,fill: aqua)

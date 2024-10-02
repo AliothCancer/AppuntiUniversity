@@ -15,7 +15,6 @@
   #pagebreak()
 
 
-
   #include "capitoli_dispositivi/01ValvoleCardiache.typ"
   #include "capitoli_dispositivi/02ExeValvole.typ"
   #include "capitoli_dispositivi/03ProtesiVascolari.typ"
