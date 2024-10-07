@@ -24,3 +24,25 @@
     content
   )
 }
+
+
+#let format-sci(value, digits) = {
+    let exponent = if value != 0 {
+      calc.floor(calc.log(calc.abs(value), base: 10))
+    } else {
+      0
+    }
+
+    let ee = calc.pow(10, calc.abs(exponent + 1))
+    if exponent > 0 {
+      value = value / ee * 10
+    } else if exponent < 0 {
+      value = value * ee * 10
+    }
+
+    value = round(value, digits)
+    if exponent <= -1 or exponent >= 1 {
+      return $#value times 10^#exponent$
+    }
+    return $#value$
+  }

@@ -68,5 +68,7 @@
  #show math.equation: set text(size: 17pt)
  #set text(15pt)
 
+*Document made with typst
+ Link to #link("https://typst.app/docs/")[typst documentation]*
  #body
 ]

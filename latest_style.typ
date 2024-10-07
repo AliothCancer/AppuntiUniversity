@@ -78,6 +78,8 @@
  #set text(15pt)
 
  #outline(indent: 2em)
+ *Document made with typst
+ Link to #link("https://typst.app/docs/")[typst documentation]*
  #body
 ]
 
