@@ -148,7 +148,7 @@ $
 \ \
 == Calori specifici gas perfetti
 *N.B.*\
-No vapore
+*NO vapore*\ *SÌ* aria umida ma solo per la parte di *aria secca*.
 
 
 $
@@ -156,9 +156,8 @@ R^* = R / ("Mm")
 $
 
 - R : Costante dei gas perfetti = 8314 $J/("kmol" K) $
-- Mm : Massa Molare del gas $["kg"/"kmol"]$ pari allla somma delle masse atomiche degli atomi che compongono la singola molecola. 
-Esempio:\
-N2 = N + N = 14 + 14 = 28 kg/kmol
+
+- Mm : Massa Molare del gas $["kg"/"kmol"]$ pari allla somma delle masse atomiche degli atomi che compongono la singola molecola.\ Esempio: N2 = N + N = 14 + 14 = 28 kg/kmol
 
 Calcolare calori specifici con l'indice *n* della politropica.
 
