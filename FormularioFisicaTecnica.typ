@@ -6,6 +6,7 @@
 
 
 = Trasformazioni <trasformazioni>
+== Trasformazione Politropica <trasformazione-politropica>
 #figure(
 canvas(length: 2.7cm, {
   let n_iso = 1;
@@ -90,8 +91,7 @@ canvas(length: 2.7cm, {
 
     })
 }), caption: "Plot made with cetz",)
-== Trasformazione Politropica <trasformazione-politropica>
-  Con essa si indica una qualsiasi trasformazione termodinamica.
+  Con essa si indica una qualsiasi trasformazione termodinamica.\ \ \ \
   === Equazione di stato
 $ p dot.op V^n = upright("costante") $
 
@@ -145,11 +145,44 @@ Due casi per il lavoro:
 $
 q = c_v dot (T_2 - T_1) - frac(p_1 dot.op V_1, n - 1) lr((lr((V_1 / V_2))^(n - 1) - 1))
 $
+\ \
+== Calori specifici gas perfetti
+*N.B.*\
+No vapore
 
-#let to_power(x) = {
-  pow(x,3.4)
-} 
 
+$
+R^* = R / ("Mm")
+$
+
+- R : Costante dei gas perfetti = 8314 $J/("kmol" K) $
+- Mm : Massa Molare del gas $["kg"/"kmol"]$ pari allla somma delle masse atomiche degli atomi che compongono la singola molecola. 
+Esempio:\
+N2 = N + N = 14 + 14 = 28 kg/kmol
+
+Calcolare calori specifici con l'indice *n* della politropica.
+
+=== A volume costante
+$
+c_v = 1 / (n-1) dot R^*
+$
+=== A pressione costante
+$
+c_p = n / (n-1) dot R^*
+$
+\
+\ \ \ \
+== Trasformazione Isoentropica
+*Se* la trasformazione *è adiabatica* *e* anche *quasistatica* (deve essere specificato nella traccia) *allora* *n=k*. 
+
+
+Dove: 
+$
+k = c_p / c_v
+$
+
+La quasistaticità è necessaria perchè se la trasformazione non è reversibile (presenza di forze non conservative che dissipano calore) si genera entropia. 
+*Forze non conservative -> dissipazione calore \ -> generazione entropia.*
 
 
 = Macchine <macchine>
