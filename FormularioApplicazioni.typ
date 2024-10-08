@@ -31,5 +31,6 @@
   $
 ]
 
+  #include "capitoli_applicazioni/vad.typ"
   
 ]
