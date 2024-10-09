@@ -32,5 +32,6 @@
 ]
 
   #include "capitoli_applicazioni/vad.typ"
+  #include "capitoli_applicazioni/ossigenatore.typ"
   
 ]

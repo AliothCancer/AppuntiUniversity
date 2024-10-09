@@ -2,7 +2,7 @@
 // CONFIGURATION
   
   //#show strong: set text(blue)
-  #set par(justify: false, leading: 0.52em)
+  #set par(justify: true, leading: 0.52em)
   #let title = text(50pt,title)
   #v(8cm)
   #align(center, title)
