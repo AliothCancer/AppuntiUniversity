@@ -77,9 +77,11 @@
  #show math.equation: set text(size: 17pt)
  #set text(15pt)
 
+#show link: set text(fill: color.blue)
+
  #outline(indent: 2em)
- *Document made with typst
- Link to #link("https://typst.app/docs/")[typst documentation]*
+ *Document made with typst: 
+ #link("https://typst.app/docs/")[Link to typst documentation]*
  #body
 ]
 
