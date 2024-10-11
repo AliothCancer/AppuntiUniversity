@@ -132,19 +132,35 @@ $ L_v = - p_1 dot.op V_1 ln V_2 / V_1 $
 
 == Calore massico scambiato
 $
-Delta u = q + w #h(.7cm) => #h(.7cm) q = Delta u - w \
+Delta u = q - w #h(.7cm)\
+=>
 $
+#align(center, 
+  block($q = Delta u + w$,
+  fill: rgb(34, 245, 55, 90),
+  height: 1.2em,
+  width: 5cm,
+  radius: 4pt))
+
 $ 
 Delta u = c_v dot (T_2 - T_1) \
 w = integral _(v_1)^(v_2) p dif v \
 $
+//#####
 $
-=> \ q = c_v dot (T_2 - T_1) - integral _(v_1)^(v_2) p dif v
+=> \ q = c_v dot (T_2 - T_1) + integral _(v_1)^(v_2) p dif v
 $
-Due casi per il lavoro:
-- $n < 1$:
+*Due casi per il lavoro:*
+
+- $n != 1$:
 $
-q = c_v dot (T_2 - T_1) - frac(p_1 dot.op V_1, n - 1) lr((lr((V_1 / V_2))^(n - 1) - 1))
+q = c_v dot (T_2 - T_1) + frac(p_1 dot.op V_1, n - 1) lr((lr((V_1 / V_2))^(n - 1) - 1))
+$
+
+- $n = 1$:
+
+$
+q = c_v dot (T_2 - T_1) - p_1 dot.op V_1 ln V_2 / V_1 
 $
 \ \
 == Calori specifici gas perfetti
