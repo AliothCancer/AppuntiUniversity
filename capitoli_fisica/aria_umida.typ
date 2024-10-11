@@ -37,8 +37,8 @@ Dove:
 - $U_a$ : umidità assoluta
 
 == Temperatura di Rugiada
-=== Metodo Analitico
 È la temperatura alla quale il vapore contenuto nell'aria inizia condensarsi.
+=== Metodo Analitico
 
 Esempio:
 - Umidità relativa = 60%
