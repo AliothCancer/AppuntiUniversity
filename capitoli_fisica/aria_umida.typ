@@ -42,7 +42,7 @@ Dove:
 
 Esempio:
 - Umidità relativa = 60%
-- Pressione totale = 1 bar = $10^5$ Pa = 100 kPa
+- Temperatura = 20 C°
 
 Da questi dati si può ricavare qual è la *pressione parziale di vapore*. Cioè quella parte della pressione totale data dalla presenza di vapore, secondo la legge delle pressioni parziali, la pressione totale di un volume contenente gas/vapore è dato dalla somma delle pressioni parziali. Quindi:
 
