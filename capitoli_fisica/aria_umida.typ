@@ -37,6 +37,7 @@ Dove:
 - $U_a$ : umidità assoluta
 
 == Temperatura di Rugiada
+=== Metodo Analitico
 È la temperatura alla quale il vapore contenuto nell'aria inizia condensarsi.
 
 Esempio:
@@ -77,4 +78,6 @@ Si potevano usare anche i valori della tabella con i valori di pressione tra 1 e
 
 *L'umidità relativa* _dipende_ dalla *temperatura* (che varia la $P_"sat"$) e dalla *quantità di vapore nell'aria* (rappresentata dalla pressione parziale di vapore).
 
-È la relazione che c'è tra temperatura e pressione parziale di vapore
+È la relazione che c'è tra temperatura e pressione parziale di vapore.
+
+=== TODO: Metodo grafico (diagramma psicrometrico)
