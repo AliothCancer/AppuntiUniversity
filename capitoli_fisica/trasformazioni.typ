@@ -131,8 +131,9 @@ $ L_v = frac(p_1 dot.op V_1, n - 1) lr((lr((V_1 / V_2))^(n - 1) - 1)) $
 $ L_v = - p_1 dot.op V_1 ln V_2 / V_1 $
 
 == Calore massico scambiato
+Il lavoro per un'espansione è da considerare come un contributo negativo all'energia interna ma se è un'espansione allora $Delta v = v_2 - v_1 > 0$ e si avrebbe un termine positivo di lavoro quindi si aggiusta mettendo un meno.
 $
-Delta u = q - w #h(.7cm)\
+Delta u = q - w #h(.7cm)\ \ \ \
 =>
 $
 #align(center, 
