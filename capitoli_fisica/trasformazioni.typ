@@ -23,7 +23,7 @@ canvas(length: 2.7cm, {
     y-max: 2.1*calc.pow(10,5),
     y-label: $P ("Pa")$,
     x-label:$#h(2cm) v(L/("kg"))$,
-    size: (3,3),
+    size: (5,3.6),
     x-grid: true,
     y-grid: true,
     y-format: "sci",
