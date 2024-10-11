@@ -92,7 +92,7 @@ canvas(length: 2.7cm, {
 
     })
 }), caption: "Differenti curve al variare dell'indice n della politropica \n(Plot made with cetz)",)
-  Con una trasf. politropica si indica una qualsiasi trasformazione termodinamica.\ \ \ \
+  Con una trasf. politropica si può descrivere una qualsiasi trasformazione termodinamica.\ \ \ \
   === Equazione di stato
 $ p dot.op V^n = upright("costante") $
 
