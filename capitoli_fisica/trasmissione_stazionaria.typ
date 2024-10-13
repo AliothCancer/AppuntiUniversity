@@ -24,26 +24,15 @@
 - *Si indica con U*
 - *Si misura in* $W / (m^2 K)$
 
-$
-  U = sum_j (1/h_j) + sum_i (s_i / k_i)  
-$
-- In genere ci sono solamente due convezioni, *una interna* e *una esterna* che rappresentano i fluidi dentro e fuori un'ipotetica stanza. *Convezione fuori parete*.
-- Mentre ci possono essere tanti più strati di conduzione nella parete. *Conduzione dentro parete*.
-
-Quindi la formula si riduce a:
-
-$
-  U = 1/h_i + sum_i (s_i / k_i)  + 1/h_e
-\
-  "convezione"_"interna" + "conduzione" + "convezione"_"esterna"
-$
 
 == Conduttanza termica
 - *Si misura in* $W/K$
 - È l'inverso della resistenza termica
 
-== Resistenza termica
-=== Di Conduzione
+
+== Caso: Parete Piana
+=== Resistenza termica
+==== Di Conduzione
 - *Si indica con* $R_k$
 - *Si misura in* $K/W$
 
@@ -56,7 +45,7 @@ $
 
 - S $[m^2]$: superficie di scambio dello strato
 
-=== Di Convezione
+==== Di Convezione
 - *Si indica con* $R_h$
 - *Si misura in* $K/W$
 
@@ -68,8 +57,38 @@ $
 
 - S $[m^2]$: superficie di scambio dello strato
 
+
+=== Potenza Termica
+$
+  dot(Q) = (Delta T) / R_"tot"
+\ \
+  dot(Q) = U dot S dot  Delta T
+$
+Dove $S$ è una superficie rettangolare:
+$
+  S = a dot b
+$
+
+== Caso: Parete Cilindrica
+=== Potenza Termica
+
+$
+  dot(Q) = -(2 pi L k dot (T_"e" - T_"i")) / ln(r_"e" / r_"i")
+$
+\* è positivo se $T_i$ > $T_e$ cioè uscente rispetto all'interno del cilindro
+
+
+- *SEGNO :* Per il II° principio della term. il calore va da un corpo più caldo a uno più freddo. Una volta che si sa quale delle temperature tra esterne ed interna si capisce qual è il verso. In alternativa si assume un verso a scelta e se esce negativo il verso effettivo è l'opposto rispetto a quello scelto.
+
+== Calcolo resistenze 
+=== Serie
+=== Parallelo
+
 === Complessiva
+
+
 - *Si misura in* $K/W$
+
 $
   R_"tot" = 1 / (S dot U)
 $
@@ -83,12 +102,3 @@ $
 
 - $Delta T:$ differenza di temperatura tra interno ed esterno
 
-== Caso: Parete Piana
-
-
-== Caso: Parete Cilindrica
-
-
-== Calcolo resistenze 
-=== Serie
-=== Parallelo
