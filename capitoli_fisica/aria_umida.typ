@@ -13,7 +13,11 @@ $ U_A = 0.622 dot.op frac(p_(v a p o r e %), p_(t o t a l e) - p_(v a p o r e %)
 Formule correlate : $ U_A = m_(H 2 O) / m_(A r i a med S e c c a) $ $ 0.622 = frac(R, M m_(H 2 O)) dot.op frac(M m_(A r i a med S e c c a), R) $
 
 == Umidità Relativa <umidità-relativa>
-$ phi = P_v / P_(s a t) $
+$
+phi = (P_v (T=T_x)) / (P_(s a t) (T=T_x))
+$
+
+- $T_x$: Temperatura fissata
 
 - $phi$: Umidità relativa
 
@@ -22,7 +26,28 @@ $ phi = P_v / P_(s a t) $
 - $P_(upright("sat"))$: Pressione di saturazione del vapore
 
 == Entalpia <entalpia>
-Se $U_a < U_(s a t)$ $ h = c_(p_(A S)) dot.op T med + med U_a dot.op lr((c_(p_v) T + h_(0 , v))) $
+Formula concettuale:
+$
+  h = "aria secca" + "vapore 0°C" + "vapore da 0°C a "T_x + "acqua condensata"
+$
+- Il contributo del vapore è formato da *entalpia di formazione del vapore* + *vapore a $T>=T_"condensazione"$*
+
+- L'acqua condensata è data dalla quantità di umidità ecceduta rispetto all'umidità di saturazione.
+
+Ci sono due casi:
+
+- *Senza condensa* -- quando l'umidità assoluta finale che si ottiene in seguito ad una climatizzazione *è minore o uguale* della umidità di saturazione
+
+#box(text([#v(0.2cm) #h(0.2cm) Se $U_a <= U_(s a t)$],color.white),fill: rgb("#0a42dcc8"),height: .9cm, width: 3.8cm, radius: .5cm) 
+
+
+$ h = c_(p_(A S)) dot.op T_x med + med U_a dot.op lr((c_(p_v) T_x + Delta h_(0 , v))) $
+- *Con condensa* -- quando l'umidità finale è maggiore di quella di saturazione
+
+#box(text([#v(0.2cm) #h(0.2cm) Se $U_a > U_(s a t)$],color.white),fill: rgb("#0a42dcc8"),height: .9cm, width: 3.8cm, radius: .5cm)
+
+$ h = c_(p_(A S)) dot.op T_x med + med U_a dot.op lr((c_(p_v) T_x + Delta h_(0 , v))) + (U_a - U_"sat")$
+
 
 Dove:
 
@@ -35,6 +60,9 @@ Dove:
 - $T$ : temperatura in Celsius
 
 - $U_a$ : umidità assoluta
+
+\
+
 
 == Temperatura di Rugiada
 È la temperatura alla quale il vapore contenuto nell'aria inizia condensarsi.

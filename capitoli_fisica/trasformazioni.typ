@@ -1,10 +1,13 @@
 #import "@preview/cetz:0.2.2": *
 
-= Trasformazioni <trasformazioni>
+ Trasformazioni <trasformazioni>
 == Trasformazione Politropica <trasformazione-politropica>
 $
 p = p_1 (v_1/v)^(n)
 $
+
+
+
 #figure(
 canvas(length: 2.7cm, {
   let domain = (0.01,2)
@@ -84,6 +87,7 @@ canvas(length: 2.7cm, {
 
       plot.add(((v1,p1),), mark: "o",mark-style: (stroke: blue, fill: black,), mark-size: .1)
       
+      
 //      plot.add(((2,3.8*calc.pow(10,4)),), mark: "o",mark-style: (stroke: black, fill: black), mark-size: .1)
 //      
 //
@@ -92,7 +96,7 @@ canvas(length: 2.7cm, {
 
     })
 }), caption: "Differenti curve al variare dell'indice n della politropica \n(Plot made with cetz)",)
-  Con una trasf. politropica si può descrivere una qualsiasi trasformazione termodinamica.\ \ \ \
+  Con una trasf. politropica si può descrivere una qualsiasi trasformazione termodinamica.
   === Equazione di stato
 $ p dot.op V^n = upright("costante") $
 
@@ -163,7 +167,6 @@ $
 $
 q = c_v dot (T_2 - T_1) - p_1 dot.op V_1 ln V_2 / V_1 
 $
-\ \
 == Calori specifici gas perfetti
 *N.B.*\
 *NO vapore*\ *SÌ* aria umida ma solo per la parte di *aria secca*.
@@ -175,7 +178,7 @@ $
 
 - R : Costante dei gas perfetti = 8314 $J/("kmol" K) $
 
-- Mm : Massa Molare del gas $["kg"/"kmol"]$ pari allla somma delle masse atomiche degli atomi che compongono la singola molecola.\ Esempio: N2 = N + N = 14 + 14 = 28 kg/kmol
+- Mm : Massa Molare del gas $["kg"/"kmol"]$ pari alla somma delle masse atomiche degli atomi che compongono la singola molecola.\ Esempio: N2 = N + N = 14 + 14 = 28 kg/kmol
 
 Calcolare calori specifici con l'indice *n* della politropica.
 
@@ -187,8 +190,6 @@ $
 $
 c_p = n / (n-1) dot R^*
 $
-\
-\ \ \ \
 == Trasformazione Isoentropica
 *Se* la trasformazione *è adiabatica* *e* anche *quasistatica* (deve essere specificato nella traccia dell'exe) *Allora* *n=k*. 
 

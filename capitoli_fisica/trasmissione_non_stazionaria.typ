@@ -1,5 +1,5 @@
 
-= Conduzione del calore: Regime non Stazionario <conduzione-del-calore-regime-non-stazionario>
+= Trasmissione del calore: Regime non Stazionario <conduzione-del-calore-regime-non-stazionario>
 
 == Numero di Biot <numero-di-biot>
 $ upright("Bi") = R_k / R_h = frac(h L_(c a r a t t e r i s t i c a), k) $

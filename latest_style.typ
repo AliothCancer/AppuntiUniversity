@@ -2,11 +2,11 @@
 // CONFIGURATION
   
   //#show strong: set text(blue)
-  #set par(justify: true, leading: 0.52em)
+  #set par(justify: false, leading: 0.52em)
   #let title = text(50pt,title)
   #v(8cm)
   #align(center, title)
-
+  #set par(justify: true, leading: 0.52em)
   #let fs_1 = 27pt
   #let fs_2 = 7*fs_1/8
   #let fs_3 = 6*fs_1/8
