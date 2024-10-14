@@ -2,7 +2,9 @@
 
 = Scambiatori di Calore <scambiatori-di-calore>
 == Temperatura Media Logaritmica <temperatura-media-logaritmica>
-=== Caso: $C_"caldo" = C_"freddo"$
+=== Caso capacità termiche uguali
+ipotesi:
+$C_"caldo" = C_"freddo"$
 
 $
   Delta T_"ml" = Delta T_"ingresso" = Delta T_"uscita" 
