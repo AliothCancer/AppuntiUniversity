@@ -32,7 +32,7 @@
 
   #set heading(numbering: "1.1 ")
   #set par(leading: 0.2cm)
-
+  #set page(numbering: "1/1", columns: 1)
 
   // HEADING STYLING
       // H1

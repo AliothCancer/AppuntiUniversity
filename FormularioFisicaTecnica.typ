@@ -8,8 +8,10 @@
 #include "/capitoli_fisica/trasformazioni.typ"
 #include "/capitoli_fisica/macchine.typ"
 #include "/capitoli_fisica/cicli.typ"
+#include "capitoli_fisica/acqua_vapore.typ"
 #include "capitoli_fisica/aria_umida.typ"
 #include "capitoli_fisica/trasmissione_stazionaria.typ"
 #include "capitoli_fisica/trasmissione_non_stazionaria.typ"
 #include "capitoli_fisica/scambiatori_calore.typ"
+
 ]
