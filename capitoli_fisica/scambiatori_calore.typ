@@ -2,9 +2,10 @@
 
 = Scambiatori di Calore <scambiatori-di-calore>
 == Temperatura Media Logaritmica <temperatura-media-logaritmica>
-=== Caso capacità termiche uguali
+=== Caso Controcorrente e capacità termiche uguali
 ipotesi:
-$C_"caldo" = C_"freddo"$
+- *Controcorrente*
+- $C_"caldo" = C_"freddo"$
 
 $
   Delta T_"ml" = Delta T_"ingresso" = Delta T_"uscita" 
