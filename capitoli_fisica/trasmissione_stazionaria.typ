@@ -41,7 +41,7 @@
 $
   R_k = L / (S dot k)
 $
-- L $[m]$: spessore dello strato
+- L $[m]$: spessore dello strato della parete
 
 - k $[W/ (m K)]$: coeff. di conduzione
 

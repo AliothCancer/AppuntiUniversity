@@ -8,6 +8,8 @@ $ upright("Bi") = R_k / R_h = frac(h L_(c a r a t t e r i s t i c a), k) $
 
 - $k med med frac(W, m K)$ : coeff. di scambio termico conduttivo (solidi)
 
+
+
 - L: lunghezza caratteristica
 
 - $R_k$ : Resistenza alla conduzione

@@ -108,4 +108,4 @@ Si potevano usare anche i valori della tabella con i valori di pressione tra 1 e
 
 È la relazione che c'è tra temperatura e pressione parziale di vapore.
 
-=== TODO: Metodo grafico (diagramma psicrometrico)
+=== Metodo grafico (diagramma psicrometrico)

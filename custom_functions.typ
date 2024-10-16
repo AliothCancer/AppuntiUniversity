@@ -46,3 +46,7 @@
     }
     return $#value$
   }
+
+
+// ROUNDING FUNCTION FOR QUICK CALCULATION
+#let c(value) = calc.round(value, digits: 3)
