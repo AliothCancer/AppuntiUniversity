@@ -18,10 +18,10 @@ Si indica con la lettera *x*.
  
 
 == Liquido sottoraffreddato
-Significa $x <= 0$:
-- $c_p = c_v = c = 4.186 ("kJ")/ ("kg" K°)$
-
+In genere si ha quando liquido saturo viene compresso. Si calcola il lavoro tecnico, volume massico constante perchè liquido si assume incomprimibile.
 
 == Vapore Insaturo
+Rappresentato dal caso $0<x<1$. Si usano i valori della tabella, in particolare le entropie per le trasformazioni isoentropiche permettono di ricavare il titolo(x) da cui è poi possibile ricavare il valore esatto di entalpia.
 
 == Vapore Surriscaldato
+Si usa la tabella dei valori per i vapori Surriscaldati.

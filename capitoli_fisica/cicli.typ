@@ -86,6 +86,7 @@ $
 T_x = T_2 + Delta T_ "scambiatore" \
 T_y = T_4 - Delta T_ "scambiatore"
 $
+#v(2em)
 Dove $Delta T_ "scambiatore"$ è calcolabile come:
 $
 Delta T_ "scamb." = epsilon dot (T_4 - T_2)
@@ -100,4 +101,8 @@ eta_ "rig." = 1 - (|T_1 - (T_4 - Delta T_ "scamb.")|) /(T_3 - (T_2 + Delta T_ "s
 $
 
 === Rankine (Vapore) <rankine-vapore>
+1→2 compressione isoentropica \
+2→3 riscaldamento isobaro\ 
+3→4 espansione isoentropica\
+4→1 raffreddamento isobaro
 $ eta = lr(|w|) / q_H = 1 - frac(lr(|h_1 - h_4|), h_3 - h_2) $

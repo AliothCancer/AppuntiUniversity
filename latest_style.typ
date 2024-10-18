@@ -52,6 +52,7 @@
   }
       //H2
   #show heading.where(level: 2): it => {
+    //pagebreak()
     set align(center)
     set text(fs_2, weight: "regular")
     v(1cm) + strong(it) + v(.5cm)

@@ -86,9 +86,9 @@ phi = P_v / P_"sat"(T=20 C°) \ \ => \ \
 P_v = phi dot P_"sat"(T=20 C°) \
 $
 
-Quindi la Pv sarà il 60% della *attuale pressione di saturazione* cioè quella a 20C°, la *$P_"sat"$ dipende solamente dalla temperatura*.
+Quindi la Pv sarà il 60%($phi$=0.6) della *attuale pressione di saturazione* cioè quella a 20C°, la *$P_"sat"$ dipende solamente dalla temperatura*.
 
-- Come si ricava la $P_"sat"$?\ Ad ogni valore di pressione di saturazione del vapore corrisponde una temperatura di saturazione.\ Quindi basta vedere la pressione associata alla temperatura attuale, in questo caso 20C° sulla tabella di vapore-acqua satura. Da cui 20C° $=>$ 2.337 kPa.
+- Come si ricava la $P_"sat"$?\ Ad ogni valore di pressione di saturazione del vapore si ha anche un valore di temperatura corrispondente.\ Quindi basta vedere la pressione associata alla temperatura attuale, in questo caso 20C° sulla tabella di vapore-acqua satura. Da cui 20C° $=>$ 2.337 kPa.
 
 #let p_v = {
   0.6 * 2.337
@@ -102,6 +102,9 @@ Se ora ci mettiamo nel caso in cui la P di saturazione del vapore è proprio 1.4
 $
 T_r = (T_2 - T_1) / (P_2 - P_1) (P_x - P_1) + T_1 = 11.8368 space C°
 $
+(non è niente altro che la formula della retta passante per 2 punti)\
+#align(center, $y - y_1 = (y_2 - y_1) / (x_2 - x_1) dot (x - x_1) $)
+
 Si potevano usare anche i valori della tabella con i valori di pressione tra 1 e 1.5 kPa, il risultato esce leggermente diverso. Essendo un'interpolazione sono entrambe approssimazioni, con l'assunzione che tra due valori vicini si può approssimare l'andamento lineare (come una retta).
 
 *L'umidità relativa* _dipende_ dalla *temperatura* (che varia la $P_"sat"$) e dalla *quantità di vapore nell'aria* (rappresentata dalla pressione parziale di vapore).
@@ -109,3 +112,6 @@ Si potevano usare anche i valori della tabella con i valori di pressione tra 1 e
 È la relazione che c'è tra temperatura e pressione parziale di vapore.
 
 === Metodo grafico (diagramma psicrometrico)
+Vedere l'altezza del punto di coordinate $(phi , T)$, il punto che si ottiene incrociando la temperatura di bulbo secco con la curva dell'umidità relativa. 
+
+Proiettare il punto orizzontalmente a destra sul metro delle temperature di rugiada e leggere il valore.

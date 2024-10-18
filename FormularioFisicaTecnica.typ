@@ -4,7 +4,7 @@
 
 #apply_my_style(title: "Formulario di Fisica Tecnica ITPS")[
 
-
+#include "capitoli_fisica/grandezze_termodinamiche.typ"
 #include "/capitoli_fisica/trasformazioni.typ"
 #include "/capitoli_fisica/macchine.typ"
 #include "/capitoli_fisica/cicli.typ"
@@ -23,3 +23,4 @@
 #include "capitoli_fisica/esercizi/esercitazione7.typ"
 #include "capitoli_fisica/esercizi/esercitazione8.typ"
 ]
+

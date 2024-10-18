@@ -97,6 +97,7 @@ canvas(length: 2.7cm, {
 
     })
 }), caption: "Differenti curve al variare dell'indice n della politropica \n(Plot made with cetz)",)
+#h(1em)
   === Equazione di stato
 $ p dot.op V^n = upright("costante") $
 
