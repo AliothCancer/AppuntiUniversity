@@ -5,8 +5,6 @@
 == titolo di vapore (x)
 È la percentuale di quantità(kg) di acqua allo stato di vapore sulla quantità totale di $H_2 O$ contenuta in un volume.
 
-- Esempio: Se su 100kg, 60kg sono di vapore, x = 60/100 = 0.6 
-
 Si indica con la lettera *x*.
 \
 \
