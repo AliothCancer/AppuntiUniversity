@@ -36,5 +36,7 @@ $T_oo$: temperatura riferita al fluido in cui è immerso il corpo. \
 \
 Con $ tau = frac(rho c, h) L_(upright("caratteristica")) $ $ tau = frac(M dot.op c, h dot.op S) $
 
+- $c:$ calore specifico del materiale della superficie considerata
+
 == Temperatura finale al tempo t <temperatura-finale-al-tempo-t>
 Dato l’istante t, data $T_oo$ (temperatura fluido convettivo) e $tau$. La temperatura finale è pari a:~~$ T_f = lr((T_i - T_oo)) dot.op e^(- t / tau) + T_oo $

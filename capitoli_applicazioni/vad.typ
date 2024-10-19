@@ -1,5 +1,5 @@
 = Vad
-Ventricular Assist Device
+*V* entricular\ *A* ssist\ *D* evice
 == HearthWare
 Dispositivo caratterizzato da pompa di tipo centrifugo e levitazione magnetica del rotore combinata con propulsione delle palette (lifting) per il mantenimento della posizione flottante.
 
@@ -10,7 +10,10 @@ $
 tau = mu dot gamma
 $
 
-- $mu$ : viscosità dinamica sangue = $3 c P ("centiPoise") = 0.03 g / (c m space s) = 0.003 (N s)/m^2 $ 
+- $mu$ : viscosità dinamica sangue (costante) 
+  - $
+    space space = 3 c P ("centiPoise") = 0.03 g / (c m space s) = 0.003 (N s)/m^2
+    $\
 - $gamma$ :  Velocità di deformazione angolare $"rad"/s$
 
 $
@@ -26,7 +29,7 @@ $
 
 - $omega$ : velocità angolare, di rotazione del rotore.
 - $r$ : raggio del rotore, ce ne sono 2, interno ed esterno.
-
+#v(1.6cm)
 ==== formula esplicita
 $
 tau_i = mu (omega r_i) / h_m
