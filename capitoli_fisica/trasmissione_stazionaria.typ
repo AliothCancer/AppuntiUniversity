@@ -55,7 +55,7 @@ $
   R_h = 1 / (S dot h)
 $
 
-- h $[W/ (m K)]$: coeff. di conduzione
+- h $[W/ (m^2 K)]$: coeff. di conduzione
 
 - S $[m^2]$: superficie di scambio dello strato
 
