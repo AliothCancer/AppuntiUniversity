@@ -142,4 +142,3 @@ $
 - $dot(Q):$ potenza termica scambiata
 
 - $Delta T:$ differenza di temperatura tra interno ed esterno
-
