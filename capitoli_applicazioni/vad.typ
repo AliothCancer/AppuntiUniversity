@@ -1,5 +1,5 @@
 = Vad
-*V* entricular\ *A* ssist\ *D* evice
+*V* entricular *A* ssist *D* evice
 == HearthWare
 Dispositivo caratterizzato da pompa di tipo centrifugo e levitazione magnetica del rotore combinata con propulsione delle palette (lifting) per il mantenimento della posizione flottante.
 
