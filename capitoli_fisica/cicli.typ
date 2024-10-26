@@ -1,7 +1,9 @@
 
 = Cicli Termodinamici <cicli-termodinamici>
 == Curiosità
-Le turbine a ciclo combinato utilizzano un ciclo Brayton i cui gas di scarico vanno ad alimentare la fase di riscaldamento di un ciclo Rankine, recuperando così il calore di scarto del Brayton.\
+Le turbine a ciclo combinato utilizzano un ciclo Brayton i cui gas di scarico vanno ad alimentare la fase di riscaldamento di un ciclo Rankine, recuperando così il calore di scarto del Brayton.
+#align(center,image("esercizi/immagini/scheme.png"))
+\
 \
 reference:  
 #link("https://it.wikipedia.org/wiki/Centrale_termoelettrica_a_ciclo_combinato")[ciclo combinato]
