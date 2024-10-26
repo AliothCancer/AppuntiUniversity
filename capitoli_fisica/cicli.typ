@@ -1,5 +1,12 @@
 
 = Cicli Termodinamici <cicli-termodinamici>
+== Curiosità
+Le turbine a cilo combinato utilizzano un ciclo Brayton i cui gas di scarico vanno ad alimentare la fase di riscaldamento di un ciclo Rankine, recuperando così il calore di scarto del Brayton.\
+\
+reference:  
+#link("https://it.wikipedia.org/wiki/Centrale_termoelettrica_a_ciclo_combinato")[ciclo combinato]
+
+
 == Diretti e indiretti
 *Ciclo Diretto*: sfrutta "direttamente" il calore per produrre lavoro/calore utile.\
 *esempio*: motore endotermico, utilizza calore di combustione per espandere il gas combusto e compiere lavoro.
