@@ -39,9 +39,9 @@
 - *Si misura in* $K/W$
 
 $
-  R_k = L / (S dot k)
+  R_k = d / (S dot k)
 $
-- L $[m]$: spessore dello strato della parete
+- d $[m]$: spessore dello strato della parete
 
 - k $[W/ (m K)]$: coeff. di conduzione
 
@@ -79,8 +79,8 @@ $
 $
   R_k = ln(r_e / r_i) / (2 pi L k)
 $
-- L $[m]$: spessore dello strato
-
+- L $[m]$: Lunghezza/altezza del cilindro
+\**nota*. nelle slide viene usato L per lo spessore della parete piana e poi per questa lunghezza :( "never let them know the your next step".
 - k $[W/ (m K)]$: coeff. di conduzione
 
 - S $[m^2]$: superficie di scambio dello strato
