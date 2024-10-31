@@ -2,7 +2,7 @@
 
   == Concentrazione soluto
   $
-  C = dot(m) / Q
+  C = dot(m) / Q \ [("kg"/s) / (m^3 /s) = "kg" / m^3 arrow g / "dL" ("unità tipica")]
   $
 
   == Cleareance
