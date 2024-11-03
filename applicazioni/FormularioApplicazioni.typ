@@ -1,4 +1,4 @@
-#import "latest_style.typ": apply_my_style
+#import "../utils/latest_style.typ": apply_my_style
 
 #let night_mode = true;
 #let ind = h(2em)

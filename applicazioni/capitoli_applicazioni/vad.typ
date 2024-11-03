@@ -92,7 +92,8 @@ H = eta dot rho dot U dot C dot cos alpha_2
 $
 
 - $eta$: rendimento (adimensionale) ($0 <= eta < 1$)
-- $rho$: densità del sangue $g/"cm"^3$
+- $rho$: densità del sangue $1 g/"cm"^3$
 - $U$: velocità tangenziale (rotore) $"cm"/s$
 - $C$: velocità assoluta (sangue) $"cm"/s$
 - $alpha_2$: l'angolo interno che si forma tra velocità assoluta e velocità tangenziale
+- 
