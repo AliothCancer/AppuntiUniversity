@@ -1,3 +1,12 @@
+#let two_col(col1: content, col2: content) = {
+  grid(
+    columns: 3,
+    col1,
+    h(.5cm),
+    col2
+  )
+}
+
 
 #let def(name, content) = {
   /* Custom formatter for a definition

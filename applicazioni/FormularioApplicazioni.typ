@@ -1,6 +1,6 @@
 #import "../utils/latest_style.typ": apply_my_style
 
-#let night_mode = true;
+#let night_mode = false;
 #let ind = h(2em)
 #let col(body) = columns(2, body)
 #apply_my_style(title: "Formulario di Applicazioni ITPS")[
