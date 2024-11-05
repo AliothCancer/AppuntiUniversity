@@ -46,7 +46,7 @@ $ h = c_(p_(A S)) dot.op T_x med + med U_a dot.op lr((c_(p_v) T_x + Delta h_(0 ,
 
 #box(text([#v(0.2cm) #h(0.2cm) Se $U_a > U_(s a t)$],color.white),fill: rgb("#0a42dcc8"),height: .9cm, width: 3.8cm, radius: .5cm)
 
-$ h = c_(p_(A S)) dot.op T_x med + med U_a dot.op lr((c_(p_v) T_x + Delta h_(0 , v))) + (U_a - U_"sat")$
+$ h = c_(p_(A S)) dot.op T_x med + med U_a dot.op lr((c_(p_v) T_x + Delta h_(0 , v))) + (U_a - U_"sat") dot c_"p"_l T_x$
 
 
 Dove:
@@ -54,6 +54,8 @@ Dove:
 - $c_(p_(A S)) = 1.007 frac(k J, k g)$ : calore specifico aria secca
 
 - $c_(p_v) = 1.86 frac(k J, k g)$ : calore specifico vapore
+
+- $c_(p_l) = 4.19 frac(k J, k g)$ : calore specifico acqua liquida
 
 - $h_(0 , v) = 2506.1 frac(k J, k g)$ : entalpia vapore a 0 C°
 

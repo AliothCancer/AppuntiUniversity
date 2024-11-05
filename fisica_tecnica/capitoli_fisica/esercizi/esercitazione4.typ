@@ -1,4 +1,4 @@
-#import "../../custom_functions.typ": c
+#import "../../../utils/custom_functions.typ": c
 
 // diminutivo di energy mass
 #let em() = $"kJ"/"kg"$

@@ -1,4 +1,4 @@
-#import "../transf_graph.typ": trasformazioni_graph
+#import "../../utils/transf_graph.typ": trasformazioni_graph
 
 
 = Trasformazione Politropica <trasformazione-politropica>
