@@ -15,10 +15,17 @@ Pompa con flusso continuo, il sangue viene pompato al centro del rotore il quale
 *P. Assiale*
 Flusso continuo, il rotore si "avvita" nel sangue, imponendo una forza propellente. 
 
+#include "circolazione_extracorporea.typ"
+
 == Vad
 *V* entricular *A* ssist *D* evice
 \ \
-Sono dispositivi che hanno lo scopo di supportare il cuore, non di sostituire la funzione cardiaca. Definiti come trattamento ponte per ad esempio trapianti di cuore, in attesa della disponibilità dell'organo.
+
+Sono dispositivi *impiantabili* che hanno lo scopo di supportare il cuore, non di sostituire la funzione cardiaca. 
+
+Sono installati in parallelo al ventricolo sinistro.
+
+Definiti come trattamento ponte per ad esempio trapianti di cuore, in attesa della disponibilità dell'organo.
 
 === HearthWare
 Dispositivo caratterizzato da pompa di tipo centrifugo e levitazione magnetica del rotore combinata con propulsione delle palette (lifting) per il mantenimento della posizione flottante.
@@ -41,7 +48,7 @@ $
 gamma = U_t/h_m
 $
 
-- $U_t$ : velocità di trascimento 
+- $U_t$ : velocità tangenziale del rotore 
 - $h_m$ : altezza del singolo meato =$(h_"scatola"-h_"rotore")/2$
 
 $
@@ -84,7 +91,7 @@ $
 
 == Prevalenza
 - È una pressione
-- Si misura quindi in $[N / m^2]$
+- Si misura quindi in $[N / m^2] "oppure" ["dynes"/"cm"^2 = g / ("cm" dot s^2)]$ 
 - Si indica con la lettera H
 
 $
