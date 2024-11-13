@@ -9,7 +9,7 @@ Solo per centrifughe e Assiali.
 
 *Velocità di Assoluta C* data dalla somma di velocità tangenziale e velocità di trascimento
 
-*Velocità Trascinamento T* è tangente al profilo delle palette
+*Velocità Relativa V* è tangente alla linea delle palette nel disegno
 
 === Velocità Tangenziale (U)
 - Dato un raggio del rotore pari a K (metri)
