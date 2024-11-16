@@ -4,7 +4,7 @@
   //#show strong: set text(blue)
   #set par(justify: false, leading: 0.52em)
   #let title = text(50pt,title)
-  #v(8cm)
+  #v(6cm)
   #align(center, title)
   #set par(justify: true, leading: 0.52em)
   #let fs_1 = 27pt
