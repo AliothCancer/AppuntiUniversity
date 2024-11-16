@@ -1,6 +1,6 @@
 #import "../utils/latest_style.typ": apply_my_style
 
-#apply_my_style(title: "Formulario \n + \n Domande \n+\n Correzioni esame \n per \n Applicazioni ITPS")[
+#apply_my_style(title: "Formulario \n + \n Domande Orale \n+\n Correzione esami \n per \n Applicazioni ITPS")[
 #include "capitoli_applicazioni/biocompatibilità.typ"
 #include "capitoli_applicazioni/emodialisi.typ"
 #include "capitoli_applicazioni/circolazione_extracorporea.typ"
