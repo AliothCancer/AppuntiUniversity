@@ -64,7 +64,7 @@ Si usi la seguente formula per il fattore di Hindrance:
 $
 epsilon = (1- lambda)^2 (1 - 2.104lambda + 2.09lambda^3 - 0.95lambda^5)
 $
-
+valore di verifica: ~0.143 facendo l'errore di considerare il diametro anzichè il raggio ($lambda=3.54/10$)
 
 Inoltre si disegni il grafico dell'andamento della concentrazione in funzione dello spessore della membrana.
 
