@@ -62,8 +62,9 @@ Calcolare la concentrazione di albumina nel liquido di dialisi all'uscita del di
 
 Si usi la seguente formula per il fattore di Hindrance:
 $
-epsilon = (1- lambda)^2 (lambda-2.09lambda^3+lambda^5)
+epsilon = (1- lambda)^2 (1 - 2.104lambda + 2.09lambda^3 - 0.95lambda^5)
 $
+
 
 Inoltre si disegni il grafico dell'andamento della concentrazione in funzione dello spessore della membrana.
 
