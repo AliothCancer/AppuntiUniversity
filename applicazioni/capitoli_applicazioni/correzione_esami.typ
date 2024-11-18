@@ -100,42 +100,6 @@ Il dializzatore con controcorrente risulta più efficiente, con una clearance fi
 === Esercizio 3
 L'angolo acuto tra l'asse delle palette e la circonferenza dell'ingresso è 30°. Il raggio interno del rotore è di 12 mm. L'altezza della palettatura è di 2 mm. Si calcoli a che velocità di rotazione della pompa si ottiene il massimo rendimento quando la portata è 5400 mL/min. Si assume che la velocità in ingresso sia uniforme lungo l'altezza della palettatura. Si rappresenti graficamente la vista in pianta della palettatura dei vettori di velocità ingresso e uscita dal rotore nel caso che la palettatura formi un angolo di 90° con la circonferenza esterna del rotore.
 
-=== Risultati
-$omega$ = 822 RPM 
-
-=== Soluzione
-===== Calcolo della Velocità di Ingresso <calcolo-della-velocità-di-ingresso>
-La portata della pompa è di 5.400 mL/min, che corrisponde a 5,4 L/min. La velocità di ingresso $C_1$ può essere calcolata con la seguente formula:
-
-$ C_1 = upright("Portata") / upright("Area") $
-
-Dove l’area dell’ingresso è data dalla formula:
-
-$ upright("Area") = 2 pi r h $
-
-Con:
-
-- Raggio $r = 12 thin upright("mm") = 1 , 2 thin upright("cm")$,
-
-- Altezza della palettatura $h = 2 thin upright("mm") = 0 , 2 thin upright("cm")$.
-
-Calcoliamo l’area:
-
-$ upright("Area") = 2 pi dot.op 1 , 2 dot.op 0 , 2 = #c(2*calc.pi*1.2*0.2) thin upright("cm")^2 $
-
-Ora possiamo calcolare la velocità di ingresso:
-
-$ C_1 = frac(
-  5400 thin upright("cm")^3 \/ 60 upright("sec") ,
-  1.508 "cm²"
-
-) = #c(5400/1.508/60) thin upright("cm/s") $
-
-===== Calcolo della Velocità di Uscita per il Massimo Rendimento <calcolo-della-velocità-di-uscita-per-il-massimo-rendimento>
-Per ottenere il massimo rendimento, la velocità assoluta $C_1$ deve essere allineata con le palette:
-
-//#{line(start:(0cm,0cm), angle: 30deg, length: 2cm)}
-
 #figure(align(center,cetz.canvas(background: white, {
     import cetz.draw: *
     import cetz.draw: line
@@ -180,15 +144,20 @@ Per ottenere il massimo rendimento, la velocità assoluta $C_1$ deve essere alli
       );
       return calc.acos(mod_prod / prod_mod).deg()
     }
+    // circonferenza
+    cetz.draw.circle((2,0),radius: 2, name:"rotore")
+    content("rotore.start",[#v(4cm) #text("rotore\nraggio\ninterno\nr=12mm")])
+
+
     // ANGOLI
     cetz.angle.angle(
       (0,0), (u_x,u_y), (c_x, c_y),
-      label: text(black, [#v(-1.2cm) #h(-3.5cm) $#c(calc_angle(u_x,u_y,c_x,c_y))° = alpha_1$])
+      label: text(green, [#v(-1.2cm) #h(-3.5cm) $#c(calc_angle(u_x,u_y,c_x,c_y))° = alpha_1$])
     )
 
     cetz.angle.angle(
       (0,0), (v_x, v_y), (u_x, -u_y),
-      label: text(black, [#v(1.2cm) #h(3.9cm) $beta_1 = #c(calc_angle(v_x,v_y,0,-u_y))°$]),
+      label: text(blue, [#v(2.2cm) #h(-2.9cm) $beta_1 = #c(calc_angle(v_x,v_y,0,-u_y))°$]),
       radius: 1,
       fill: blue.lighten(50%)
     )
@@ -202,6 +171,42 @@ Per ottenere il massimo rendimento, la velocità assoluta $C_1$ deve essere alli
   }
 )), caption: "Rappresentazione del triangolo delle velocità in ingresso per il problema presentato. Proporzioni rispettate."
 )
+=== Risultati
+$omega$ = 822 RPM 
+
+=== Soluzione
+===== Calcolo della Velocità di Ingresso <calcolo-della-velocità-di-ingresso>
+La portata della pompa è di 5.400 mL/min, che corrisponde a 5,4 L/min. La velocità di ingresso $C_1$ può essere calcolata con la seguente formula:
+
+$ C_1 = upright("Portata") / upright("Area") $
+
+Dove l’area dell’ingresso è data dalla formula:
+
+$ upright("Area") = 2 pi r h $
+
+Con:
+
+- Raggio $r = 12 thin upright("mm") = 1 , 2 thin upright("cm")$,
+
+- Altezza della palettatura $h = 2 thin upright("mm") = 0 , 2 thin upright("cm")$.
+
+Calcoliamo l’area:
+
+$ upright("Area") = 2 pi dot.op 1 , 2 dot.op 0 , 2 = #c(2*calc.pi*1.2*0.2) thin upright("cm")^2 $
+
+Ora possiamo calcolare la velocità di ingresso:
+
+$ C_1 = frac(
+  5400 thin upright("cm")^3 \/ 60 upright("sec") ,
+  1.508 "cm²"
+
+) = #c(5400/1.508/60) thin upright("cm/s") $
+
+===== Calcolo della Velocità di Uscita per il Massimo Rendimento <calcolo-della-velocità-di-uscita-per-il-massimo-rendimento>
+Per ottenere il massimo rendimento, la velocità assoluta $C_1$ deve essere allineata con le palette:
+
+//#{line(start:(0cm,0cm), angle: 30deg, length: 2cm)}
+
 //#image("../../applicazioni/immagini/ex_gi.gif")
 
 #cetz.canvas(length: 3cm, {
@@ -222,6 +227,7 @@ Per ottenere il massimo rendimento, la velocità assoluta $C_1$ deve essere alli
   grid((-1.5, -1.5), (1.4, 1.4), step: 0.5, stroke: gray + 0.2pt)
 
   circle((0,0), radius: 1)
+
 
   cetz.draw.line((-1.5, 0), (1.5, 0), mark: (end: "stealth"))
   content((), $ x $, anchor: "west")
