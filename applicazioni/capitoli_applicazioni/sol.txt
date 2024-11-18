@@ -1,0 +1,32 @@
+1. Determinare la clearance:
+   La clearance dell'urea è data dalla portata di sangue nel grafico.
+$
+"Clearance" = 262 "mL"/"min"\
+   "Concentrazione sangue" = 136 "mg"/"mL"$
+
+2. Calcolo della quantità di urea rimossa:\
+   Quantità rimossa = Clearance x Concentrazione
+$ 
+"Quantità rimossa" = 262 "mL"/"min" dot 1.36 "mg"/"mL" = #c(262*1.36) "mg"/"min"
+$
+
+3. Calcolo della concentrazione nel liquido di dialisi:
+   Concentrazione nel liquido di dialisi = Quantità rimossa / Portata liquido dialisi
+   Concentrazione liquido di dialisi = 356 mg / 500 mL = 0.71 mg/mL = 71.26 mg/dL
+
+4. Concentrazione nel plasma dopo dialisi:
+   Concentrazione rimanente nel plasma = Quantità rimanente nel plasma / Portata
+   Concentrazione rimanente nel plasma = 17 mg / 100 mL = 0.17 mg/mL = 17 mg/dL
+
+5. Diagramma della concentrazione:
+   La concentrazione di urea nel sangue passa da 136 mg/mL a 71 mg/mL nel liquido di dialisi.
+   La concentrazione nel plasma diminuisce fino a 17 mg/mL.
+
+6. Bilancio di massa dell'urea (equilibrio):
+   Quantità entrante = Portata del sangue \* Concentrazione nel sangue
+   Quantità entrante = 136 mg/mL \* 100 mL/min = Equilibrio concentrazione \* 800 mL/min
+   Risolvendo, si ottiene la concentrazione di equilibrio = 51 mg/mL nel liquido di dialisi.
+
+7. Calcolo della clearance finale:
+   Clearance finale = Portata del sangue \* (Concentrazione finale - Concentrazione iniziale)
+   Clearance finale = 300 mL/min \* (136 mg/mL - 51 mg/mL) = 187 mL/min

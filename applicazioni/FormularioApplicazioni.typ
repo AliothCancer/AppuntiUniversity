@@ -3,7 +3,6 @@
 #apply_my_style(title: "Formulario \n + \n Domande Orale \n+\n Correzione esami \n per \n Applicazioni ITPS")[
 #include "capitoli_applicazioni/biocompatibilità.typ"
 #include "capitoli_applicazioni/emodialisi.typ"
-#include "capitoli_applicazioni/circolazione_extracorporea.typ"
 #include "capitoli_applicazioni/pompe_sangue.typ"
 #include "capitoli_applicazioni/ossigenatore.typ"
 #include "capitoli_applicazioni/domande_orale.typ"

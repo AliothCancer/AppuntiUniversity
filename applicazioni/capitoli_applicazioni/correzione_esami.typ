@@ -1,3 +1,6 @@
+#import "custom_functions.typ": c
+#import "@preview/cetz:0.3.1" as cetz
+
 = Correzione esami
 \*Si tenga conto che alcune risposte possono non essere testualmente uguali a quelle dell'esame, ma il significato è uguale. 
 
@@ -78,7 +81,209 @@ il grafico mette in relazione portata ematica e clearance e mostra che la cleara
 
 Da cui per 300 ml/min di portata di sangue si ottiene una clearance di 262 ml/min.
 
+==== Soluzione
+In progress..
+
+=== Risultati
+- Clearance iniziale = 262 mL/min
+- Concentrazione nel liquido di dialisi = 0.71 mg/mL (71.26 mg/dL)
+- Concentrazione nel plasma dopo dialisi = 0.17 mg/mL (17 mg/dL)
+- Concentrazione finale nell'equilibrio = 51 mg/mL
+- Clearance finale con bilancio di massa = 187 mL/min
+
+Conclusione:
+Il dializzatore con controcorrente risulta più efficiente, con una clearance finale di 187 mL/min rispetto alla clearance iniziale di 262 mL/min.
+
+
 
 
 === Esercizio 3
 L'angolo acuto tra l'asse delle palette e la circonferenza dell'ingresso è 30°. Il raggio interno del rotore è di 12 mm. L'altezza della palettatura è di 2 mm. Si calcoli a che velocità di rotazione della pompa si ottiene il massimo rendimento quando la portata è 5400 mL/min. Si assume che la velocità in ingresso sia uniforme lungo l'altezza della palettatura. Si rappresenti graficamente la vista in pianta della palettatura dei vettori di velocità ingresso e uscita dal rotore nel caso che la palettatura formi un angolo di 90° con la circonferenza esterna del rotore.
+
+=== Risultati
+$omega$ = 822 RPM 
+
+=== Soluzione
+===== Calcolo della Velocità di Ingresso <calcolo-della-velocità-di-ingresso>
+La portata della pompa è di 5.400 mL/min, che corrisponde a 5,4 L/min. La velocità di ingresso $C_1$ può essere calcolata con la seguente formula:
+
+$ C_1 = upright("Portata") / upright("Area") $
+
+Dove l’area dell’ingresso è data dalla formula:
+
+$ upright("Area") = 2 pi r h $
+
+Con:
+
+- Raggio $r = 12 thin upright("mm") = 1 , 2 thin upright("cm")$,
+
+- Altezza della palettatura $h = 2 thin upright("mm") = 0 , 2 thin upright("cm")$.
+
+Calcoliamo l’area:
+
+$ upright("Area") = 2 pi dot.op 1 , 2 dot.op 0 , 2 = #c(2*calc.pi*1.2*0.2) thin upright("cm")^2 $
+
+Ora possiamo calcolare la velocità di ingresso:
+
+$ C_1 = frac(
+  5400 thin upright("cm")^3 \/ 60 upright("sec") ,
+  1.508 "cm²"
+
+) = #c(5400/1.508/60) thin upright("cm/s") $
+
+===== Calcolo della Velocità di Uscita per il Massimo Rendimento <calcolo-della-velocità-di-uscita-per-il-massimo-rendimento>
+Per ottenere il massimo rendimento, la velocità assoluta $C_1$ deve essere allineata con le palette:
+
+//#{line(start:(0cm,0cm), angle: 30deg, length: 2cm)}
+
+#figure(align(center,cetz.canvas(background: white, {
+    import cetz.draw: *
+    import cetz.draw: line
+
+    set-style(
+    mark: (fill: black, scale: 1.2),
+    stroke: (thickness: 1.4pt, cap: "round"),
+    angle: (
+      radius: .8,
+      label-radius: .22,
+      fill: green.lighten(80%),
+      stroke: (paint: green.darken(50%))
+    ),
+    content: (padding: 1pt)
+  )
+    let scale_f = 20
+    let start = (0,0)
+
+    // vettori
+    let (u_x,u_y) = (0,calc.sqrt(calc.pow(119.364/scale_f, 2)- calc.pow(59.682/scale_f,2)));
+    let u_v = (u_x,u_y);
+
+    let (c_x,c_y) = (-59.682/scale_f, 0);
+    let c_v = (c_x,c_y);
+
+    let (v_x,v_y) = (c_x, -u_y);
+    let v_v = (v_x,v_y);
+
+    let U = line(name: "U",start, u_v, stroke: (paint: red),mark: (end: "stealth"))
+
+    let V = line(name: "V", start, v_v, stroke: (paint: blue),mark: (end: "stealth"))
+
+    let C = line(name: "C", start, c_v, stroke: (paint: green), mark: (end: "stealth"))
+
+    let calc_angle(x1,x2, y1, y2) = {
+
+      let mod_prod = x1 * y1 + x2 * y2
+      let prod_mod = calc.sqrt(
+        calc.pow(x1,2) + calc.pow(x2,2)
+      ) * calc.sqrt(
+        calc.pow(y1,2) + calc.pow(y2,2)
+      );
+      return calc.acos(mod_prod / prod_mod).deg()
+    }
+    // ANGOLI
+    cetz.angle.angle(
+      (0,0), (u_x,u_y), (c_x, c_y),
+      label: text(black, [#v(-1.2cm) #h(-3.5cm) $#c(calc_angle(u_x,u_y,c_x,c_y))° = alpha_1$])
+    )
+
+    cetz.angle.angle(
+      (0,0), (v_x, v_y), (u_x, -u_y),
+      label: text(black, [#v(1.2cm) #h(3.9cm) $beta_1 = #c(calc_angle(v_x,v_y,0,-u_y))°$]),
+      radius: 1,
+      fill: blue.lighten(50%)
+    )
+    line(name: "U",start, (0,-3), stroke: (paint: black))
+    U;C;V
+    content(("U.start", 70%, "U.end"), text(red, "    U"), anchor: "north")
+    content(("C.start", 70%, "C.end"), text(green, "    C       "), anchor: "south")
+    content(("V.start", 70%, "V.end"), text(blue, "        V"), anchor: "north")
+
+    
+  }
+)), caption: "Rappresentazione del triangolo delle velocità in ingresso per il problema presentato. Proporzioni rispettate."
+)
+//#image("../../applicazioni/immagini/ex_gi.gif")
+
+#cetz.canvas(length: 3cm, {
+  import cetz.draw: *
+  import cetz.draw: line as cline
+  set-style(
+    mark: (fill: black, scale: 2),
+    stroke: (thickness: 0.4pt, cap: "round"),
+    angle: (
+      radius: 0.3,
+      label-radius: .22,
+      fill: green.lighten(80%),
+      stroke: (paint: green.darken(50%))
+    ),
+    content: (padding: 1pt)
+  )
+
+  grid((-1.5, -1.5), (1.4, 1.4), step: 0.5, stroke: gray + 0.2pt)
+
+  circle((0,0), radius: 1)
+
+  cetz.draw.line((-1.5, 0), (1.5, 0), mark: (end: "stealth"))
+  content((), $ x $, anchor: "west")
+  line((0, -1.5), (0, 1.5), mark: (end: "stealth"))
+  content((), $ y $, anchor: "south")
+
+  for (x, ct) in ((-1, $ -1 $), (-0.5, $ -1/2 $), (1, $ 1 $)) {
+    line((x, 3pt), (x, -3pt))
+    content((), anchor: "north", ct)
+  }
+
+  for (y, ct) in ((-1, $ -1 $), (-0.5, $ -1/2 $), (0.5, $ 1/2 $), (1, $ 1 $)) {
+    line((3pt, y), (-3pt, y))
+    content((), anchor: "east", ct)
+  }
+
+  // Draw the green angle
+  cetz.angle.angle((0,0), (1,0), (1, calc.tan(30deg)),
+    label: text(green, [#sym.alpha]))
+
+  line((0,0), (1, calc.tan(30deg)))
+
+  set-style(stroke: (thickness: 1.2pt))
+
+  line((30deg, 1), ((), "|-", (0,0)), stroke: (paint: red), name: "sin")
+  content(("sin.start", 50%, "sin.end"), text(red)[$ sin alpha $])
+  line("sin.end", (0,0), stroke: (paint: blue), name: "cos")
+  content(("cos.start", 50%, "cos.end"), text(blue)[$ cos alpha $], anchor: "north")
+  line((1, 0), (1, calc.tan(30deg)), name: "tan", stroke: (paint: orange))
+  content("tan.end", $ text(#orange, tan alpha) = text(#red, sin alpha) / text(#blue, cos alpha) $, anchor: "west")
+})
+\ \
+\ \
+La velocità di uscita $V_1$ è:
+
+$ V_1 = C_1 / (cos (beta_1-90°)) = (C_1) / cos(30°-90°) = (C_1) / cos(60°)=\ = (C_1) / (1/2)= 2 C_1 = 2 dot 59.682= #c(2*59.682) thin upright("cm/s") $
+
+===== Calcolo della Velocità Angolare della Pompa <calcolo-della-velocità-angolare-della-pompa>
+Siccome il triangolo delle velocità è un triangolo rettangolo ipotenusa C1, si calcola U1 con il teorema di pitagora:
+$
+V_1^2 = U_1^2 + C_1^2
+$
+Per cui:
+$
+U_1^2 = V_1^2 - C_1^2\
+U_1 = sqrt(V_1^2 - C_1^2) =\
+= sqrt((119.364 "cm/s")^2 - (59.682 "cm/s")^2)\
+= #c(calc.sqrt(calc.pow(119.364, 2) - calc.pow(59.682, 2))) "cm/s"
+$
+
+Da cui si ottiene la velocità angolare con:
+
+$
+omega = U_1 / r = (103.372 "cm/s") / (1.2 "cm") = #c(103.372/1.2) "rad/s"
+$
+
+
+===== Conversione in Giri al Minuto <conversione-in-giri-al-minuto>
+Per ottenere la velocità angolare in giri al minuto (rpm), convertiamo i radianti in giri. Sappiamo che 1 giro corrisponde a $2 pi$ radianti, dopodichè si converte da secondi a minuti. Pertanto, la velocità angolare in giri al minuto è:
+
+$
+"RPM" = omega("rad/s") dot ( 60 s/"min") / (2pi ("rad/giro"))\
+= 86.143 "rad/s" dot (60 "s/min")/(2pi "rad/giro") = #c(86.143* 60 / (2 * calc.pi)) "giri/min"
+$
+
