@@ -3,16 +3,13 @@
 
 
 
-#let def(formula, unit) = {
+#let param(param, unit) = {
   set text(luma(0%), 1em, weight: "bold")
-  text(strong("· "), 1.4em, weight: "bold") + formula + $ arrow space$
 
-  show text: set text(blue)
-  show math.equation: set text(blue)
-  unit + "\n" 
+  [- #param $ arrow space$ #text(blue, unit)]  
 } 
-
 #apply_my_style(title: "Formulario di Dispositivi itps")[
+
 
 
 = Valvole cardiache
@@ -21,15 +18,15 @@
   "EOA"(Q, Delta p)= 10^4/516 (Q) / (sqrt(Delta p))  arrow "cm"^2
   $
 
-  - $Q : "dm"^3/s$
-  - $Delta p: "mmHg"$
+  #param[$Q$][$"dm"^3/s$]
+  #param[$Delta p$][$"mmHg"$]
 
 == Discharge Coefficient (DC)
   $
   "DC" = "EOA"/A_"int" arrow ["adim."]
   $
-  #def[EOA][$"cm"^2$]
-  #def[$A_"interna"$][$"cm"^2$]
+  #param[EOA][$"cm"^2$]
+  #param[$A_"interna"$][$"cm"^2$]
   
 
 == Performance Index (PI)
@@ -38,8 +35,8 @@
   "PI" = "EOA" / A_"est" arrow ["adim."]
   $
 
-  #def[EOA][$"cm"^2$]
-  #def[$A_"esterna"$][$"cm"^2$]    
+  #param[EOA][$"cm"^2$]
+  #param[$A_"esterna"$][$"cm"^2$]    
 
 #pagebreak()
 == Reverse Flow (RF%)
@@ -62,9 +59,9 @@
 
   - d: diametro del condotto $"cm"$
 
-  - $mu$ : viscosità del sangue 0.03Poise = 0.03 $(g dot "cm") / s$
+  - $mu$ : viscosità dinamica del sangue 0.03Poise = 0.03 $(g dot "cm") / s$
   \
-  #strong("Nota:") Numero di Reynold  
+  #strong("Nota:") Interpretazione del numero di Reynold  
   
   - Re < 2000 #h(2cm) $arrow$  flusso laminare
   - 2000 < Re < 4000 #h(.45cm)$arrow$  Regime di transizione

@@ -17,8 +17,7 @@
     ===== Fonte 
     Silverthorn "Fisiologia umana. Un'approccio integrato" pag. 422-423 (libro del corso di fisiologia)
 
-    #align(center, image("../immagini/cuore_valvole.png", width: 60%))
-    #pagebreak()
+    #align(center, image("../immagini/cuore_valvole.png", width: 55%))
   == Funzione cardiaca
   #let im0 = image("../immagini/immagine_cuore.png", width: 80%)
   #let im1 = image("../immagini/grafico_pressioni_ciclo_cardiaco.png", width: 110%)

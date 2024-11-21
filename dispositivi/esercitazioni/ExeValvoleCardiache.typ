@@ -1,6 +1,6 @@
 #import "../../utils/custom_functions.typ": *
 
-= Esercitazione 1: Valvole Cardiache
+= Esercitazione 1+2: Valvole Cardiache
 
 #def[Effective Orifice Area][
   È la sezione efficace/effettiva della valvola, si usa per valutare il grado di ostruzione che la valvola provoca.
