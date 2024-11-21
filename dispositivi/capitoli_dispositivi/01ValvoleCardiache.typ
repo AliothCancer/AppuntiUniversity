@@ -17,11 +17,11 @@
     ===== Fonte 
     Silverthorn "Fisiologia umana. Un'approccio integrato" pag. 422-423 (libro del corso di fisiologia)
 
-    #align(center, image("/immagini/cuore_valvole.png", width: 60%))
+    #align(center, image("../immagini/cuore_valvole.png", width: 60%))
     #pagebreak()
   == Funzione cardiaca
-  #let im0 = image("/immagini/immagine_cuore.png", width: 80%)
-  #let im1 = image("/immagini/grafico_pressioni_ciclo_cardiaco.png", width: 110%)
+  #let im0 = image("../immagini/immagine_cuore.png", width: 80%)
+  #let im1 = image("../immagini/grafico_pressioni_ciclo_cardiaco.png", width: 110%)
   #grid(
     columns: 2,
     rows: 1,
@@ -32,7 +32,7 @@
 
     La valvola aortica si apre quando la *pressione ventricolare* supera la pressione aortica che arriva fino ad un valore massimo di riferimento pari a 120mmHg (*pressione sistolica*), la *pressione aortica* è quindi normalmente la *pressione diastolica*, ha valore di riferimento di 80mmHg. Questo accade perchè la valvola aortica è una valvola che si apre in una sola direzione, la sua forma a "uncino" fa in modo che il flusso quando scorre nel verso opposto faccia chiudere la valvola, come si vede in figura.
     
-    #align(center, image("/immagini/valvola_aortica00.png", width: 60%))
+    #align(center, image("../immagini/valvola_aortica00.png", width: 60%))
 
   #pagebreak()
   == Criticità
@@ -78,8 +78,8 @@
       - Esempio materiale metallico: Ti6Al4V
       - Esempio materiale polimerico: pet Dacron
       #{
-      let img0 = image("/immagini/valvola_meccanica_moderna.png", width: 50%)
-      let img1 = image("/immagini/valvola_meccanica_moderna01.png", width: 100%)
+      let img0 = image("../immagini/valvola_meccanica_moderna.png", width: 50%)
+      let img1 = image("../immagini/valvola_meccanica_moderna01.png", width: 100%)
 
       let fig0 = figure(img0, caption: "bileaflet -- A emidischi")
       let fig1 = figure(img1, caption: "altri tipi")
@@ -104,7 +104,7 @@
 
         Il rivestimento viene eseguito all'interno di un forno, detto *forno di letto fluido*, in un atmosfera composta da 2 gas: l'*elio*, gas inerte che permette la *pirolisi* (combustione in assenza di agenti ossidanti), permette inoltre di regolare il risultato del rivestimento regolando la composizione dei 2 gas, e un idrocarburo gassoso da cui poter strappare gli atomi di carbonio.
         #align(
-          center, image("/immagini/pyrolitic_carbon_manifacturing.png", width: 60%
+          center, image("../immagini/pyrolitic_carbon_manifacturing.png", width: 60%
           )
         )
         

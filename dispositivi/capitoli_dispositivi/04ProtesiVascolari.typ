@@ -1,4 +1,4 @@
-#import "../custom_functions.typ": def
+#import "../../utils/custom_functions.typ": def
 
 = Protesi Vascolari
   #def[Protesi Vascolare][Dispositivi medici impiantati permanentemente per *ripristinare la funzione di un tratto

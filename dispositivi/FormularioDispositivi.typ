@@ -1,35 +1,28 @@
-#import "style.typ": apply_style
-#import "custom_functions.typ": def
+#import "../utils/latest_style.typ": apply_my_style
+//#import "../utils/custom_functions.typ": def
 
 
-#let title = align(center)[
-  #text(
-    "Formulario di Dispositivi itps",
-    30pt)
-  
-]
 
 #let def(formula, unit) = {
-  //set text(rgb("#000000"), 1em, weight: "bold")
-  text(strong("· "), 1.4em, weight: "bold") + formula + $med med arrow med med$
-  
+  set text(luma(0%), 1em, weight: "bold")
+  text(strong("· "), 1.4em, weight: "bold") + formula + $ arrow space$
+
   show text: set text(blue)
   show math.equation: set text(blue)
   unit + "\n" 
 } 
 
-#title
-#apply_style[
-#outline(indent: true)
-#pagebreak()
+#apply_my_style(title: "Formulario di Dispositivi itps")[
+
 
 = Valvole cardiache
 == Effective Orifice Area (EOA)
   $
-  "EOA" = 10^4/516 (Q) / (sqrt(Delta p))  arrow "cm"^2
+  "EOA"(Q, Delta p)= 10^4/516 (Q) / (sqrt(Delta p))  arrow "cm"^2
   $
-  #def[Q][Litri/secondo]
-  #def[$Delta p$][mmHg]
+
+  - $Q : "dm"^3/s$
+  - $Delta p: "mmHg"$
 
 == Discharge Coefficient (DC)
   $
@@ -40,10 +33,11 @@
   
 
 == Performance Index (PI)
+  
   $
   "PI" = "EOA" / A_"est" arrow ["adim."]
-
   $
+
   #def[EOA][$"cm"^2$]
   #def[$A_"esterna"$][$"cm"^2$]    
 

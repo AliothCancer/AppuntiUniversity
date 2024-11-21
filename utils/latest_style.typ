@@ -44,9 +44,8 @@
     set text(fs_1, weight: "bold",
     number-type: "old-style",
     )
-    rect(smallcaps(underline(it)) + v(1cm), fill: rgb("#ddd5f3"),height: 1.2em,
+    rect(smallcaps(underline(it)) + v(1cm), fill: rgb("#ddd5f3"),height: 2.2em,
     radius: .5cm,
-    
     )
     
   }
