@@ -8,6 +8,24 @@
 }
 
 
+#let def_um(line_arr) = {
+  for (n,param) in line_arr.enumerate().filter(((n,_)) => calc.even(n)){
+    [- #param $arrow$ #text(blue,line_arr.at(n+1)) \ ]
+  }
+}
+#def_um(
+  (
+    $A_"esterna"$, $"cm"^2$,
+    $A_"esterna"$, $"cm"^2$
+  )
+)
+
+#let param(param, unit) = {
+  set text(luma(0%), 1em, weight: "bold")
+
+  [- #param $ arrow space$ #text(blue, unit)]  
+} 
+
 #let def(name, content) = {
   /* Custom formatter for a definition
   also work as a tag for definition

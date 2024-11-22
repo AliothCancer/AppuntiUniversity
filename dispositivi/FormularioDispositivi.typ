@@ -1,13 +1,9 @@
 #import "../utils/latest_style.typ": apply_my_style
-//#import "../utils/custom_functions.typ": def
+#import "../utils/custom_functions.typ": param,def_um
 
 
 
-#let param(param, unit) = {
-  set text(luma(0%), 1em, weight: "bold")
 
-  [- #param $ arrow space$ #text(blue, unit)]  
-} 
 #apply_my_style(date:(2024,09,13),title: "Formulario di Dispositivi itps\n" + text(red, "deprecated") + "\nOra incluso tutto in DispositiviMedicali.pdf")[
 
 
