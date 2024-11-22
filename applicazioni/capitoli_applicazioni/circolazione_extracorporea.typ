@@ -42,6 +42,6 @@ Si noti però che viene richiesto un valore non un range per calcolare le altre 
 
 === Legame dei 3 vettori
 $
-overline(V) = overline(C) + overline(U)
+overline(C) = overline(V) + overline(U)
 $
 

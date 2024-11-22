@@ -1,11 +1,23 @@
-#let apply_my_style(title:str,body) = [
+#let apply_my_style(title:str, date: array,body) = [
+
+
 // CONFIGURATION
   #let mode = "a4";
   //#show strong: set text(blue)
   #set par(justify: false, leading: 0.52em)
   #let title = text(50pt,title)
-  #v(6cm)
+
+  #v(3cm)
   #align(center, title)
+
+  #let (year, month, day) = (
+    date.at(0),
+    date.at(1),
+    date.at(2),
+  )
+  #let date = datetime(year: year, month: month, day: day).display("[day]  [month repr:long] [year]")
+  #align(center, date)
+
   #set par(justify: true, leading: 0.52em)
   #let fs_1 = 27pt
   #let fs_2 = 7*fs_1/8

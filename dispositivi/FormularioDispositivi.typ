@@ -8,7 +8,7 @@
 
   [- #param $ arrow space$ #text(blue, unit)]  
 } 
-#apply_my_style(title: "Formulario di Dispositivi itps\n" + text(red, "deprecated") + "\nOra incluso tutto in DispositiviMedicali.pdf")[
+#apply_my_style(date:(2024,09,13),title: "Formulario di Dispositivi itps\n" + text(red, "deprecated") + "\nOra incluso tutto in DispositiviMedicali.pdf")[
 
 
 

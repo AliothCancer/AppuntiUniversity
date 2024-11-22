@@ -1,13 +1,8 @@
 #import "../utils/latest_style.typ": apply_my_style
 
-#apply_my_style(title:"Dispositivi Medicali e Diagnostici Teoria + Esercitazioni")[
+#apply_my_style(date:(2024,9,13), title:"Dispositivi Medicali\ne\n Diagnostici\n\nTeoria\n+\n Esercitazioni")[
 
-  #let date = datetime(year: 2024, month: 09, day: 13).display("[day]  [month repr:long] [year]")
-  #align(center, date)
-
-  #pagebreak()
-  #outline(indent: auto, depth: 4)
-  #pagebreak()
+ 
 
   #include "capitoli_dispositivi/00Introduzione.typ"
 
