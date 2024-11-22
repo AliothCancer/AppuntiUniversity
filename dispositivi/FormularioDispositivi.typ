@@ -8,7 +8,7 @@
 
   [- #param $ arrow space$ #text(blue, unit)]  
 } 
-#apply_my_style(title: "Formulario di Dispositivi itps")[
+#apply_my_style(title: "Formulario di Dispositivi itps\n" + text(red, "deprecated") + "\nOra incluso tutto in DispositiviMedicali.pdf")[
 
 
 
