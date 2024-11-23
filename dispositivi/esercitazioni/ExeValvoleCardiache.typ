@@ -115,7 +115,7 @@ $
 
 == Exe 1 n.1
 
-== Exe 2 n. 1
+== Exe 2: n. 1
 
 Per la sostituzione della valvola aortica si vuole utilizzare una valvola artificiale
 avente diametro esterno Dest = 27 mm e diametro interno Dint = 23 mm. Si
@@ -212,7 +212,7 @@ $
 "RF%" = V_"rig"/V_"espulso" dot 100 
 $
 
-== Exe 2 n.2
+== Exe 2: n.2
 
 1. Si calcola il BSA con peso e altezza
 2. Si calcola Qm come $Q_m = "BSA"dot "CardiacIndex"$
@@ -226,3 +226,16 @@ $
 8. Si usa la formula dell'EOA per ricavare la pressione di picco, per ogni valvola:
   - $Delta p_"peak" = (10^4/516 dot (Q_"peak")/("EOA"))^2$
 9. Si scartano tutte le valvole con la pressione di picco superiore a 20mmHg e tra queste che rimangono si prende quella con il PI(Performance Index) maggiore, perchè performa meglio.
+
+
+== Exe 2: n.3
+Una valvola meccanica bileaflet, con diametro interno di 23
+mm ha l’aspetto riportato in figura. Si calcoli il valore
+massimo dello shear stress che agisce sull’anello assumendo
+una portata di picco di 33 L/min e una distribuzione delle
+portate come riportato in tabella. Si consideri una viscosità
+del sangue di 3 cP.
+Si confronti il valore ottenuto con quello che si può calcolare
+per una valvola biologica che in fase di apertura assume una
+forma circolare con diametro interno di 19 mm.
+
