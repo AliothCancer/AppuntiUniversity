@@ -82,17 +82,25 @@ il grafico mette in relazione portata ematica e clearance e mostra che la cleara
 Da cui per 300 ml/min di portata di sangue si ottiene una clearance di 262 ml/min.
 
 ==== Soluzione
-In progress..
+1. Si può calcolare la portata massica di urea ceduta al liquido di dialisi con la clearance K e la concentrazione C di urea nel sangue:$ dot(m) = K dot C_"sangue" = \ = 262 "ml"/"min" dot 136/100 "mg"/"ml" = \ =#c(262*136/100) "mg"/"min" $
+
+2. Quindi si può ricavare la concentrazione di urea nel liquido di dialisi all'uscita con la portata della dialisi e la portata massica: $ C_"ld" = dot(m) / Q_"ld" = (356.32 "mg"/"min")/ (500 "ml"/"min") = #c(356.32/500) "mg"/"ml" = #c(356.32/500*100) "mg"/"dl" $
+
+3. Per il sangue, siccome la cleareance è la portata di sangue totalmente pulita si può calcolare considerando la massa di soluto che è presente solo nella portata di sangue sottratta alla clearance: $ C_"sangue fin." = (Q_"sangue" - K)/Q_"sangue" dot C_"sangue iniz."= \ = ((300 -262)"ml"/"min") /( 300 "ml"/"min") dot 136 "mg"/"dl" =\ = #c((300-262)*136/300) "mg"/"dl" $
+
+4. Nel caso di configurazione equicorrente, la concentrazione finale sarà uguali per sangue e liquido di dialisi, pari a: $ C_"finale" = (Q_"sangue")/(Q_"sangue" + Q_"ld") dot C_"iniziale" = (300 "ml"/"min") / ((300 + 500) "ml"/"min") dot 136/100 "mg"/"ml"= \ = #c(300/(500+300)*136/100) "mg"/"ml" = #c(300/(500+300)*136) "mg"/"dl"  $
+
+5. Per calcolare la K per l'equicorrente, si divide la portata del sangue in una completamente pulita K e una che deve trasportare tutta la portata massica di soluto che è presente all'inizio: $ Q_"parziale" + K = Q_"sangue" $ Usando il bilancio di massa: $ C_"finale"dot Q_"sangue" = Q_"parziale" dot C_"iniziale" + K dot C_"nulla" = Q_"parziale" dot C_"iniziale"\ Q_"parziale" = C_"finale" / C_"iniziale" dot Q_"sangue"\ K = Q_"sangue" - Q_"parziale" = Q_"sangue" (1- C_"finale"/C_"iniziale")\ = 300 "ml"/"min" dot (1- (51 "mg/dl")/(136 "mg/dl")) = #c(300*(1 - 51/136) ) "ml"/"min"  $ 
 
 === Risultati
 - Clearance iniziale = 262 mL/min
 - Concentrazione nel liquido di dialisi = 0.71 mg/mL (71.26 mg/dL)
-- Concentrazione nel plasma dopo dialisi = 0.17 mg/mL (17 mg/dL)
+- Concentrazione nel plasma dopo dialisi = 0.17 mg/mL (17.227 mg/dL)
 - Concentrazione finale nell'equilibrio = 51 mg/mL
-- Clearance finale con bilancio di massa = 187 mL/min
+- Clearance finale con bilancio di massa = 187.5 mL/min
 
-Conclusione:
-Il dializzatore con controcorrente risulta più efficiente, con una clearance finale di 187 mL/min rispetto alla clearance iniziale di 262 mL/min.
+*Conclusione:*\
+Il dializzatore con controcorrente risulta più efficiente, con una clearance di 262 mL/min rispetto alla clearance dell'equicorrente di 187.5 mL/min.
 
 
 
