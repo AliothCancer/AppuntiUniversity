@@ -273,8 +273,8 @@ forma circolare con diametro interno di 19 mm.
    1. L'area occupata dalle due palette è pari a:\ $100-(40+8+40) = 100-88 = 12% "di" A_"tot"$
    2. Ci interessa quanto è larga una paletta per cui la sezione di una paletta è la metà, il 6%:\ $ A_"paletta" = A_"tot" dot 6% = 4.155 "cm"^2 dot 0.06 = #c(4.155 * 0.06) " cm"^2$
    
-   3. Approssimo la forma della paletta ad un rettangolo di altezza pari al diametro interno d. Quindi con la formula inversa dell'area del rettangolo posso calcolare il lato minore che è la larghezza l cercata:\ $ A_"rett." = (b dot h) = (l dot d) $ Da cui: $ l = (A_"rett.")/d = A_"rett." / d = (0.249 "cm"^2) / (2.3 "cm") = #c(.249/2.3) "cm" = #c(.249/2.3*10) "mm" $ \*Si noti però che l'area calcolata è leggermente maggiore (per l'approssimazione h=d) di quella effettiva, quindi l sarà in realtà leggermente minore
+   3. Approssimo la forma della paletta ad un rettangolo di altezza pari al diametro interno d. Quindi con la formula inversa dell'area del rettangolo posso calcolare il lato minore che è la larghezza l cercata:\ $ A_"rett." = (b dot h) = (l dot d) $ Da cui: $ l = (A_"rett.")/d = A_"rett." / d = (0.249 "cm"^2) / (2.3 "cm") = #c(.249/2.3) "cm" = #c(.249/2.3*10) "mm" $ \*Si noti però che l'area calcolata è leggermente maggiore (per l'approssimazione h=d) di quella effettiva.
   
-  6. Quindi si può infine calcolare lo spazio tra una parete delle palette e il centro come: $ (11.5 - 9 - 1.083) "mm" = #c(11.5 - 9 - 1.083) "mm" $ \*Significa che lo spazio al centro è di #c(1.083*2) mm, in realtà calcolando un integrale è in realtà di 2.799434 \~ 2.8 mm e la larghezza della singola paletta è di 1.100283 \~ 1.1 mm, l'errore non è trascurabile.
+  6. Quindi si può infine calcolare lo spazio tra una parete delle palette e il centro come: $ (11.5 - 9 - 1.083) "mm" = #c(11.5 - 9 - 1.083) "mm" $ \*Significa che lo spazio al centro è di #c(1.417*2) mm, in realtà calcolando un integrale è in realtà di 2.799434 \~ 2.8 mm e la larghezza della singola paletta è di 1.100283 \~ 1.1 mm, l'errore è trascurabile.
 
   #image("../immagini/ricostruzione_geometria_valvola.png")
