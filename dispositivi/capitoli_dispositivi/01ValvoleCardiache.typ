@@ -98,8 +98,10 @@
       
       Questo materiale ha delle caratteristiche miste delle due forme del carbonio cristallino, *la grafite* e *il diamante*, come per i polimeri si può avere una composizione parziale di struttura cristallina e amorfa. 
 
+      Farmaci dicumerolici
+
       ==== Metodo: Forno a letto fluido
-        Questo processo viene utilizzato per ottenere carbonio pirolitico, anche chiamato Carbonio Low Temperature Isotropic (LTI), a partire da un idrocarburo gassoso.
+        Questo processo viene utilizzato per ottenere carbonio pirolitico, anche chiamato Carbonio Low Temperature Isotropic (LTI), a partire da un uesto materiale ha delle caratteristiche miste delle due forme del carbonio cristallino, *la grafite* e *il diamante*, come per i polimeri si può avere una composizione parziale di struttura cristallina e amorfa.idrocarburo gassoso.
 
         Il rivestimento viene eseguito all'interno di un forno, detto *forno di letto fluido*, in un atmosfera composta da 2 gas: l'*elio*, gas inerte che permette la *pirolisi* (combustione in assenza di agenti ossidanti), permette inoltre di regolare il risultato del rivestimento regolando la composizione dei 2 gas, e un idrocarburo gassoso da cui poter strappare gli atomi di carbonio.
         #align(

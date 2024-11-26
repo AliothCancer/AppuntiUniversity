@@ -77,3 +77,25 @@
 
 // ROUNDING FUNCTION FOR QUICK CALCULATION
 #let c(value) = calc.round(value, digits: 3)
+
+
+#let create_table(raw_text) = {
+
+  let mat = raw_text.split("\n").map(it => it.split(",").map(it => grid(it)))
+
+  
+  for g in mat{
+    for k in g{
+      grid(k, align: left)
+    }
+  }
+
+
+}
+
+#create_table(
+  "Col 1, Col2, Col3
+  1,2,3
+  4,5,6
+  "
+)

@@ -239,3 +239,42 @@ Si confronti il valore ottenuto con quello che si può calcolare
 per una valvola biologica che in fase di apertura assume una
 forma circolare con diametro interno di 19 mm.
 
+#image("../immagini/valvola_bifleat.png",height: 40%)
+
+#table(
+  align: center,
+  columns: 3,
+  [],[% Area totale],[Portate (%)],
+  [1], [40],[45],
+  [2], [8],[10],
+  [3], [40],[45],
+)
+
+*Richieste*
+- Calcolare valore massimo shear stress sull'anello, assumendo una portata di picco di 33 L/min
+- Confrontare i valori per le due valvole
+
+
+*Soluzione*
+- *Ragionamento*: Si calcola lo shear stress dalla velocità massima, questa a sua volta si ottiene dalla velocità media calcolata dalla portata che attraversa la sezione considerata.
+
+
+- *Considerando la valvola meccanica*:\ Ci sono 2 sezioni differenti, la 1 e la 2, per cui queste avranno valori di shear stress differente e per questo motivo ha senso calcolare lo shear stress per entrambi.
+  
+  1. Calcolo le portate in 1 e in 2:\ \ $Q_1=Q_"tot" dot 0.45 = 33 L/"min"dot 0.45 = #c(33*.45) L/"min" = #c(33*.45*1000/60)" mL/s"$\ \ $Q_2=Q_"tot" dot 0.10 = 33 L/"min" dot 0.10 = #c(33*.10) L/"min" = #c(33*.1*1000/60)" mL/s"$ \ \ $"mL" = "cm"^3$
+  \
+  2. Calcolo le aree in 1 e in 2, calcolando prima l'area totale:\ \ $r = d/2 = 23/2 "mm" = 11.5 "mm" = 1.15 "cm"$\ \ $A_"tot" = pi dot r^2 = pi dot (1.15 "cm")^2 = #c(calc.pi*pow(1.15,2)) " cm"^2$\ \ $A_1 = A_"tot" dot 0.40 = #c(4.155*.40) " cm"^2$\ \ $A_2 = A_"tot" dot 0.08 = #c(4.155*.08) " cm"^2$
+  \
+  3. Calcolo le velocità medie:\ \ $V_"m1" = Q_1 / A_1 = (247.5 "mL"/s) / (1.662 "cm"^2) = #c(247.5 / 1.662) "cm/s"$\ \ $V_"m2" = Q_2 / A_2 = (55 "mL"/s) / (0.332 "cm"^2) = #c(55 / 0.332) "cm/s"$
+  \
+  4. Calcolo le velocità massime:\ \ $V_"max1" = 2 dot V_"m1" = 2 dot 148.917 "cm/s" = #c(2 * 148.917) "cm/s"$\ \ $V_"max2" = 2 dot V_"m2" = 2 dot 165.663 "cm/s" = #c(2 * 165.663) "cm/s"$
+ \
+  5. Si deve calcolare lo spazio tra le due palette:
+   1. L'area occupata dalle due palette è pari a:\ $100-(40+8+40) = 100-88 = 12% "di" A_"tot"$
+   2. Ci interessa quanto è larga una paletta per cui la sezione di una paletta è la metà, il 6%:\ $ A_"paletta" = A_"tot" dot 6% = 4.155 "cm"^2 dot 0.06 = #c(4.155 * 0.06) " cm"^2$
+   
+   3. Approssimo la forma della paletta ad un rettangolo di altezza pari al diametro interno d. Quindi con la formula inversa dell'area del rettangolo posso calcolare il lato minore che è la larghezza l cercata:\ $ A_"rett." = (b dot h) = (l dot d) $ Da cui: $ l = (A_"rett.")/d = A_"rett." / d = (0.249 "cm"^2) / (2.3 "cm") = #c(.249/2.3) "cm" = #c(.249/2.3*10) "mm" $ \*Si noti però che l'area calcolata è leggermente maggiore (per l'approssimazione h=d) di quella effettiva, quindi l sarà in realtà leggermente minore
+  
+  6. Quindi si può infine calcolare lo spazio tra una parete delle palette e il centro come: $ (11.5 - 9 - 1.083) "mm" = #c(11.5 - 9 - 1.083) "mm" $ \*Significa che lo spazio al centro è di #c(1.083*2) mm, in realtà calcolando un integrale è in realtà di 2.799434 \~ 2.8 mm e la larghezza della singola paletta è di 1.100283 \~ 1.1 mm, l'errore non è trascurabile.
+
+  #image("../immagini/ricostruzione_geometria_valvola.png")

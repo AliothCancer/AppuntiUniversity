@@ -128,7 +128,7 @@
   #set page(paper: "presentation-16-9")
   #set par(justify: false, leading: 0.52em)
   #let title = text(50pt,title)
-  #v(8cm)
+  #v(2cm)
   #align(center, title)
   #set par(justify: true, leading: 0.52em)
   #let fs_1 = 27pt
@@ -169,7 +169,7 @@
     set text(fs_1, weight: "bold",
     number-type: "old-style",
     )
-    rect(smallcaps(underline(it)) + v(1cm), fill: rgb("#ddd5f3"),height: 1.2em,
+    rect(smallcaps(underline(it)) + v(2cm), fill: rgb("#ddd5f3"),height: 1.2em,
     radius: .5cm,
     
     )
