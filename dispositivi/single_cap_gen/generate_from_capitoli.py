@@ -56,7 +56,7 @@ for capitolo in capitoli:
 ]
 """
     output_file_path = (
-        "~/Scrivania/WorkingArea/AppuntiPDF/dispositivi/"
+        "/home/giulio/Scrivania/WorkingArea/AppuntiPDF/dispositivi/"
         + f"single_cap_gen/{titolo.replace(' ','_')}.typ"
     )
     write_content(output_file_path,typ_file_content)
