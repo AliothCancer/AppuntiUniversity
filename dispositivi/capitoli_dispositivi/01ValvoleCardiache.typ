@@ -27,13 +27,12 @@
     grid.cell(im0),
     grid.cell(im1),
   )
-    Le valvole vengono azionate semplicemente dalle pressioni su cui agisce il cuore.
+    Le valvole vengono azionate semplicemente dalle pressioni che sono generate dal cuore.
 
     La valvola aortica si apre quando la *pressione ventricolare* supera la pressione aortica che arriva fino ad un valore massimo di riferimento pari a 120mmHg (*pressione sistolica*), la *pressione aortica* è quindi normalmente la *pressione diastolica*, ha valore di riferimento di 80mmHg. Questo accade perchè la valvola aortica è una valvola che si apre in una sola direzione, la sua forma a "uncino" fa in modo che il flusso quando scorre nel verso opposto faccia chiudere la valvola, come si vede in figura.
     
     #align(center, image("/dispositivi/immagini/valvola_aortica00.png", width: 60%))
 
-  #pagebreak()
   == Criticità
     Le valvole non devono avere reflusso, cioè devono impedire lo scorrimento del sangue nel verso opposto, se questo non avviene, il ventricolo cercherà comunque di aumentare la pressione per vincere quella aortica ed aprire la valvola, si richiederà al cuore uno sforzo maggiore perchè dovrà aumentare la pressione mentre perde volume, si avrà quindi una perdita di eiezione, la ejection fraction sarà minore.
 
@@ -157,3 +156,16 @@
       - Biologiche: 10-15 anni
       - Meccaniche: 30+ anni
 
+== Caratteristiche meccniche della valvola cardiache
+La valvola è formata da 3 strati di tessuto:
+
+1. *Strato fibroso* fatto da fasci di collagene
+
+
+2. *Struttura spongiosa* composta da glicos-ammino-glicani e collagene
+
+3. *Strato ventricolare* strato elastico, contiene elastina.
+
+#image("../immagini/valvola_cardiaca00.png")
+
+#image("../immagini/comportamento_meccanico_valvola.png")

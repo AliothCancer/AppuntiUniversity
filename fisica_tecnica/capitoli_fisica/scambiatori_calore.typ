@@ -22,7 +22,7 @@ dove:
 
 - $Delta T_2:$ differenza di temperatura tra le due linee dall'altra parte del grafico (@scamb_graph).
 
-#figure(image("/immagini/scamb_graph_temp.png", height: 6cm),
+#figure(image("../immagini/scamb_graph_temp.png", height: 6cm),
 caption: "Valido tranne nel caso di capacità termiche uguali per le due parti dello scambiatore." 
 )<scamb_graph>
 == Potenza termica scambiata dal fluido freddo <potenza-terminca-scambiata-dal-fluido-freddo>

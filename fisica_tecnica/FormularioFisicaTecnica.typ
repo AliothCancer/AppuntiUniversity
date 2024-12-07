@@ -2,7 +2,7 @@
 //#import "@preview/plotst:0.2.0": *
 
 
-#apply_my_style(title: "Formulario di Fisica Tecnica ITPS")[
+#apply_my_style(date:(2024,9,13),title: "Formulario di Fisica Tecnica ITPS")[
 
 #include "capitoli_fisica/grandezze_termodinamiche.typ"
 #include "capitoli_fisica/trasformazioni.typ"
