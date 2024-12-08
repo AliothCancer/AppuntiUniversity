@@ -2,6 +2,16 @@
 
 = Stents
 Come unità di misura vengono riportate quelle usate nelle esercitazioni oppure del SI.
+
+== Fraction Flow Reserve (FFR)
+$
+"FFR" = P_d / P_p
+$
+#def_um((
+  $P_d: "Pressione Distale rispetto all'occlusione"$, $"mmHg"$,
+  $P_p: "Pressione Prossimale rispetto all'occlusione"$, $"mmHg"$
+))
+
 == Sforzo dato da allungamento $(epsilon)$
 $
 sigma = E dot epsilon
@@ -44,4 +54,27 @@ $
   )
 )
 
+== Sforzo in uno stent
 
+Questo parametro è necessario quando si vuole sapere la pressione del palloncino tale per raggiungere lo snervamento nella sezione dello Stent che si flette.
+\ \
+#align(center,[*Sforzo massimo da momento flettente* (nello stent)])
+$
+sigma_"M,n" = sigma_M + sigma_n
+$
+
+*Dove $sigma_M$* è lo sforzo massimo causato dal momento flettente:
+$
+sigma_M = (M_f dot h/2)/J
+$
+#pagebreak()
+
+Con *$J$ inerza* della sezione rispetto all'asse neutro:
+$
+J = (b dot h^3) / 12
+$
+
+E $sigma_n$ è lo sforzo normale causato dalla forza circonferenziale F:
+$
+sigma_n = F / (pi r^2)
+$
