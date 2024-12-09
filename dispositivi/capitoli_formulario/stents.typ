@@ -37,7 +37,7 @@ $
 
 #pagebreak()
 
-== Pressione generata dal vaso con placca dopo dilatazione <pressione_generata_dal_vaso_con_placca dopo_dilatazione>
+== Pressione generata dal vaso con placca dopo dilatazione <pressione_generata_dal_vaso_con_placca_dopo_dilatazione>
 
 Lo sforzo che deve esercitare lo Stent per mantenere il lume ridotto dalla placca ateromasica.
 
@@ -123,11 +123,11 @@ $
 Si ottiene uguagliando la pressione interna necessaria per dilatare l'occlusione con una certa riduzione % target del lume.
 
 $
-K_"p min" = (2p) / (d_s - D_t) =\
+K_"p min" = 2 / (d_s - D_t) dot p =\
 $
-Sostituendo p con la (pressione del vaso con placca)<>
+Sostituendo p con la pressione del vaso con placca (@pressione_generata_dal_vaso_con_placca_dopo_dilatazione).
 $
-= 2 dot ( )
+K_"p min" = 2 / (d_s - D_t) dot (E_"pl" + E_"par") dot (D_t - D_l)/ D_0
 $
 
 *Esempio:*\
