@@ -122,13 +122,6 @@ $
 === Rigidità Minima
 Si ottiene uguagliando la pressione interna necessaria per dilatare l'occlusione con una certa riduzione % target del lume.
 
-$
-K_"p min" = 2 / (d_s - D_t) dot p =\
-$
-Sostituendo p con la pressione del vaso con placca (@pressione_generata_dal_vaso_con_placca_dopo_dilatazione).
-$
-K_"p min" = 2 / (d_s - D_t) dot (E_"pl" + E_"par") dot (D_t - D_l)/ D_0
-$
 
 *Esempio:*\
 Se viene chiesto di calcolare la rigidità minima di uno stent, la si può calcolare in funzione della pressione interna necessaria a dilatare il lume di un certo $epsilon$.
@@ -136,3 +129,37 @@ Se viene chiesto di calcolare la rigidità minima di uno stent, la si può calco
 Cioè si eguaglia la pressione necessaria a dilatare fino a raggiungere il diametro post trattamento con la pressione esercitata dallo stent.
 
 Lo stent dovrà avere una rigidità maggiore di quella calcolata.  
+#pagebreak()
+
+*Ricavando la formula*\
+$
+K_"p min" = 2 / (d_s - D_t) dot p
+$
+
+Sostituendo p con la pressione del vaso con @pressione_generata_dal_vaso_con_placca_dopo_dilatazione[placca].
+
+$
+K_"p min" = 2 / (d_s - D_t) dot (E_"pl" + E_"par") dot (D_t - D_l)/ D_0 =\
+= 2 E_"pl,par" dot (D_t - D_l)/( D_0 dot (d_s - D_t)) = \
+= 2 E_"pl,par" dot (Delta "Diam."_"lume")/(Delta "Diam."_"stent")
+$
+
+*U.M. vaso*\
+#def_um(
+  (
+    $D_0: "Diametro Esterno del Vaso"$, $"mm"$,
+    $D_t: "Diametro post-trattamento"$, $"mm"$,
+    $D_l: "Diametro minimo della parte stenotica"$, $"mm"$,
+    $E_"pl": " Modulo di Young della placca"$, $"MPa"$,
+    $E_"par": " Modulo di Young della parete vasale"$, $"MPa"$,
+  )
+)
+
+*U.M. stent*\
+#def_um(
+  (
+    $d_s: "Diametro iniziale dello stent"$, $"mm"$,
+  )
+)
+\*$d_s$ con iniziale ci si riferisce al diametro che assumerebbe senza carico.
+
