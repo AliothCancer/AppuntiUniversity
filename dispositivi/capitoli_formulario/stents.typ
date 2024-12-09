@@ -161,5 +161,5 @@ $
     $d_s: "Diametro iniziale dello stent"$, $"mm"$,
   )
 )
-\*$d_s$ con iniziale ci si riferisce al diametro che assumerebbe senza carico.
+\*$d_s$ con iniziale ci si riferisce al diametro che assumerebbe senza carico (carico del vaso occluso).
 
