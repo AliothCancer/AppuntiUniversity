@@ -37,28 +37,44 @@ $
 
 #pagebreak()
 
-== Pressione generata dalla dilatazione del vaso con placca
+== Pressione generata dal vaso con placca dopo dilatazione <pressione_generata_dal_vaso_con_placca dopo_dilatazione>
 
 Lo sforzo che deve esercitare lo Stent per mantenere il lume ridotto dalla placca ateromasica.
 
 Lo Stent viene applicato nella parte di vaso in cui vi è un'occlusione parziale del lume, per cui si distinguono dei valori prima e dopo l'installazione dello stent.
 
 $
-E = (E_"pl" + E_"par") dot (D_t - D_l)/ D_0
+p = (E_"pl" + E_"par") dot (D_t - D_l)/ D_0
 $
 #def_um(
   (
     $D_0: "Diametro Esterno del Vaso"$, $"mm"$,
     $D_t: "Diametro post-trattamento"$, $"mm"$,
-    $D_l: "Diametro minimo della parte stenotica"$, $"mm"$
+    $D_l: "Diametro minimo della parte stenotica"$, $"mm"$,
+    $E_"pl": " Modulo di Young della placca"$, $"MPa"$,
+    $E_"par": " Modulo di Young della parete vasale"$, $"MPa"$,
   )
 )
+=== Strain ($epsilon$)
+$
+epsilon = (D_t - D_l)/ D_0
+$
+
+
+#pagebreak()
 
 == Sforzo in uno stent
 
 Questo parametro è necessario quando si vuole sapere la pressione del palloncino tale per raggiungere lo snervamento nella sezione dello Stent che si flette.
-\ \
-#align(center,[*Sforzo massimo da momento flettente* (nello stent)])
+
+#image("../immagini/stent_scheme.png")
+
+=== Asse neutro
+È la linea che separa le fibre in trazione da in compressione e dove il momento flettente si annulla.
+
+#pagebreak()
+
+== Sforzo massimo da momento flettente (nello stent)
 $
 sigma_"M,n" = sigma_M + sigma_n
 $
@@ -67,14 +83,56 @@ $
 $
 sigma_M = (M_f dot h/2)/J
 $
-#pagebreak()
+#def_um((
+  $h/2: "distanza dall'asse neutro"$, "mm" 
+))
 
 Con *$J$ inerza* della sezione rispetto all'asse neutro:
 $
 J = (b dot h^3) / 12
 $
+#align(right, [*\*h è la lunghezza parallela all'asse neutro*]) 
 
-E $sigma_n$ è lo sforzo normale causato dalla forza circonferenziale F:
+E *$sigma_n$* è lo *sforzo normale* alla sezione causato dalla *forza circonferenziale F*:
 $
 sigma_n = F / (pi r^2)
 $
+#pagebreak()
+
+== Rigidità Stent
+$
+K_p = P / (Delta r)
+$
+
+#def_um((
+  $P: "Pressione interna per espandere lo stent"$, $"MPa"$,
+  $Delta r: "Variazione del raggio dello stent"$, $"mm"$
+))
+
+Con $Delta r$:
+$
+Delta r = (d_s - D_t) / 2
+$
+
+#def_um((
+  $d_s: "diametro stent dopo dilatazione"$, $"mm"$,
+  $D_t: "diametro interno dopo trattamento"$, $"mm"$
+))
+
+=== Rigidità Minima
+Si ottiene uguagliando la pressione interna necessaria per dilatare l'occlusione con una certa riduzione % target del lume.
+
+$
+K_"p min" = (2p) / (d_s - D_t) =\
+$
+Sostituendo p con la (pressione del vaso con placca)<>
+$
+= 2 dot ( )
+$
+
+*Esempio:*\
+Se viene chiesto di calcolare la rigidità minima di uno stent, la si può calcolare in funzione della pressione interna necessaria a dilatare il lume di un certo $epsilon$.
+
+Cioè si eguaglia la pressione necessaria a dilatare fino a raggiungere il diametro post trattamento con la pressione esercitata dallo stent.
+
+Lo stent dovrà avere una rigidità maggiore di quella calcolata.  
