@@ -141,7 +141,7 @@ Sostituendo p con la pressione del vaso con @pressione_generata_dal_vaso_con_pla
 $
 K_"p min" = 2 / (d_s - D_t) dot (E_"pl" + E_"par") dot (D_t - D_l)/ D_0 =\
 = 2 E_"pl,par" dot (D_t - D_l)/( D_0 dot (d_s - D_t)) = \
-= 2 E_"pl,par" dot (Delta "Diam."_"lume")/(Delta "Diam."_"stent")
+= 2 E_"pl,par" dot (Delta "Diam."_"lume")/(D_0 dot Delta "Diam."_"stent")
 $
 
 *U.M. vaso*\
