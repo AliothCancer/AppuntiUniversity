@@ -124,9 +124,9 @@
 #show link: set text(fill: color.blue)
 
  #outline(indent: 2em, title: [#h(0.7em) Indice dei Contenuti])
- *Document made with typst: 
- #link("https://typst.app/docs/")[Link to typst documentation]*
-#body
+ #text(white,[*Document made with typst: #link("https://typst.app/docs/")[Link to typst documentation]*])
+
+  #body
 ]
 
 
