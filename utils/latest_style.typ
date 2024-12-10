@@ -19,32 +19,32 @@
 #let apply_my_style(title:str, date: array,body, mode:str) = [
   #let outline_text_color = black
   #let page_fill_color = white
+  #let text_color = black
   #{
     if mode == "night"{
       outline_text_color = white
       page_fill_color = black
+      text_color = white
     } else if mode == "light"{
-      outline_text_color = black
-      page_fill_color = white
+      none
     } else{
       outline_text_color = white
     }
   }
+  #set text(text_color)
+  #show math.equation: set text(text_color)
   #set page(fill: page_fill_color)
-  #let title_h1_color = color.linear-rgb(3.19%, 0%, 93.87%)
-  #let title_h1_fill = color.linear-rgb(38.13%, 0%, 100%, 22.3%)
-
+  #let h1_fill = color.linear-rgb(38.13%, 0%, 100%, 22.3%)
+  #let h1_color = color.linear-rgb(3.19%, 0%, 93.87%)
   #let h2_color = color.linear-rgb(11%, 56.5%, 100%, 100%)
   #let h3_color = color.linear-rgb(12.74%, 8.65%, 81.48%)
-
-
   #let h4_color = color.linear-rgb(54.1%, 16.9%, 88.2%, 100%)
 
 // CONFIGURATION
   #let mode = "a4";
   //#show strong: set text(blue)
   #set par(justify: false, leading: 0.52em)
-  #let title = text(title_h1_color,50pt,title)
+  #let title = text(h1_color,50pt,title)
 
   #v(3cm)
   #styled_box(contenuto:title)
@@ -56,7 +56,7 @@
   )
   
   #let date = datetime(year: year, month: month, day: day).display("[day]  [month repr:long] [year]")
-  #align(center, text(color.linear-rgb(100%, 100%, 100%),date))
+  #align(center, text(text_color,date))
 
   #set par(justify: true, leading: 0.52em)
   #let fs_1 = 27pt
@@ -94,12 +94,12 @@
     pagebreak()
     set align(left)
     set par(justify: true, leading: 0.52em)
-    set text(title_h1_color,fs_1, weight: "bold",
+    set text(h1_color,fs_1, weight: "bold",
     number-type: "old-style",
     )
     let size = measure(it)
     let it = smallcaps(it)
-    box([#v(0.3cm) #it], fill: title_h1_fill,
+    box([#v(0.3cm) #it], fill: h1_fill,
     width: size.width*1.8,
     height: size.height+1cm,
     radius: 1cm,

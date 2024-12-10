@@ -2,7 +2,11 @@
 //#import "@preview/plotst:0.2.0": *
 
 
-#apply_my_style(date:(2024,9,13),title: "Formulario di Fisica Tecnica ITPS")[
+#apply_my_style(date:(2024,9,13),title: "   Formulario\n        di\n   Fisica Tecnica ITPS", mode: "light")[
+
+//#set text(white)
+//#show math.equation: set text(white)
+
 
 #include "capitoli_fisica/grandezze_termodinamiche.typ"
 #include "capitoli_fisica/trasformazioni.typ"
