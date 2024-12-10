@@ -21,7 +21,7 @@
 )
 
 #let param(param, unit) = {
-  set text(luma(0%), 1em, weight: "bold")
+  set text(1em, weight: "bold")
 
   [- #param $ arrow space$ #text(blue, unit)]  
 } 
