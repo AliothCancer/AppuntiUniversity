@@ -1,3 +1,19 @@
+
+
+#let styled_box(contenuto: content) = {
+  context {
+    let title_h1_color = color.linear-rgb(3.19%, 0%, 93.87%)
+    let title_h1_fill = color.linear-rgb(38.13%, 0%, 100%, 22.3%)
+    let size = measure([ #contenuto])
+    let it = smallcaps(contenuto)
+    box([#v(0.3cm) #contenuto], fill: title_h1_fill,
+    width: size.width*1.8,
+    height: size.height+1cm,
+    radius: 1cm,
+    )
+  }
+}
+
 #let apply_my_style(title:str, date: array,body) = [
 
   #set page(fill: black)
@@ -5,22 +21,29 @@
   #let title_h1_color = color.linear-rgb(3.19%, 0%, 93.87%)
   #let title_h1_fill = color.linear-rgb(38.13%, 0%, 100%, 22.3%)
 
+  #let h2_color = color.linear-rgb(11%, 56.5%, 100%, 100%)
+  #let h3_color = color.linear-rgb(12.74%, 8.65%, 81.48%)
+
+
+  #let h4_color = color.linear-rgb(54.1%, 16.9%, 88.2%, 100%)
+
 // CONFIGURATION
   #let mode = "a4";
   //#show strong: set text(blue)
   #set par(justify: false, leading: 0.52em)
-  #let title = text(50pt,title)
+  #let title = text(title_h1_color,50pt,title)
 
   #v(3cm)
-  #align(center, title)
+  #styled_box(contenuto:title)
 
   #let (year, month, day) = (
     date.at(0),
     date.at(1),
     date.at(2),
   )
+  
   #let date = datetime(year: year, month: month, day: day).display("[day]  [month repr:long] [year]")
-  #align(center, date)
+  #align(center, text(color.linear-rgb(0.06%, 4.67%, 100%),date))
 
   #set par(justify: true, leading: 0.52em)
   #let fs_1 = 27pt
@@ -74,14 +97,14 @@
   #show heading.where(level: 2): it => {
     //pagebreak()
     set align(center)
-    set text(fs_2, weight: "regular")
+    set text(h2_color,fs_2, weight: "regular")
     v(1cm) + strong(it) + v(.5cm)
     
   }
       //H3
   #show heading.where(level: 3): it => {
     set align(center)
-    set text(fs_3, weight: "regular")
+    set text(h3_color,fs_3, weight: "regular")
     v(.5cm) + strong(it) + v(.3cm)
   
   }
@@ -89,7 +112,7 @@
       //H4
   #show heading.where(level: 4): it => {
     set align(center)
-    set text(fs_4, weight: "regular")
+    set text(h4_color,fs_4, weight: "regular")
     v(.3cm) + strong(it) + v(.3cm)
     
   }

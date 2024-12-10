@@ -136,7 +136,7 @@ $
 K_"p min" = 2 / (d_s - D_t) dot p
 $
 
-Sostituendo p con la pressione del vaso con @pressione_generata_dal_vaso_con_placca_dopo_dilatazione[placca].
+Sostituendo p con la pressione del vaso con //@pressione_generata_dal_vaso_con_placca_dopo_dilatazione[placca].
 
 $
 K_"p min" = 2 / (d_s - D_t) dot (E_"pl" + E_"par") dot (D_t - D_l)/ D_0 =\
@@ -173,4 +173,3 @@ $])))
   )
 )
 \*$d_s$ con iniziale ci si riferisce al diametro che assumerebbe senza carico (carico del vaso occluso).
-

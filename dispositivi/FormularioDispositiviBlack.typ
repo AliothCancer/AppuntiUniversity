@@ -4,7 +4,7 @@
 
 
 #apply_my_style(date:(2024,09,13),title: 
-"Formulario di Dispositivi itps\n")[
+"    Formulario\n           di\n    Dispositivi itps\n")[
 
 #set page(fill: black )
 #set text(white)
