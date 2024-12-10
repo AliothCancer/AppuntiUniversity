@@ -1,5 +1,9 @@
 #let apply_my_style(title:str, date: array,body) = [
 
+  #set page(fill: black)
+  #let outline_text_color = white
+  #let title_h1_color = color.linear-rgb(3.19%, 0%, 93.87%)
+  #let title_h1_fill = color.linear-rgb(38.13%, 0%, 100%, 22.3%)
 
 // CONFIGURATION
   #let mode = "a4";
@@ -28,21 +32,22 @@
   
   #show outline.entry.where(level: 1): it => {
     v(0.5cm, weak: false)
-    set text(19pt)
+    set text(19pt, outline_text_color)
     strong(it)
   }
   #show outline.entry.where(level: 2): it => {
     //v(1pt, weak: false)
-    set text(16pt)
+    set text(16pt, outline_text_color)
     it
   }
   #show outline.entry.where(level: 3): it => {
     //v(1pt, weak: false)
-    set text(14pt)
+    set text(14pt, outline_text_color)
     it
   }
+  
 
-  #set heading(numbering: "1.1 ")
+  #set heading(numbering: "    1.1")
   #set par(leading: 0.2cm)
   #set page(numbering: "1/1", columns: 1)
 
@@ -53,11 +58,15 @@
     pagebreak()
     set align(left)
     set par(justify: true, leading: 0.52em)
-    set text(fs_1, weight: "bold",
+    set text(title_h1_color,fs_1, weight: "bold",
     number-type: "old-style",
     )
-    rect(smallcaps(underline(it)) + v(1cm), fill: rgb("#ddd5f3"),height: 2.2em,
-    radius: .5cm,
+    let size = measure(it)
+    let it = smallcaps(it)
+    box([#v(0.3cm) #it], fill: title_h1_fill,
+    width: size.width*1.8,
+    height: size.height+1cm,
+    radius: 1cm,
     )
     
   }
