@@ -14,10 +14,23 @@
   }
 }
 
-#let apply_my_style(title:str, date: array,body) = [
+// possible modes "night" or "light"
 
-  #set page(fill: black)
-  #let outline_text_color = white
+#let apply_my_style(title:str, date: array,body, mode:str) = [
+  #let outline_text_color = black
+  #let page_fill_color = white
+  #{
+    if mode == "night"{
+      outline_text_color = white
+      page_fill_color = black
+    } else if mode == "light"{
+      outline_text_color = black
+      page_fill_color = white
+    } else{
+      outline_text_color = white
+    }
+  }
+  #set page(fill: page_fill_color)
   #let title_h1_color = color.linear-rgb(3.19%, 0%, 93.87%)
   #let title_h1_fill = color.linear-rgb(38.13%, 0%, 100%, 22.3%)
 
@@ -43,7 +56,7 @@
   )
   
   #let date = datetime(year: year, month: month, day: day).display("[day]  [month repr:long] [year]")
-  #align(center, text(color.linear-rgb(0.06%, 4.67%, 100%),date))
+  #align(center, text(color.linear-rgb(100%, 100%, 100%),date))
 
   #set par(justify: true, leading: 0.52em)
   #let fs_1 = 27pt
