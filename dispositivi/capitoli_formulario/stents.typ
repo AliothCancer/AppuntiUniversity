@@ -154,7 +154,7 @@ text(color.linear-rgb(0.97%, 0%, 99.11%),[$
 K_"p min"= 2 E_"pl,par" dot (Delta "Diam."_"lume")/(D_0 dot Delta "Diam."_"stent")
 $])))
 
-#stroke()
+
 *U.M. vaso*\
 #def_um(
   (
