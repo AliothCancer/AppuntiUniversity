@@ -142,8 +142,19 @@ $
 K_"p min" = 2 / (d_s - D_t) dot (E_"pl" + E_"par") dot (D_t - D_l)/ D_0 =\
 = 2 E_"pl,par" dot (D_t - D_l)/( D_0 dot (d_s - D_t)) = \
 = 2 E_"pl,par" dot (Delta "Diam."_"lume")/(D_0 dot Delta "Diam."_"stent")
-$
+$*Formula:*
+#align(center, box(
+  stroke: color.linear-rgb(0.15%, 0.15%, 90.47%) + 0.1cm,
+  fill: color.linear-rgb(0%, 78.35%, 100%, 72.9%),
+  radius: 1cm,
+  height: 2.5cm,
+  width: 10cm,
+text(color.linear-rgb(0.97%, 0%, 99.11%),[$
+\ =>\
+K_"p min"= 2 E_"pl,par" dot (Delta "Diam."_"lume")/(D_0 dot Delta "Diam."_"stent")
+$])))
 
+#stroke()
 *U.M. vaso*\
 #def_um(
   (
