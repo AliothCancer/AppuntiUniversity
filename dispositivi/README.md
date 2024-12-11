@@ -1,3 +1,5 @@
+# Contenuti della cartella
+
 Ci sono 5 documenti:
 
 1. **DispositiviMedicaliBlack.pdf**
@@ -14,4 +16,7 @@ Ci sono 5 documenti:
    Formule ma con un tema scuro
 5. **DispositiviMedicaliPresentazione.pdf**
 
-   Formato presentazione
+   Formato presentazione, attualmente non mantenuto
+
+
+E poi i relativi file.typ da cui vengono generati questi pdf
