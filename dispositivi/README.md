@@ -1,4 +1,4 @@
-Ci sono i 3 pdf:
+Ci sono 3 documenti:
 
 1. DispositiviMedicaliBlack.pdf
 

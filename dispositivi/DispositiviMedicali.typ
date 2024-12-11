@@ -1,8 +1,6 @@
 #import "../utils/latest_style.typ": apply_my_style
 
-#apply_my_style(date:(2024,9,13), title:"Dispositivi Medicali\ne\n Diagnostici\n\nTeoria\n+\n Esercitazioni")[
-
- 
+#apply_my_style(date:(2024,9,13), title:"\n  Dispositivi Medicali\n                  e\n          Diagnostici\n\n             Teoria\n                  +\n         Esercitazioni\n ", mode: "light")[
 
   #include "capitoli_teoria/00Introduzione.typ"
 
