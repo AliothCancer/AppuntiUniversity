@@ -7,5 +7,5 @@
 "    Formulario\n           di\n    Dispositivi itps\n", mode: "night")[
     
 #include "capitoli_formulario/valvole_cardiache.typ"
-#include "capitoli_formulario/stents.typ"
+#include "capitoli_formulario/stents_e_vascolari.typ"
 ]
