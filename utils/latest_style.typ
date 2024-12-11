@@ -35,7 +35,7 @@
   #show math.equation: set text(text_color)
   #set page(fill: page_fill_color)
   #let h1_fill = color.linear-rgb(42.87%, 1.52%, 44.52%, 84.5%)
-  #let h1_color = color.linear-rgb(100%, 100%, 100%)
+  #let h1_color = color.linear-rgb(95.6%, 6.12%, 98.23%, 84.5%)
   #let h2_color = color.linear-rgb(5.61%, 65.84%, 31.4%)
   #let h3_color = color.linear-rgb(85.5%, 2.42%, 61.72%)
   #let h4_color = color.linear-rgb(53.33%, 48.51%, 2.12%)
@@ -44,7 +44,7 @@
   #let mode = "a4";
   //#show strong: set text(blue)
   #set par(justify: false, leading: 0.52em)
-  #let title = text(h1_color,50pt,title)
+  #let title = text(color.linear-rgb(35.64%, 31.4%, 98.23%),50pt,title)
 
   #v(3cm)
   #styled_box(contenuto:title)
@@ -98,8 +98,8 @@
     number-type: "old-style",
     )
     let size = measure(it)
-    let it = smallcaps(it)
-    box([#v(0.3cm) #it], fill: h1_fill,
+    let it = underline(smallcaps(it))
+    box([#v(0.3cm) #it], //fill: h1_fill,
     width: size.width*1.8,
     height: size.height+1cm,
     radius: 1cm,

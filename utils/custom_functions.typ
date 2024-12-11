@@ -9,8 +9,9 @@
 
 
 #let def_um(line_arr) = {
+  show math.equation: set text(blue)
   for (n,param) in line_arr.enumerate().filter(((n,_)) => calc.even(n)){
-    [- #param $arrow$ #text(blue,line_arr.at(n+1)) \ ]
+    [- #param $arrow$ #line_arr.at(n+1)]
   }
 }
 #def_um(
