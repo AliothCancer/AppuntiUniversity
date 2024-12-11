@@ -1,1 +1,1 @@
-typst compile dispositivi/FormularioDispositivi.typ --root .;git add .; git commit -m "content update"; git push
+typst compile dispositivi/FormularioDispositivi.typ --root .;typst compile dispositivi/FormularioDispositiviBlack.typ --root .;typst compile dispositivi/DispositiviMedicaliBlack.typ --root .;git add .; git commit -m "content update"; git push
