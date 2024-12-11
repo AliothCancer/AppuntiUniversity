@@ -3,11 +3,11 @@
 #let styled_box(contenuto: content) = {
   context {
     let title_h1_color = color.linear-rgb(3.19%, 0%, 93.87%)
-    let title_h1_fill = color.linear-rgb(38.13%, 0%, 100%, 22.3%)
+    let title_fill = color.linear-rgb(3.07%, 2.12%, 10.46%, 84.5%)
     let size = measure([ #contenuto])
     let it = smallcaps(contenuto)
-    box([#v(0.3cm) #contenuto], fill: title_h1_fill,
-    width: size.width*1.8,
+    box([#v(0.3cm) #contenuto], fill: title_fill,
+    width: size.width*1.1,
     height: size.height+1cm,
     radius: 1cm,
     )
@@ -18,15 +18,15 @@
 
 #let apply_my_style(title:str, date: array,body, mode:str) = [
   #let outline_text_color = black
-  #let page_fill_color = white
+  #let page_fill_color = none
   #let text_color = black
   #{
     if mode == "night"{
       outline_text_color = white
-      page_fill_color = black
+      page_fill_color = color.linear-rgb(1.1%, 0.12%, 3.95%)
       text_color = white
     } else if mode == "light"{
-      none
+      page_fill_color = color.linear-rgb(88.79%, 99.11%, 98.23%)
     } else{
       outline_text_color = white
     }
@@ -34,11 +34,11 @@
   #set text(text_color)
   #show math.equation: set text(text_color)
   #set page(fill: page_fill_color)
-  #let h1_fill = color.linear-rgb(38.13%, 0%, 100%, 22.3%)
-  #let h1_color = color.linear-rgb(3.19%, 0%, 93.87%)
-  #let h2_color = color.linear-rgb(11%, 56.5%, 100%, 100%)
-  #let h3_color = color.linear-rgb(12.74%, 8.65%, 81.48%)
-  #let h4_color = color.linear-rgb(54.1%, 16.9%, 88.2%, 100%)
+  #let h1_fill = color.linear-rgb(42.87%, 1.52%, 44.52%, 84.5%)
+  #let h1_color = color.linear-rgb(100%, 100%, 100%)
+  #let h2_color = color.linear-rgb(5.61%, 65.84%, 31.4%)
+  #let h3_color = color.linear-rgb(85.5%, 2.42%, 61.72%)
+  #let h4_color = color.linear-rgb(53.33%, 48.51%, 2.12%)
 
 // CONFIGURATION
   #let mode = "a4";
@@ -257,3 +257,10 @@
  #body
 ]
 
+#let insert_image(path) ={
+  box(
+    stroke: color.linear-rgb(30.95%, 18.78%, 84.69%) + .1cm,
+    radius:.1cm,
+    image(path)
+  )
+}

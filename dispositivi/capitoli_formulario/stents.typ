@@ -1,4 +1,5 @@
 #import "../../utils/custom_functions.typ": def_um
+#import "../../utils/latest_style.typ": insert_image
 
 = Stents
 Come unità di misura vengono riportate quelle usate nelle esercitazioni oppure del SI.
@@ -67,7 +68,7 @@ $
 
 Questo parametro è necessario quando si vuole sapere la pressione del palloncino tale per raggiungere lo snervamento nella sezione dello Stent che si flette.
 
-#image("../immagini/stent_scheme.png")
+#insert_image("../dispositivi/immagini/stent_scheme.png")
 
 === Asse neutro
 È la linea che separa le fibre in trazione da in compressione e dove il momento flettente si annulla.
