@@ -6,8 +6,8 @@ Come unità di misura vengono riportate quelle usate nelle esercitazioni oppure 
 
 == Fraction Flow Reserve (FFR)
 $
-"FFR" = P_d / P_p
-$
+"FFR" = P_d / P_p space arrow ["adim."]
+$ 
 #def_um((
   $P_d: "Pressione Distale rispetto all'occlusione"$, $"mmHg"$,
   $P_p: "Pressione Prossimale rispetto all'occlusione"$, $"mmHg"$
@@ -15,7 +15,7 @@ $
 
 == Sforzo dato da allungamento $(epsilon)$
 $
-sigma = E dot epsilon
+sigma = E dot epsilon space arrow ["MPa"]
 $
 
 #def_um(
@@ -45,7 +45,7 @@ Lo sforzo che deve esercitare lo Stent per mantenere il lume ridotto dalla placc
 Lo Stent viene applicato nella parte di vaso in cui vi è un'occlusione parziale del lume, per cui si distinguono dei valori prima e dopo l'installazione dello stent.
 
 $
-p = (E_"pl" + E_"par") dot (D_t - D_l)/ D_0
+p = (E_"pl" + E_"par") dot (D_t - D_l)/ D_0 space arrow ["MPa"] "or" [N / "mm"^2] 
 $
 #def_um(
   (
@@ -58,7 +58,7 @@ $
 )
 === Strain ($epsilon$)
 $
-epsilon = (D_t - D_l)/ D_0
+epsilon = (D_t - D_l)/ D_0 space arrow ["adim."]
 $
 
 
@@ -85,12 +85,12 @@ $
 sigma_M = (M_f dot h/2)/J
 $
 #def_um((
-  $h/2: "distanza dall'asse neutro"$, "mm" 
+  $h/2: "distanza dall'asse neutro"$, $"mm"$ 
 ))
 
 Con *$J$ inerza* della sezione rispetto all'asse neutro:
 $
-J = (b dot h^3) / 12
+J = (b dot h^3) / 12 -> [m^4] 
 $
 #align(right, [*\*h è la lunghezza parallela all'asse neutro*]) 
 
@@ -102,7 +102,7 @@ $
 
 == Rigidità Stent
 $
-K_p = P / (Delta r)
+K_p = P / (Delta r) -> ["MPa/mm"] "or" [N / "mm"^3]
 $
 
 #def_um((
@@ -121,7 +121,7 @@ $
 ))
 
 === Rigidità Minima
-Si ottiene uguagliando la pressione interna necessaria per dilatare l'occlusione con una certa riduzione % target del lume.
+Si ottiene eguagliando la pressione interna necessaria per dilatare l'occlusione con una certa riduzione % target del lume.
 
 
 *Esempio:*\
@@ -137,7 +137,7 @@ $
 K_"p min" = 2 / (d_s - D_t) dot p
 $
 
-Sostituendo p con la pressione del vaso con //@pressione_generata_dal_vaso_con_placca_dopo_dilatazione[placca].
+Sostituendo p con la pressione del vaso con placca @pressione_generata_dal_vaso_con_placca_dopo_dilatazione .
 
 $
 K_"p min" = 2 / (d_s - D_t) dot (E_"pl" + E_"par") dot (D_t - D_l)/ D_0 =\
@@ -156,7 +156,7 @@ K_"p min"= 2 E_"pl,par" dot (D_t - D_l)/( D_0 dot (d_s - D_t))
 $])))
 
 
-*U.M. vaso*\
+*-- U.M. vaso --*\
 #def_um(
   (
     $D_0: "Diametro Esterno del Vaso"$, $"mm"$,
@@ -167,7 +167,7 @@ $])))
   )
 )
 
-*U.M. stent*\
+*-- U.M. stent --*\
 #def_um(
   (
     $d_s: "Diametro iniziale dello stent"$, $"mm"$,

@@ -67,18 +67,19 @@
   // CONTENTS STYLING
   
   #show outline.entry.where(level: 1): it => {
+    
     v(0.5cm, weak: false)
-    set text(19pt, outline_text_color)
+    set text(1.9em, outline_text_color)
     strong(it)
   }
   #show outline.entry.where(level: 2): it => {
     //v(1pt, weak: false)
-    set text(16pt, outline_text_color)
+    set text(1.4em, outline_text_color)
     it
   }
   #show outline.entry.where(level: 3): it => {
     //v(1pt, weak: false)
-    set text(14pt, outline_text_color)
+    set text(1.2em, outline_text_color)
     it
   }
   
@@ -131,8 +132,8 @@
   }
 
  // FONT SIZES
- #show math.equation: set text(size: 17pt)
- #set text(15pt)
+ #show math.equation: set text(size: 15pt)
+ #set text(12pt)
 
 #show link: set text(fill: color.blue)
 
