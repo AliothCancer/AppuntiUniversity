@@ -3,8 +3,8 @@
 
 
 = Protesi Vascolari
-  #def[Protesi Vascolare][Dispositivi medici impiantati permanentemente per *ripristinare la funzione di un tratto
-vascolare* non più in grado di trasportare correttamente il sangue.]
+  Dispositivi medici impiantati permanentemente per *ripristinare la funzione di un tratto
+vascolare* non più in grado di trasportare correttamente il sangue.
 
   == Condizione patologica
   - *Stenosi* (occlusione parziale)
@@ -18,12 +18,7 @@ vascolare* non più in grado di trasportare correttamente il sangue.]
     caption: ""
   )
 
-  \
-  \
-  \
   == Compliance
-
-  #def("Compliance o Capacitanza")[
     È l'equivalente idraulico della capacità elettrica. È la quantità di energia che può essere immagazzinata sottoforma di energia potenziale elastica da un segmento di vaso.
 
     *Definizione matematica:*

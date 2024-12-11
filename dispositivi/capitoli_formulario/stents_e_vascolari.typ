@@ -1,7 +1,7 @@
 #import "../../utils/custom_functions.typ": def_um
 #import "../../utils/latest_style.typ": insert_image
 
-= Stents
+= Stents e protesi vascolari
 Come unità di misura vengono riportate quelle usate nelle esercitazioni oppure del SI.
 
 == Fraction Flow Reserve (FFR)
@@ -137,7 +137,7 @@ $
 K_"p min" = 2 / (d_s - D_t) dot p
 $
 
-Sostituendo p con la pressione del vaso con placca @pressione_generata_dal_vaso_con_placca_dopo_dilatazione .
+Sostituendo p con la pressione del vaso con placca //@pressione_generata_dal_vaso_con_placca_dopo_dilatazione .
 
 $
 K_"p min" = 2 / (d_s - D_t) dot (E_"pl" + E_"par") dot (D_t - D_l)/ D_0 =\

@@ -2,14 +2,14 @@
 #import calc: pow
 
 
-= Esercitazione 1+2: Valvole Cardiache
+= Esercitazione 1+2: Valvole#text("\n") Cardiache
 == Formule
 === Effective Orifice Area (EOA)
-#def[Effective Orifice Area][
+
   È la sezione efficace/effettiva della valvola, si usa per valutare il grado di ostruzione che la valvola provoca.
 
   Si possono confrontare valvole dello stesso diametro per capire quale è migliore. Un EOA più grande implica più basse cadute di pressione e quindi perdite energetiche minori. 
-] 
+
 
 #let formula_caption(formula, content) = {
   //set page(margin: auto)

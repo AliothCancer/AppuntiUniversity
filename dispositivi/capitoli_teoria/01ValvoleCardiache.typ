@@ -1,4 +1,4 @@
-
+#import "../../utils/latest_style.typ": insert_image
 
 = Valvole Cardiache
   == Apertura e chiusura delle valvole
@@ -17,10 +17,10 @@
     ===== Fonte 
     Silverthorn "Fisiologia umana. Un'approccio integrato" pag. 422-423 (libro del corso di fisiologia)
 
-    #align(center, image("/dispositivi/immagini/cuore_valvole.png", width: 55%))
+    #align(center, insert_image("/dispositivi/immagini/cuore_valvole.png", width: 55%))
   == Funzione cardiaca
-  #let im0 = image("/dispositivi/immagini/immagine_cuore.png", width: 80%)
-  #let im1 = image("/dispositivi/immagini/grafico_pressioni_ciclo_cardiaco.png", width: 110%)
+  #let im0 = insert_image("/dispositivi/immagini/immagine_cuore.png", width: 80%)
+  #let im1 = insert_image("/dispositivi/immagini/grafico_pressioni_ciclo_cardiaco.png", width: 100%)
   #grid(
     columns: 2,
     rows: 1,
@@ -31,7 +31,7 @@
 
     La valvola aortica si apre quando la *pressione ventricolare* supera la pressione aortica che arriva fino ad un valore massimo di riferimento pari a 120mmHg (*pressione sistolica*), la *pressione aortica* è quindi normalmente la *pressione diastolica*, ha valore di riferimento di 80mmHg. Questo accade perchè la valvola aortica è una valvola che si apre in una sola direzione, la sua forma a "uncino" fa in modo che il flusso quando scorre nel verso opposto faccia chiudere la valvola, come si vede in figura.
     
-    #align(center, image("/dispositivi/immagini/valvola_aortica00.png", width: 60%))
+    #align(center, insert_image("/dispositivi/immagini/valvola_aortica00.png", width: 60%))
 
   == Criticità
     Le valvole non devono avere reflusso, cioè devono impedire lo scorrimento del sangue nel verso opposto, se questo non avviene, il ventricolo cercherà comunque di aumentare la pressione per vincere quella aortica ed aprire la valvola, si richiederà al cuore uno sforzo maggiore perchè dovrà aumentare la pressione mentre perde volume, si avrà quindi una perdita di eiezione, la ejection fraction sarà minore.
@@ -76,8 +76,8 @@
       - Esempio materiale metallico: Ti6Al4V
       - Esempio materiale polimerico: pet Dacron
       #{
-      let img0 = image("/dispositivi/immagini/valvola_meccanica_moderna.png", width: 50%)
-      let img1 = image("/dispositivi/immagini/valvola_meccanica_moderna01.png", width: 100%)
+      let img0 = insert_image("/dispositivi/immagini/valvola_meccanica_moderna.png", width: 50%)
+      let img1 = insert_image("/dispositivi/immagini/valvola_meccanica_moderna01.png", width: 100%)
 
       let fig0 = figure(img0, caption: "bileaflet -- A emidischi")
       let fig1 = figure(img1, caption: "altri tipi")
@@ -104,7 +104,7 @@
 
         Il rivestimento viene eseguito all'interno di un forno, detto *forno di letto fluido*, in un atmosfera composta da 2 gas: l'*elio*, gas inerte che permette la *pirolisi* (combustione in assenza di agenti ossidanti), permette inoltre di regolare il risultato del rivestimento regolando la composizione dei 2 gas, e un idrocarburo gassoso da cui poter strappare gli atomi di carbonio.
         #align(
-          center, image("/dispositivi/immagini/pyrolitic_carbon_manifacturing.png", width: 60%
+          center, insert_image("/dispositivi/immagini/pyrolitic_carbon_manifacturing.png", width: 60%
           )
         )
         
