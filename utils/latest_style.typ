@@ -100,11 +100,7 @@
     )
     let size = measure(it)
     let it = underline(smallcaps(it))
-    box([#v(0.3cm) #it], //fill: h1_fill,
-    width: size.width*1.8,
-    height: size.height+1cm,
-    radius: 1cm,
-    )
+   it
     
   }
       //H2
