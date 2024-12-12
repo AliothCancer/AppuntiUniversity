@@ -124,16 +124,6 @@ La scelta del tipo di stent più appropriato per un paziente dipende da una seri
 - Valvole bioartificiali: introduzione alle valvole cardiache bioartificiali, alle problematiche da risolvere per la loro realizzazione e alle diverse sorgenti cellulari utilizzabili.
 
 
-= Protesi Articolari
-== 17-20 PROTESI ARTICOLARI DEF.pdf:
-- Introduzione alle protesi articolari: panoramica dei diversi tipi di protesi per diverse articolazioni, tra cui protesi d'anca, di ginocchio e per la sostituzione del menisco.
-- Articolazione dell'anca: descrizione dettagliata dell'anatomia e biomeccanica dell'articolazione dell'anca, inclusi gradi di libertà, assi di rotazione, legamenti e muscoli.
-- Sollecitazioni sull'articolazione dell'anca: analisi delle forze agenti sull'articolazione durante l'appoggio bipodalico e monopodalico, con esempi di calcolo.
-- Protesi d'anca: descrizione dei requisiti, dei tipi di ancoraggio (osteointegrazione vs. incastro meccanico) e dei materiali utilizzati per le protesi d'anca.
-- Usura delle superfici articolari: analisi delle cause di fallimento delle protesi d'anca, con particolare attenzione all'usura e alla produzione di detriti.
-- Protesi di ginocchio: introduzione alle protesi di ginocchio, con descrizione delle componenti metalliche e polimeriche.
-- Osteosintesi: descrizione dei diversi sistemi utilizzati per la stabilizzazione delle fratture ossee, come chiodi endomidollari, fissatori esterni e sistemi a placche e viti.
-
 = Pacemaker
 
 - *Definizione e funzione dei pacemaker.*

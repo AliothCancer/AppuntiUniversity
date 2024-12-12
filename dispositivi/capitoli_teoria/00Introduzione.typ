@@ -70,7 +70,7 @@ Per le classi I e A, la classificazione del rischio può essere un’autocertifi
 Per le altre classi, è necessario un corpo notificato che funzioni come certificatore.
 
 == Tabella di confronto
-#block[
+#block(fill:color.linear-rgb(11.44%, 8.23%, 71.57%),[
   #figure(align(center)[#table(
       columns: 3,
       align: (col, row) => (left, left, left,).at(col),
@@ -92,5 +92,5 @@ Per le altre classi, è necessario un corpo notificato che funzioni come certifi
       [IVDR (2017/746)],
     )])
 
-]
+])
 *Nota*: Consultare le slide del corso per la classificazione italiana, lunga e complessa.

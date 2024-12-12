@@ -1,14 +1,14 @@
 
 
-#let styled_box(contenuto: content) = {
+#let styled_box(contenuto: content, fill:color.linear-rgb(3.07%, 2.12%, 10.46%, 84.5%)) = {
   context {
     let title_h1_color = color.linear-rgb(3.19%, 0%, 93.87%)
-    let title_fill = color.linear-rgb(3.07%, 2.12%, 10.46%, 84.5%)
+    let title_fill = fill
     let size = measure([ #contenuto])
     let it = smallcaps(contenuto)
-    box([#v(0.3cm) #contenuto], fill: title_fill,
-    width: size.width*1.1,
-    height: size.height+1cm,
+    box([#v(0.1cm) #contenuto], fill: title_fill,
+    width: size.width*1.05,
+    height: size.height+.5cm,
     radius: 1cm,
     )
   }
@@ -67,13 +67,14 @@
   // CONTENTS STYLING
   
   #show outline.entry.where(level: 1): it => {
-    
     v(0.5cm, weak: false)
     set text(1.9em, outline_text_color)
     strong(it)
+    "\n"
   }
   #show outline.entry.where(level: 2): it => {
     //v(1pt, weak: false)
+    "\n        "
     set text(1.4em, outline_text_color)
     it
   }
@@ -129,11 +130,11 @@
 
  // FONT SIZES
  #show math.equation: set text(size: 15pt)
- #set text(12pt)
+ #set text(17pt)
 
 #show link: set text(fill: color.blue)
 
- #outline(indent: 2em, title: [#h(0.7em) Indice dei Contenuti])
+ #outline(indent: 2em, title: [#h(0.7em) Indice dei Contenuti],depth: 2)
  #text(white,[*Document made with typst: #link("https://typst.app/docs/")[Link to typst documentation]*])
 
   #body
@@ -188,6 +189,7 @@
   }
   #show outline.entry.where(level: 2): it => {
     //v(1pt, weak: false)
+    
     set text(16pt)
     it
   }

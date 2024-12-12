@@ -212,6 +212,8 @@ $
 "RF%" = V_"rig"/V_"espulso" dot 100 
 $
 
+#pagebreak()
+
 == Exe 2: n.2
 
 1. Si calcola il BSA con peso e altezza
