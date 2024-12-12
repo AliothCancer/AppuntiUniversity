@@ -1,4 +1,4 @@
-#import "@preview/cetz:0.3.1": *
+#import "@preview/cetz:0.3.0": *
 #import "../../utils/latest_style.typ": insert_image,styled_box
 
 = Protesi Articolari
