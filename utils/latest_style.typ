@@ -33,6 +33,7 @@
   }
   #set text(text_color)
   #show math.equation: set text(text_color)
+  #set page(margin: (x:0.7cm,y:.7cm))
   #set page(fill: page_fill_color)
   #let h1_fill = color.linear-rgb(42.87%, 1.52%, 44.52%, 84.5%)
   #let h1_color = color.linear-rgb(95.6%, 6.12%, 98.23%, 84.5%)

@@ -170,6 +170,8 @@ Le protesi più usate sono costituite principalmente da:
 + *supporto metallico* (metal back) dell’elemento acetabolare
 
 
+== Ancoraggio all'osso
 
+Può avvenire in 2 modi:
 
-
+==== 
