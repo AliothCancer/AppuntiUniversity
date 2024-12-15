@@ -7,9 +7,12 @@
   #include "capitoli_teoria/01ValvoleCardiache.typ"
   #include "esercitazioni/ExeValvoleCardiache.typ"
 
+  #include "capitoli_teoria/materiali.typ"
+
   #include "capitoli_teoria/03StentVascolari.typ"
 
   #include "capitoli_teoria/04ProtesiVascolari.typ"
   #include "esercitazioni/ExeProtesiVascolari.typ"
+  #include "capitoli_teoria/05ProtesiArticolari.typ"
 
 ]

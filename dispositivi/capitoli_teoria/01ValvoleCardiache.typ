@@ -36,7 +36,7 @@
   == Criticità
     Le valvole non devono avere reflusso, cioè devono impedire lo scorrimento del sangue nel verso opposto, se questo non avviene, il ventricolo cercherà comunque di aumentare la pressione per vincere quella aortica ed aprire la valvola, si richiederà al cuore uno sforzo maggiore perchè dovrà aumentare la pressione mentre perde volume, si avrà quindi una perdita di eiezione, la ejection fraction sarà minore.
 
-    Fondamentale quindi è il mantenimento delle proprietà meccaniche della valvola, che deve presentare la giusta resistenza alle sollecitazioni che le vengono imposte dal cuore attraverso il sangue.
+    Fondamentale quindi è il mantenimento delle proprietà meccaniche della valvola, che deve mantenere la giusta resistenza alle sollecitazioni che le vengono trasmesse dal cuore attraverso il sangue.
 
     Le caratteristiche meccaniche possono variare a causa di risposte immunitarie che vanno a modificare la composizione del tessuto a causa dell'azione delle cellule immunitarie. Questo può essere causato da: *febbre reumatica*, *endocardite*. Di seguito un elenco delle cause delle patologie valvolari: 
 

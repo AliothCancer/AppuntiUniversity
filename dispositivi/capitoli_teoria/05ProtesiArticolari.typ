@@ -173,5 +173,29 @@ Le protesi più usate sono costituite principalmente da:
 == Ancoraggio all'osso
 
 Può avvenire in 2 modi:
+- Incastro
+- Cementazione
 
-==== 
+
+==== Protesi cementate
+Il cemento di cui si parla è una resina acrilica, il poli-metil-met-acrilato.
+
+- Migliora la distribuzione delle sollecitazioni: le rende più uniformi e riduce gli sforzi massimi locali.
+- Riduce il dolore dovuto ai micromovimenti tra stelo e osso.
+- *La polimerizzazione* viene indotta con una sostanza detta iniziatore, questa provoca l'inizio della formazione dei radicali liberi, in seguito vengono distinte 3 fasi, pastosa, di lavorabilità e infine indurimento, per cui nelle prime due fasi è possibile modellare il cemento. 
+- La reazione di polimerizzazione è esotermica, va tenuto conto perchè un eccessiva temperatura danneggia i tessuti.
+
+==== Incastro
+Alla protesi viene fatto un trattamento superficiale particolare che rende irregolare la superficie, oppure la forma presenta delle cavità in cui l'osso si rigenera fissando ulteriormente la protesi.
+
+- Rivestimento di idrossiapatite: è un materiale che si integra bene con l'osso.
+
+
+== Protesi di ginocchio
+
+== Fissatori endomidollari
+
+== Viti e filetti per fissatori
+
+== Fissatori esterni
+
