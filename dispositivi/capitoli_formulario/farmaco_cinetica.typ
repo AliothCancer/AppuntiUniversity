@@ -50,7 +50,7 @@ $
 == Concentrazione e Tempo: Infusione continua
 
 $
-C(t) = I_0/(k_"tot" V_"app") e^(k_"tot" t)
+C(t) = I_0/(k_"tot" V_"app") (1-e^(k_"tot" t))
 $
 
 #def_um((
