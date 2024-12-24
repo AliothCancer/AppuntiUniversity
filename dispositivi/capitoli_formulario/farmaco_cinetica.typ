@@ -33,7 +33,8 @@ $
 k_"tot" = "CL"_"plasma" / V_"app" arrow [1/"min"]
 $
 
-== Relazione Concentrazione e Tempo
+== Concentrazione e Tempo: Infusione non continua
+
 
 Basata sul modello monocompartimentale, tiene conto di:
 -  concentrazione iniziale
@@ -44,3 +45,15 @@ Basata sul modello monocompartimentale, tiene conto di:
 $
 C(t) = C_0 dot e^(-k_"tot" t)
 $
+
+
+== Concentrazione e Tempo: Infusione continua
+
+$
+C(t) = I_0/(k_"tot" V_"app") e^(k_"tot" t)
+$
+
+#def_um((
+  $I_0: "portata massica del farmaco"$, $"mg/mL"$,
+  $V_"app": "volume apparente"$, $"mL"$
+))
