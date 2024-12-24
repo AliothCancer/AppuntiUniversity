@@ -14,3 +14,13 @@
 La protesi è in equilibrio se $ F_s = 2F_p $. Si calcolano le forze:
  $ F_s = P_"arteriosa" dot A_"rossa" $  
  $ F_p = P_"azzurra" dot A_"azzurra" $
+
+
+$ 
+1 + 1 = 2  \ \
+
+integral x dif x = 1/2 x^2 \ \
+
+"derivative( x^2, x) = 2 x "\ \
+3 * 4/2^2 * log 10 = log(1000)
+$

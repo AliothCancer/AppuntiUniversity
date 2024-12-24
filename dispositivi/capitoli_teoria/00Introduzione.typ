@@ -4,7 +4,7 @@ I dispositivi medici fanno parte delle tecnologie biomediche. Bisogna innanzitut
 
 Per i dispositivi medici, la definizione (*MD*) viene data dal regolamento europeo *MDR (Medical Device Regulation)* 2017/745 che ha sostituito le passate direttive e regolamenti europei.
 
-Per i dispositivi medico-diagnostici in vitro (*IVDMD*), la definizione viene data dal regolamento europeo *MDR (Medical Device Regulation)* 2017/746, che abroga la direttiva 98/79/CE e la decisione 2010/227/UE della Commissione.
+Per i dispositivi medico-diagnostici in vitro (*IVDM*), la definizione viene data dal regolamento europeo *IVDR (In Vitro Device Regulation)* 2017/746, che abroga la direttiva 98/79/CE e la decisione 2010/227/UE della Commissione.
 
 Il *MDR 2017* introduce la novità che l’efficacia e la sicurezza devono essere dimostrate con evidenze cliniche e che è necessario il monitoraggio della sicurezza post-market dopo l’immissione sul mercato.
 
