@@ -7,7 +7,6 @@
   )
 }
 
-
 #let def_um(line_arr) = {
   show math.equation: set text(blue)
   for (n,param) in line_arr.enumerate().filter(((n,_)) => calc.even(n)){

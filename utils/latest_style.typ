@@ -258,10 +258,12 @@
 ]
 
 #let insert_image(path,width:100%,fill:white) ={
-  box(
-    fill: fill,
-    stroke: color.linear-rgb(30.95%, 18.78%, 84.69%) + .1cm,
-    radius:.1cm,
-    image(path,width: width)
+  align(center,
+    box(
+      fill: fill,
+      stroke: color.linear-rgb(30.95%, 18.78%, 84.69%) + .1cm,
+      radius:.1cm,
+      image(path,width: width)
+    )
   )
 }

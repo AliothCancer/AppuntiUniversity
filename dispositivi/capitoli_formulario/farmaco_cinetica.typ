@@ -71,3 +71,11 @@ $*f dot D = A_0$
   $D: "quantità della dose"$,$"mg"$,
   $A_0: "dose assorbita"$, $"mg"$
 ))
+#pagebreak()
+
+== Tempo di picco concentrazione
+- Modello ad un compartimento
+
+$
+T_"max" = 1 / ( k_a - k_"tot") ln (k_a / k_"tot") -> ["min"]
+$

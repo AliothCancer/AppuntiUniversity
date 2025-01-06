@@ -9,4 +9,5 @@
 #include "capitoli_formulario/valvole_cardiache.typ"
 #include "capitoli_formulario/stents_e_vascolari.typ"
 #include "capitoli_formulario/farmaco_cinetica.typ"
+#include "capitoli_formulario/ecosound.typ"
 ]
