@@ -10,4 +10,5 @@
 #include "capitoli_formulario/stents_e_vascolari.typ"
 #include "capitoli_formulario/farmaco_cinetica.typ"
 #include "capitoli_formulario/ecosound.typ"
+#include "capitoli_formulario/blood_pressure_oximetry.typ"
 ]
