@@ -58,7 +58,7 @@ La keyword `pass` in questo esempio dice di andare avanti perchè altrimenti un 
 == sintassi
 ```python
 if condizione1:
-  # codice che esegue se condizione ritorna un valore True
+  # codice che viene eseguito se condizione ritorna un valore True
   pass
 # opzionale valido solo se viene messo dopo un blocco if o dopo un altro elif 
 elif condizione2:
