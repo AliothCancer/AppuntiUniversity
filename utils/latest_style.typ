@@ -36,7 +36,7 @@
   #set page(margin: (x:0.7cm,y:.7cm))
   #set page(fill: page_fill_color)
   #let h1_fill = color.linear-rgb(42.87%, 1.52%, 44.52%, 84.5%)
-  #let h1_color = color.linear-rgb(95.6%, 6.12%, 98.23%, 84.5%)
+  #let h1_color = color.linear-rgb(3.56%, 22.32%, 91.31%)
   #let h2_color = color.linear-rgb(5.61%, 65.84%, 31.4%)
   #let h3_color = color.linear-rgb(85.5%, 2.42%, 61.72%)
   #let h4_color = color.linear-rgb(53.33%, 48.51%, 2.12%)
@@ -69,14 +69,14 @@
   
   #show outline.entry.where(level: 1): it => {
     v(0.5cm, weak: false)
-    set text(1.9em, outline_text_color)
+    set text(1em, outline_text_color)
     strong(it)
     "\n"
   }
   #show outline.entry.where(level: 2): it => {
     //v(1pt, weak: false)
     "\n        "
-    set text(1.4em, outline_text_color)
+    set text(.7em, outline_text_color)
     it
   }
   #show outline.entry.where(level: 3): it => {

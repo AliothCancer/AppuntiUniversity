@@ -1,11 +1,13 @@
 #import "../utils/latest_style.typ": apply_my_style
 
 
-#apply_my_style(title:"  bruta hf ",date: (2024,12,11),mode:"night" )[
+#apply_my_style(title:"  bruta hf ",date: (2024,12,11),mode:"light" )[
+
 
 = Argomenti principali
 
 1. Flussi monetari in ingresso
+   - Sistema di finanziamento del SNS
    - Sistema DRG (Diagnosis-Related Group)
    - Ticket, attività intramoenia e finanziamenti pubblici
 
@@ -63,6 +65,4 @@ Sottoargomenti: Esplorazione dei Flussi Monetari in Entrata nel Settore Sanitari
 6. Analisi della Sostenibilità Economica
    - Impatti delle diverse fonti di finanziamento
    - Strategie di miglioramento del sistema sanitario
-
-
 ]
