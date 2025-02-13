@@ -66,10 +66,15 @@ $
 Cioè il valore di un azienda è pari al Capitale Investito.
 === UN,MON,OF
 $
-  "UN" = "MON" - "OF"
+  "UN" = "MON" - "OF"\
+  "OF" = D dot "ROD"
 $
 - MON = EBIT: Margine Operativo Netto, cioè $"MON" = "RICAVI" - "COSTI"$
 - EBIT: Earnings Before Interests and Taxes
+
+== Leva Finanziaria
+- Con LEVA si intende variare il rapporto D/E
+- Permette di aumentare il ROE se
 
 == È possibile aumentare il valore dell'impresa variando D/E?
 
