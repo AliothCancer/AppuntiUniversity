@@ -2,14 +2,16 @@
 
 #let styled_box(contenuto: content, fill:color.linear-rgb(3.07%, 2.12%, 10.46%, 84.5%)) = {
   context {
-    let title_h1_color = color.linear-rgb(3.19%, 0%, 93.87%)
+    let title_h1_color = color.linear-rgb(3.19%, 0%, 3.87%)
     let title_fill = fill
     let size = measure([ #contenuto])
     let it = smallcaps(contenuto)
-    box([#v(0.1cm) #contenuto], fill: title_fill,
-    width: size.width*1.05,
-    height: size.height+.5cm,
-    radius: 1cm,
+    box(contenuto, fill: title_fill,
+    inset: 0.3cm,
+    outset: 0.2cm,
+    //width: size.width*0.75,
+    //height: size.height,
+    radius: .2cm,
     )
   }
 }
@@ -55,36 +57,34 @@
     date.at(1),
     date.at(2),
   )
-  
+
   #let date = datetime(year: year, month: month, day: day).display("[day]  [month repr:long] [year]")
   #align(center, text(text_color,date))
 
   #set par(justify: true, leading: 0.52em)
-  #let fs_1 = 27pt
-  #let fs_2 = 7*fs_1/8
-  #let fs_3 = 6*fs_1/8
-  #let fs_4 = 5*fs_1/8
+  #let fs_1 = 2.0em
+  #let fs_2 = 1.4em
+  #let fs_3 = 1.2em
+  #let fs_4 = 1.1em
 
   // CONTENTS STYLING
-  
+
   #show outline.entry.where(level: 1): it => {
     v(0.5cm, weak: false)
-    set text(1em, outline_text_color)
+    set text(fs_1*.9, outline_text_color)
     strong(it)
-    "\n"
   }
   #show outline.entry.where(level: 2): it => {
     //v(1pt, weak: false)
-    "\n        "
-    set text(.7em, outline_text_color)
+    set text(fs_2, outline_text_color)
     it
   }
   #show outline.entry.where(level: 3): it => {
     //v(1pt, weak: false)
-    set text(1.2em, outline_text_color)
+    set text(fs_3, outline_text_color)
     it
   }
-  
+
 
   #set heading(numbering: "    1.1")
   #set par(leading: 0.2cm)
@@ -103,7 +103,7 @@
     let size = measure(it)
     let it = underline(smallcaps(it))
    it
-    
+
   }
       //H2
   #show heading.where(level: 2): it => {
@@ -111,14 +111,14 @@
     set align(center)
     set text(h2_color,fs_2, weight: "regular")
     v(1cm) + strong(it) + v(.5cm)
-    
+
   }
       //H3
   #show heading.where(level: 3): it => {
     set align(center)
     set text(h3_color,fs_3, weight: "regular")
     v(.5cm) + strong(it) + v(.3cm)
-  
+
   }
 
       //H4
@@ -126,16 +126,16 @@
     set align(center)
     set text(h4_color,fs_4, weight: "regular")
     v(.3cm) + strong(it) + v(.3cm)
-    
+
   }
 
  // FONT SIZES
- #show math.equation: set text(size: 15pt)
- #set text(17pt)
+ #set text(10pt)
+ #show math.equation: set text(size: 1.2em)
 
 #show link: set text(fill: color.blue)
 
- #outline(indent: 2em, title: [#h(0.7em) Indice dei Contenuti],depth: 2)
+ #outline(indent: 2em, title: [#h(0.7em) Indice dei Contenuti])
  #text(white,[*Document made with typst: #link("https://typst.app/docs/")[Link to typst documentation]*])
 
   #body
@@ -182,7 +182,7 @@
   #let mode = "presentation";
 
   // CONTENTS STYLING
-  
+
   #show outline.entry.where(level: 1): it => {
     v(0.5cm, weak: false)
     set text(19pt)
@@ -190,7 +190,7 @@
   }
   #show outline.entry.where(level: 2): it => {
     //v(1pt, weak: false)
-    
+
     set text(16pt)
     it
   }
@@ -216,9 +216,9 @@
     )
     rect(smallcaps(underline(it)) + v(2cm), fill: rgb("#ddd5f3"),height: 1.2em,
     radius: .5cm,
-    
+
     )
-    
+
   }
       //H2
   #show heading.where(level: 2): it => {
@@ -226,7 +226,7 @@
     set align(center)
     set text(fs_2, weight: "regular")
     v(1cm) + strong(it) + v(.5cm)
-    
+
   }
       //H3
   #show heading.where(level: 3): it => {
@@ -234,7 +234,7 @@
     set align(center)
     set text(fs_3, weight: "regular")
     v(.5cm) + strong(it) + v(.3cm)
-  
+
   }
 
       //H4
@@ -242,7 +242,7 @@
     set align(center)
     set text(fs_4, weight: "regular")
     v(.3cm) + strong(it) + v(.3cm)
-    
+
   }
 
  // FONT SIZES
@@ -252,7 +252,7 @@
 #show link: set text(fill: color.blue)
 
  #outline(indent: 2em)
- *Document made with typst: 
+ *Document made with typst:
  #link("https://typst.app/docs/")[Link to typst documentation]*
  #body
 ]
