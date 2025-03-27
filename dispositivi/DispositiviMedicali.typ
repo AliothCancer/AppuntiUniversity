@@ -14,6 +14,6 @@
   #include "capitoli_teoria/04ProtesiVascolari.typ"
   #include "esercitazioni/ExeProtesiVascolari.typ"
   #include "capitoli_teoria/05ProtesiArticolari.typ"
-
+  #include "capitoli_teoria/06RisonanzaMagnetica.typ"
 
 ]

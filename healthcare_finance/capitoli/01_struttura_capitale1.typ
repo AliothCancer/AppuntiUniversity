@@ -102,3 +102,12 @@ Si ha che $r_e>r_d$ per giustificare il maggior rischio assunto dall'investitore
     $
   ]
 )
+
+#styled_box(
+  contenuto:[
+    == Differenza ROE/ROD e r_e/r_d
+    - ROI
+    - ROE/ROD: Tassi di rendimento effettivi rispettivamente su EQUITY e DEBITO
+    - $r_e\/r_d$: Tassi di rendimento attesi rispettivamente EQUITY e DEBITO
+  ]
+)
