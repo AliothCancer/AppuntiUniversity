@@ -7,4 +7,5 @@
 #set page(columns: 2)
 #include "../healthcare_finance/capitoli/01_struttura_capitale1.typ"
 #include "../healthcare_finance/capitoli/02_recap.typ"
+
 ]

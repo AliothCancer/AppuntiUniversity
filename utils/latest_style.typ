@@ -7,8 +7,29 @@
     let size = measure([ #contenuto])
     let it = smallcaps(contenuto)
     box([#v(0.1cm) #contenuto], fill: title_fill,
-    width: size.width*1.05,
-    height: size.height+.5cm,
+    width: size.width*1.8,
+    height: size.height+.1cm,
+    radius: 1cm,
+    )
+  }
+}
+
+#let color_palette = ("#8ED6EA", "#87BFE8", "#85A4E0", "#6F6BD1", "#6942C2", "#712AAD", "#7F12B0", "#7F14A2", "#77198C", "#611372")
+
+
+
+#let get_color(color_number) = color.rgb(color_palette.at(color_number))
+
+#let styled_box_presentation(contenuto: content, fill:color.rgb(color_palette.at(2))) = {
+  
+  context {
+    let title_h1_color = color.white
+    let title_fill = fill
+    let size = measure([ #contenuto])
+    let it = smallcaps(contenuto)
+    box([ #contenuto], fill: title_fill,
+    width: size.width,
+    height: size.height * 1.1,
     radius: 1cm,
     )
   }
@@ -55,7 +76,7 @@
     date.at(1),
     date.at(2),
   )
-  
+
   #let date = datetime(year: year, month: month, day: day).display("[day]  [month repr:long] [year]")
   #align(center, text(text_color,date))
 
@@ -66,7 +87,7 @@
   #let fs_4 = 5*fs_1/8
 
   // CONTENTS STYLING
-  
+
   #show outline.entry.where(level: 1): it => {
     v(0.7cm, weak: false)
     set text(1em, outline_text_color)
@@ -75,7 +96,7 @@
   }
   #show outline.entry.where(level: 2): it => {
     //v(1pt, weak: false)
-    
+
     set text(.9em, outline_text_color)
     ""
     it
@@ -83,7 +104,7 @@
   #show outline.entry.where(level: 3): it => {
     //v(1pt, weak: false)
     set text(0.6em, outline_text_color)
-    
+
     it
   }
   #show outline.entry.where(level: 4): it => {
@@ -93,7 +114,7 @@
   }
 #show outline.entry.where(level: 5): it => {
     set text(0.6em, outline_text_color)
-    
+
     it
   }
 
@@ -114,7 +135,7 @@
     let size = measure(it)
     let it = underline(smallcaps(it))
    it
-    
+
   }
       //H2
   #show heading.where(level: 2): it => {
@@ -122,14 +143,14 @@
     set align(center)
     set text(h2_color,fs_2, weight: "regular")
     v(1cm) + strong(it) + v(.5cm)
-    
+
   }
       //H3
   #show heading.where(level: 3): it => {
     set align(center)
     set text(h3_color,fs_3, weight: "regular")
     v(.5cm) + strong(it) + v(.3cm)
-  
+
   }
 
       //H4
@@ -137,7 +158,7 @@
     set align(center)
     set text(h4_color,fs_4, weight: "regular")
     v(.3cm) + strong(it) + v(.3cm)
-    
+
   }
 
  // FONT SIZES
@@ -175,10 +196,11 @@
 ]
 
 
-#let presentation_style(title:str,body) = [
+#let presentation_style(date: array,title:str,body, mode: str) = [
 // CONFIGURATION
   //#show strong: set text(blue)
   //#set text(font: "Monofur Nerd Font")
+  
   #set page(paper: "presentation-16-9")
   #set par(justify: false, leading: 0.52em)
   #let title = text(50pt,title)
@@ -192,7 +214,7 @@
   #let mode = "presentation";
 
   // CONTENTS STYLING
-  
+
   #show outline.entry.where(level: 1): it => {
     v(0.5cm, weak: false)
     set text(19pt)
@@ -200,7 +222,7 @@
   }
   #show outline.entry.where(level: 2): it => {
     //v(1pt, weak: false)
-    
+
     set text(16pt)
     it
   }
@@ -224,35 +246,35 @@
     set text(fs_1, weight: "bold",
     number-type: "old-style",
     )
-    rect(smallcaps(underline(it)) + v(2cm), fill: rgb("#ddd5f3"),height: 1.2em,
+    rect(smallcaps(underline(it)) + v(2cm),height: 1.2em,
     radius: .5cm,
-    
+
     )
-    
+
   }
       //H2
   #show heading.where(level: 2): it => {
-    pagebreak()
+    colbreak()
     set align(center)
-    set text(fs_2, weight: "regular")
+    set text(fs_2, weight: "regular",fill:  get_color(9))
     v(1cm) + strong(it) + v(.5cm)
-    
+
   }
       //H3
   #show heading.where(level: 3): it => {
     pagebreak()
     set align(center)
-    set text(fs_3, weight: "regular")
+    set text(fs_3, weight: "regular",fill:  get_color(8))
     v(.5cm) + strong(it) + v(.3cm)
-  
+
   }
 
       //H4
   #show heading.where(level: 4): it => {
     set align(center)
-    set text(fs_4, weight: "regular")
+    set text(fs_4, weight: "regular",fill:  get_color(7))
     v(.3cm) + strong(it) + v(.3cm)
-    
+
   }
 
  // FONT SIZES
@@ -262,7 +284,7 @@
 #show link: set text(fill: color.blue)
 
  #outline(indent: 2em)
- *Document made with typst: 
+ *Document made with typst:
  #link("https://typst.app/docs/")[Link to typst documentation]*
  #body
 ]
