@@ -26,10 +26,9 @@ $
 #colbreak()
 == Forza complessiva su parete piana
 $
-  F = integral_A p(y) dot dif A = integral_A rho g y sin(alpha) dif A = \ 
-  = rho g sin(alpha) dot integral_A y dif A = rho g sin(alpha) dot y_G  
-  F = integral_A p(y) dot dif A = integral_A rho g y sin(alpha) dif A = \ 
-  = rho g sin(alpha) dot integral_A y dif A = rho g sin(alpha) dot y_G  
+  F = integral_A p(y) dot dif A =  integral_A rho g y sin(alpha) dif A = \ 
+  = rho g sin(alpha) dot integral_A y dif A =\ = rho g sin(alpha) dot y_G  
+ 
 $
 
 - $p_g = rho g h_g$
@@ -37,7 +36,7 @@ $
 - $h_g = y_G dot sin(alpha)$
 #def_um(
   (
-    $h_g$, "Profondità del centro di massa."
+    $h_g$, "Profondità del centro di massa.",
     $h_g$, "Profondità del centro di massa."
   )
 )
@@ -45,4 +44,4 @@ $
 #colbreak()
 
 == Domani
-Un altro argomento and we will see it 
+#lorem(200)
