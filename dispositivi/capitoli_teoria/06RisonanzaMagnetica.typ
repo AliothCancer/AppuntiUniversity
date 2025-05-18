@@ -25,5 +25,9 @@ omega = gamma dot B_0
 $
 
 Dove $gamma$ è il rapporto giromagnetico che per gli atomi di idrogeno vale 42.6 MHz/T.
+\
+\
+== Codifica della posizione
+Per poter discriminare un segnale generato nello spazio ogni punto deve avere un segnale con unico.
 
-== 
+*La sezione* quindi è fatta da due dimensioni, poniamo x e y. Per queste due dimensioni viene usata la frequenza di risonanza che è unica per ogni punto a causa di B0 che ha un gradiente di intensità e di conseguenza ogni punto
