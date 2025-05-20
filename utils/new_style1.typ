@@ -1,7 +1,7 @@
 
 
-#let color_palette1 = ("26547c","ef476f","ffd166","06d6a0")
-
+#let color_palette1 = ("26547c","ef476f","01f160","06d6a0", "4357AD")
+#let color_palette2 = ("4357ad","48a9a6","e4dfda","d4b483","c1666b")
 
 #let color_palette = color_palette1
 #let get_color(color_number) = color.rgb(color_palette.at(color_number))
@@ -10,8 +10,8 @@
 // CONFIGURATION
   //#show strong: set text(blue)
   //#set text(font: "Monofur Nerd Font")
-  
-  #set page(paper: "presentation-16-9", margin: 1cm)
+
+  #set page(paper: "a3", margin: 1cm)
   #set par(justify: false, leading: 0.52em)
   #let title = text(50pt,title)
   #v(2cm)
@@ -69,7 +69,7 @@
   }
       //H3
   #show heading.where(level: 3): it => {
-    pagebreak()
+    //pagebreak()
     set align(center)
     set text(fs_3, weight: "regular",fill:  get_color(2))
     v(.5cm) + strong(it) + v(.3cm)
@@ -83,12 +83,20 @@
     v(.3cm) + strong(it) + v(.3cm)
 
   }
+       //H4
+  #show heading.where(level: 5): it => {
+    set align(center)
+    set text(fs_4, weight: "regular",fill:  get_color(4))
+    v(.3cm) + strong(it) + v(.3cm)
+
+  }
 
  // FONT SIZES
  #show math.equation: set text(size: 17pt)
+#set math.equation(numbering: "eq. 1", number-align: left)
  #set text(15pt)
 
-#show link: set text(fill: color.blue)
+#show link: set text(fill: color.fuchsia)
 
  #outline(indent: 2em)
  *Document made with typst:
