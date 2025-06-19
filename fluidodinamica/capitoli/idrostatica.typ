@@ -121,9 +121,3 @@ $
   I_(G,x) = (pi R^4)/(64)
 $
  
-
-= Title 1
-== Title 2
-=== Title 3
-==== Title 4
-===== Title 5
