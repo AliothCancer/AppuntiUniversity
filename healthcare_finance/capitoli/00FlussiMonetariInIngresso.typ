@@ -43,7 +43,7 @@ Le fonti di finanziamento del fabbisogno sanitario in Italia sono:
 
 Nel 2016, queste fonti si ripartivano in: IRAP e Addizionale IRPEF (59%), IVA e Accise (28%), Compartecipazione Regioni a Statuto Speciale (11%), e Altro (2%).
 
-=== Allocazione dei Fondi: Dal Centro alle Regioni
+=== Fondi: da f. statale a f. regionale
 
 Il riparto del finanziamento del SSN alle singole Regioni si basa sul Decreto Legislativo 6 maggio 2011, n. 68. Il punto di partenza è il *livello programmato di finanziamento a livello centrale*, che rappresenta le risorse assicurabili per l'erogazione dei Livelli Essenziali di Assistenza (LEA).
 
@@ -53,12 +53,12 @@ Per l'assegnazione a ciascuna regione si utilizzano:
 
 - *Quota capitaria pesata*: questo modello di finanziamento mira a garantire che ogni ASL abbia una capacità di spesa sufficiente per erogare servizi che corrispondano ai LEA.
    
-\
-*Criteri di ripartizione*:
 
-- *Semplice*: basata solo sulla numerosità della popolazione.
+- *Criteri di ripartizione*:
 
-- *Ponderata*: considera le differenze nei bisogni sanitari tra individui (es. composizione per età e sesso, mobilità infra-regionale passiva e attiva, tipologia di servizi fruibili e bisogni sanitari) per garantire equità nell'accesso.
+    - *Semplice*: basata solo sulla numerosità della popolazione.
+
+    - *Ponderata*: considera le differenze nei bisogni sanitari tra individui (es. composizione per età e sesso, mobilità infra-regionale passiva e attiva, tipologia di servizi fruibili e bisogni sanitari) per garantire equità nell'accesso.
 
 Il finanziamento indistinto complessivo (es. 113.257.674.550 € nel 2020) viene poi suddiviso in sub-livelli (es. prevenzione, medicina di base, farmaceutica, specialistica, territoriale, ospedaliera) con criteri di riparto misti, basati sulla popolazione pesata e non.
 
