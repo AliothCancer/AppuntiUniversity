@@ -36,7 +36,14 @@ Dato un tasso annuale $j$ si ha:
 Notare che negli esercizi il valore di interesse è il numero di capitalizzazioni
 
 Esempi:
-- $j = 3% "bimestrale"$
+- $j_k = 3% "bimestrale"$ $=> k = 6$
+- quindi: $ j = 3% dot 2 = #{3*2}%$
+- poichè in 1 anno avvengono 2 capitalizzazioni:
+$
+  M_1 = C dot (1 + 3/100) "(fine primo bimestre)"\ \
+  M_2 = C dot (1 + 3/100 dot 2) ("fine secondo bimestre")
+$
+- $M_1$
 
 == Capitalizzazione semplice
 
@@ -47,4 +54,5 @@ $
 - C: Capitale prestato
 - j: tasso di interesse sull'unità del periodo t
 - t: Numero di capitalizzazioni al tasso j
+
 
