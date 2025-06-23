@@ -6,12 +6,12 @@
 #let color_palette = color_palette1
 #let get_color(color_number) = color.rgb(color_palette.at(color_number))
 
-#let presentation_style(date: array,title:str,body, mode: str) = [
+#let presentation_style(paper: "a3",date: array,title:str,body, mode: str) = [
 // CONFIGURATION
   //#show strong: set text(blue)
   //#set text(font: "Monofur Nerd Font")
 
-  #set page(paper: "a3", margin: 1cm)
+  #set page(paper: paper, margin: 1cm)
   #set par(justify: false, leading: 0.52em)
   #let title = text(50pt,title)
   #v(2cm)
