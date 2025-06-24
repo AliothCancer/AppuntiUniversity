@@ -4,5 +4,5 @@
 #typst compile dispositivi/DispositiviMedicali.typ --root .
 typst compile healthcare_finance/healthcare_finance.typ --root .
 git add .
- git commit -m "content update"
- git push
+git commit -m "content update"
+git push

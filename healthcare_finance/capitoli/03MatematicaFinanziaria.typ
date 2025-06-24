@@ -237,18 +237,48 @@ $
   a_"n|i" = i^(-1) - (i^(-1))/(1+i)^n\ \
 $
 
+== Annuity con ANTICIPO
+$
+  "VA" = R dot a_"n|i" dot (1+i)
+$<annuity_con_anticipo>
+#figure(image("image.png"), caption: "Preso da soluzioni exe III: esercizio n. 2")
+
+
 == Present & Future value
 === Relazione
 $
-  "PV" = "FV" / (1+ i)^n  
+  "PV" = "FV" / (1+ i)^t 
 $
 
 È il valore finanziario attuale di una somma di denaro.
-- *ATTUALE*: 100 euro oggi sono 100 euro finanziari (oggi) ma sono meno di 100 euro finanziari (domani)
+- *ATTUALE*: 100 euro disponibili oggi sono 100 euro finanziari (oggi) ma sono meno di 100 euro finanziari (disponibili domani)
 
 Portare al presente delle somme di denaro significa scontarle di un tasso.
 
 Scontare significa ridurre, quindi le somme che verranno date in futuro hanno un valore finanziario più piccolo rispetto a quello nominale.
 
 Le somme che sono state date in passato, sono capitalizzate e quindi hanno un valore finanziario maggiore rispetto a quello nominale.
+
+
+
+Quindi un certo quantitativo nominale di denaro disponibile oggi vale X.
+
+Il PV è quella quantità di denaro che si investe per ottenere un certo valore di FV maggiore di PV, allo scadere del tempo t.
+
+Esempietto:\
+Se investo oggi $"PV"= 10'000 euro$, con un rendimento annuo del 2%, quanti soldi diventeranno dopo 5 anni?
+
+$
+  "FV" &= 10'000 euro dot (1 + 0.02)^5\ &=  #calc.round({10000 *calc.pow(1 + 0.02, 5)}, digits: 3) euro
+$
+
+Se voglio ottenere $"FV" = 11'000 euro$ fra 5 anni con un rendimento annuo del 2%, quanti soldi devo investire oggi?
+
+- *Esercizio inverso*
+$
+"PV" &= "FV" / (1 + r)^n \
+&= (11'000) / (1 + 0.02)^5 \
+&= #{calc.round(11000 / calc.pow(1 + 0.02, 5), digits: 2)} euro
+
+$
 

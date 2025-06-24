@@ -4,7 +4,7 @@
 
 #presentation_style(paper:"a3",date:(2025,02,12), title:"\n Note di:\n\n Healthcare  \n  Finance  \n ", mode: "night")[
 
-#set page(columns: 1)
+#set page(columns: 2)
 
 #include "capitoli/00FlussiMonetariInIngresso.typ"
 
