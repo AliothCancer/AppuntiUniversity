@@ -1,3 +1,4 @@
+#import calc: *
 = Matematica Finanziaria
 == Unità temporali di Capitalizzazione
 Il tempo finanziariamente ha senso esprimerlo non in termini di mesi o anni, ma piuttosto in termini di numero di capitalizzazioni con un determinato tasso che chiameremo $j$ nel caso di c. annuale e $j_k$ dove k è il numero di *PERIODI* in un anno. Notare $j_1$ equivale a $j$.
@@ -66,7 +67,7 @@ $
   M_n = C ( 1 + j_k dot t)
 $
 
-#colbreak()
+////#colbreak()
 === Relazione t e k
 $
   t = k dot "anni"
@@ -174,7 +175,7 @@ $
   (1+"TAE")^(1/k) - 1 ="TAN"/k\
   ((1+"TAE")^(1/k) -1 ) k= "TAN"\
 $
-#colbreak()
+//#colbreak()
 
 == Attualizzazione dei flussi di cassa
 Formula per il valore attuale dei flussi di cassa $F_i$ al tasso di sconto $i$.
@@ -194,6 +195,26 @@ Esempio con 5 flussi di cassa:
   }
 }
 )
+== Capitalizzazione dei flussi di cassa
+*FV* Future Value\
+
+Esempio con 5 flussi di cassa con durata 5 anni:
+#align(center,{
+  $"FV" = $
+  let len = 5
+  for n in range(1,len+1){
+    if n!=len{
+      $F_#n dot (1 + i)^#(len - n + 1) +$
+    }else{
+      $F_#n dot (1 + i)^1$
+    }
+  }
+}
+)
+Il primo FC capitalizza per 5 anni, il secondo 4 anni, il terzo 3, il quarto 2, etc...
+
+
+
 == Perpetuity
 Un flusso di cassa costante per sempre: $F_n = F$
 
@@ -220,7 +241,7 @@ Le formule di annuity e perpetuity forniscono il valore attuale delle rispettive
 $
   "VA"_"perp" &=  F dot (1 / (1+ i) + ... + 1 / (1+ i)^n )\
 $
-
+//#colbreak()
 === Formula
 Di gran lunga più realistica:
 $
@@ -237,13 +258,29 @@ $
   a_"n|i" = i^(-1) - (i^(-1))/(1+i)^n\ \
 $
 
+== Le 3 forme dell'annuity
+Sono 
+=== Forma 1
+$
+  a = (1-(1+i)^(-n)) /i
+$
+=== Forma 2
+Utile per confrontarla con s
+$ 
+ a = ((1+i)^(n) - 1)/(i (1+i)^(n))  
+$
+=== Forma 3
+$ 
+  a = 1/i - 1/(i(1+i)^n)
+$
+
 == Annuity con ANTICIPO
 $
   "VA" = R dot a_"n|i" dot (1+i)
 $<annuity_con_anticipo>
-#figure(image("image.png"), caption: "Preso da soluzioni exe III: esercizio n. 2")
+#figure(image("../img/image.png"), caption: "Preso da soluzioni exe III: esercizio n. 2")
 
-
+//#colbreak()
 == Present & Future value
 === Relazione
 $
@@ -282,3 +319,61 @@ $
 
 $
 
+
+== Annuity per flussi di cassa futuri
+
+$
+  s_"t|v" = ((1 + v)^t - 1) / v
+$<eq54>
+
+Esempio:
+- A quanto devono ammontare le rate annuali costanti da versare su un fondo di risparmio per avere 40'000 euro tra 10 anni, con un rendimento effettivo del 0.5% semestrale?
+
+Dati
+- FV = 40 000 euro
+- v = 3/100
+- t = 20 semestri
+
+$
+  R = (40'000) / (s_"t|v")
+$
+
+Calcolo s:
+
+#{
+let v = 3/100
+let t = 10
+let FV = 40000
+let s = (pow(1 + v, t) - 1)/v;
+$
+  s = ((1 + #v)^#t - 1)/#v = #{round(s, digits: 3)}
+$
+[Calcolo R:]
+let R = FV / s
+$
+  R = #FV / #round(s,digits: 2) =#round(R, digits: 3) euro
+$
+}
+
+
+== Relazione tra $s_"t|i"$ e $a_"t|i"$
+
+Definizione in *@eq54*
+$
+s = ((1 + i)^t - 1)/i
+$
+$
+a &= (1-(1+i)^(-t)) / i\  &= 1/i - 1/(i (1+i)^t)\
+&= ((1+i)^t - 1)/(i(1+i)^t)\
+&= underbrace((((1+i)^t - 1)/(i)), s) dot 1/(1+i)^t\
+$
+
+
+Extra:
+$
+a &= (1-(1+i)^(-t)) / i\  &= 1/i - 1/(i (1+i)^t)\
+
+&= 1/i - (1+i)^(-t) / i
+\
+&= (1 - (1+i)^(-t)) / i
+$

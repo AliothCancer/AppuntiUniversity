@@ -103,3 +103,33 @@ $
 - ROI
 - ROE/ROD: Tassi di rendimento *EFFETTIVI* rispettivamente su EQUITY e DEBITO
 - $r_e\/r_d$: Tassi di rendimento *ATTESI* rispettivamente EQUITY e DEBITO
+
+== Importante
+
+$
+  V_L = P_"az." dot N_"az." + D
+$
+Notare che che questa formula non si può utilizzare a seguito del variare di $D\/E$ poichè il prezzo delle azioni cambierebbe, e non sarebbe più il precedente. 
+
+Più in generale se ad esempio è stato convertito una parte di debito in equity, allora dipende se la parte aggiuntiva è stata messa come aumento di prezzo o come aumento di numero della azioni, analogamente nel caso da equity a debito in verso negativo per l'equity. 
+
+- Quindi come fare per calcolare $V_L$ dopo un operazione di rifinanziamento?
+
+Al variare della struttura del capitale $V_U$ (valore dell'azienda unlevered) non cambia.
+
+$V_l$ invece cambia al variare della struttura del capitale.
+
+$
+  V_L = V_U + D dot T_c
+$<eq12>
+- $T_c :$ aliquota fiscale 
+
+$V_L$ beneficia del tax shield, mentre $V_U$ rimane costante al variare di $D\/E$.
+
+Si ha che $V_L = V_U$ *solo se* si è in *ASSENZA di TASSE*
+
+
+- Grazie alla @eq12 è possibile calcolare $V_U$ come:
+$
+  V_U = underbrace((P_"az." dot &N_"az." + D), V_L) - D dot T_c
+$

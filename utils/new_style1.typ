@@ -55,6 +55,8 @@
     set text(fs_1, weight: "bold",
     number-type: "old-style",
     )
+    
+    pagebreak()
     rect(smallcaps(underline(it)) + v(2cm),height: 1.2em,
     radius: .5cm,
     )
@@ -64,6 +66,8 @@
   #show heading.where(level: 2): it => {
     set align(center)
     set text(fs_2, weight: "regular",fill:  get_color(1))
+    
+    colbreak()
     v(1cm) + strong(it) + v(.5cm)
 
   }
@@ -93,7 +97,7 @@
 
  // FONT SIZES
  #show math.equation: set text(size: 17pt)
-#set math.equation(numbering: "eq. 1", number-align: left)
+#set math.equation(numbering: "eq. 1", number-align: right)
  #set text(15pt)
 
 #show link: set text(fill: color.fuchsia)
