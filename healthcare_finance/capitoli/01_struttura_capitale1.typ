@@ -9,7 +9,8 @@ La struttura del capitale si compone in generale di:
 - Debito ed Equity sono le due parti che costituiscono il passivo dello stato patrimoniale.
 - L'*ATTIVO* rappresenta gli impieghi del capitale, cioè come è stato investito. Risponde alla domanda *"Come hai investito il capitale?"*
 - Il *PASSIVO* rappresenta il finanziamento, risponde alla domanda: *"Come hai finanziato i tuoi investimenti?*"
------------------------------------
+
+
 == Leverage
 Un'azienda *LEVERAGE* è un'azienda con una parte di finanziamento del proprio capitale derivante da *DEBITO*.\
 Quindi paga gli interessi ai propri creditori.
@@ -22,6 +23,35 @@ Equivalenze:\
 - B ha A come creditore
 
 $ D / E > 0 $
+
+== Valore Unlevered
+Il valore unlevered di un'azienda, è il valore dell'azienda come se fosse solamente finanziata tramite equity.
+
+Nota: a me sta definizione fa schifo, non è una definizione, è un'autodefinizione inutile perchè se si ha un'azienda finanziata totalmente con equity pari a 33 mln euro a valore di libro, allora il $V_U$ non è pari a 33mln € ma al valore di mercato, cioè il valore dato da $P_"az" dot N_"az"$.
+
+$
+  V_U = ("EBIT" dot (1- T_c))/ r_U space "se" D=0
+$
+Più in generale $V_U$:
+$
+  V_U = overbrace("UN" + "OF", "flusso di cassa agli investitori")/underbrace(r_U, "tasso di sconto")
+$
+Cioè è la formula della perpetuity, un flusso di cassa costante per sempre considerando i flussi di cassa quello che va agli investitori, UN e OF (anche senza )
+
+$
+"Valore Unlevered"=sum_(t=1)^n​ ( ("FCFF​​"_t)/(1+"WACC")^t + ("Valore Terminale")/(1+"WACC")^n )
+​$
+
+Dove:
+
+  - *FCFF* (Free Cash Flow to Firm): È il flusso di cassa generato dalle attività operative disponibile per tutti i finanziatori (azionisti e creditori), al lordo degli oneri finanziari e al netto delle tasse pagate sul reddito operativo. Cioè: 
+  $"FCFF" =& ("EBIT"- "OF") (1-T_c) + "OF" =\ =&"EBIT"- cancel("OF")- "EBIT" T_c + "OF" T_c + cancel("OF") =\
+  =&"EBIT" dot (1-T_c) + "OF" dot T_c
+  $ 
+
+  - *WACC* (Weighted Average Cost of Capital): È il costo medio ponderato del capitale, che rappresenta il rendimento atteso da tutti i portatori di capitale.
+
+  - *Valore Terminale* (Terminal Value): Stima del valore dell'azienda oltre il periodo di previsione esplicito.
 
 == Finanziamento con Debito o Equity?
 Il *DEBITO* ha:

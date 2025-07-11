@@ -2,9 +2,9 @@
 #import "../utils/new_style1.typ": presentation_style
 #import "../utils/custom_functions.typ": two_col
 
-#presentation_style(paper:"presentation-16-9",date:(2025,02,12), title:"\n Note di:\n\n Healthcare  \n  Finance  \n ", mode: "night")[
+#presentation_style(paper:"a4",date:(2025,02,12), title:"\n Note di:\n\n Healthcare  \n  Finance  \n ", mode: "night")[
 
-#set page(columns: 2)
+//#set page(columns: 1)
 
 #include "capitoli/00FlussiMonetariInIngresso.typ"
 

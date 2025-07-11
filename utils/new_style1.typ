@@ -64,17 +64,17 @@
   }
       //H2
   #show heading.where(level: 2): it => {
-    set align(center)
+    set align(left)
     set text(fs_2, weight: "regular",fill:  get_color(1))
     
-    colbreak()
+    //colbreak()
     v(1cm) + strong(it) + v(.5cm)
 
   }
       //H3
   #show heading.where(level: 3): it => {
     //pagebreak()
-    set align(center)
+    set align(left)
     set text(fs_3, weight: "regular",fill:  get_color(2))
     v(.5cm) + strong(it) + v(.3cm)
 
@@ -82,21 +82,24 @@
 
       //H4
   #show heading.where(level: 4): it => {
-    set align(center)
+    set align(left)
     set text(fs_4, weight: "regular",fill:  get_color(3))
     v(.3cm) + strong(it) + v(.3cm)
 
   }
-       //H4
+       //H5
   #show heading.where(level: 5): it => {
-    set align(center)
+    set align(left)
     set text(fs_4, weight: "regular",fill:  get_color(4))
     v(.3cm) + strong(it) + v(.3cm)
 
   }
 
  // FONT SIZES
- #show math.equation: set text(size: 17pt)
+ #show math.equation.where(): it =>  {
+  set text(size: 17pt)
+  it
+ }
 #set math.equation(numbering: "eq. 1", number-align: right)
  #set text(15pt)
 
