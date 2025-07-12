@@ -327,11 +327,11 @@ $
 $<eq54>
 
 Esempio:
-- A quanto devono ammontare le rate annuali costanti da versare su un fondo di risparmio per avere 40'000 euro tra 10 anni, con un rendimento effettivo del 0.5% semestrale?
+- A quanto devono ammontare le rate annuali costanti da versare su un fondo di risparmio per avere 40'000 euro tra 10 anni, con un rendimento effettivo del 0.8% semestrale?
 
 Dati
 - FV = 40 000 euro
-- v = 3/100
+- v = 0.8/100
 - t = 20 semestri
 
 $
@@ -341,10 +341,11 @@ $
 Calcolo s:
 
 #{
-let v = 3/100
-let t = 10
+let v = 0.8/100
+let t = 20
 let FV = 40000
 let s = (pow(1 + v, t) - 1)/v;
+let TAE = round(pow((1+v),t),digits: 3)
 $
   s = ((1 + #v)^#t - 1)/#v = #{round(s, digits: 3)}
 $
@@ -353,7 +354,16 @@ let R = FV / s
 $
   R = #FV / #round(s,digits: 2) =#round(R, digits: 3) euro
 $
+"Calcolo il TAE:"
+$ 
+  "TAE" = (1 + #v)^t - 1 = #{round(TAE, digits: 3)}  
+$
+$
+  s = ((1 + #TAE)^#{t/2} - 1)/#TAE = #{round(s, digits: 3)}
+$
+
 }
+
 
 
 == Relazione tra $s_"t|i"$ e $a_"t|i"$
