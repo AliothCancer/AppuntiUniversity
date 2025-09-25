@@ -1,55 +1,71 @@
 
 
-#let color_palette1 = ("26547c","ef476f","01f160","06d6a0", "4357AD")
+#let color_palette1 = ("26547c","ef476f","01d160","06d6a0", "4357AD")
 #let color_palette2 = ("4357ad","48a9a6","e4dfda","d4b483","c1666b")
+#let color_palette3 = ("3d3b8e","6883ba","f9f9f9","e072a4","b0e298")
 
-#let color_palette = color_palette1
+#let color_palette = color_palette3
 #let get_color(color_number) = color.rgb(color_palette.at(color_number))
 
-#let presentation_style(paper: "a3",date: array,title:str,body, mode: str) = [
-// CONFIGURATION
-  //#show strong: set text(blue)
-  //#set text(font: "Monofur Nerd Font")
+#let presentation_style(paper: "a3",date: array,title:str,body, mode: str) = {
+  let page_color = rgb("#ffffff")
+  let text_color = rgb("#000000")
+  let d = rgb("#f9f9f9")
+  if (mode == "night"){
+    page_color = rgb("#2a283f")
+    text_color = rgb("#ffffff")
+  }
 
-  #set page(paper: paper, margin: 1cm)
-  #set par(justify: false, leading: 0.52em)
-  #let title = text(50pt,title)
-  #v(2cm)
-  #align(center, title)
-  #set par(justify: true, leading: 0.52em)
-  #let fs_1 = 22pt
-  #let fs_2 = 7*fs_1/8
-  #let fs_3 = 6*fs_1/8
-  #let fs_4 = 5*fs_1/8
-  #let mode = "presentation";
+
+// CONFIGURATION
+  //show strong: set text(blue)
+  set text(fill: text_color)
+  set page(
+    paper: paper,
+    margin: 1cm,
+    fill: page_color,
+    header: auto
+    )
+
+
+  set par(justify: false, leading: 0.52em)
+  let title = text(50pt,title)
+  v(2cm)
+  align(center, title)
+  set par(justify: true, leading: 0.52em)
+  let fs_1 = 22pt
+  let fs_2 = 7*fs_1/8
+  let fs_3 = 6*fs_1/8
+  let fs_4 = 5*fs_1/8
+  
 
   // CONTENTS STYLING
 
-  #show outline.entry.where(level: 1): it => {
+  show outline.entry.where(level: 1): it => {
     v(0.5cm, weak: false)
     set text(19pt)
     strong(it)
   }
-  #show outline.entry.where(level: 2): it => {
+  show outline.entry.where(level: 2): it => {
     //v(1pt, weak: false)
 
     set text(16pt)
     it
   }
-  #show outline.entry.where(level: 3): it => {
+  show outline.entry.where(level: 3): it => {
     //v(1pt, weak: false)
     set text(14pt)
     it
   }
 
-  #set heading(numbering: "1.1 ")
-  #set par(leading: 0.2cm)
-  #set page(numbering: "1/1", columns: 1)
+  set heading(numbering: "1.1 ")
+  set par(leading: 0.2cm)
+  set page(numbering: "1/1", columns: 1)
 
   // HEADING STYLING
       // H1
 
-  #show heading.where(level: 1): it => {
+  show heading.where(level: 1): it => {
     set align(left)
     set par(justify: true, leading: 0.52em)
     set text(fs_1, weight: "bold",
@@ -63,7 +79,7 @@
 
   }
       //H2
-  #show heading.where(level: 2): it => {
+  show heading.where(level: 2): it => {
     set align(left)
     set text(fs_2, weight: "regular",fill:  get_color(1))
     
@@ -72,7 +88,7 @@
 
   }
       //H3
-  #show heading.where(level: 3): it => {
+  show heading.where(level: 3): it => {
     //pagebreak()
     set align(left)
     set text(fs_3, weight: "regular",fill:  get_color(2))
@@ -81,14 +97,14 @@
   }
 
       //H4
-  #show heading.where(level: 4): it => {
+  show heading.where(level: 4): it => {
     set align(left)
     set text(fs_4, weight: "regular",fill:  get_color(3))
     v(.3cm) + strong(it) + v(.3cm)
 
   }
        //H5
-  #show heading.where(level: 5): it => {
+  show heading.where(level: 5): it => {
     set align(left)
     set text(fs_4, weight: "regular",fill:  get_color(4))
     v(.3cm) + strong(it) + v(.3cm)
@@ -96,18 +112,20 @@
   }
 
  // FONT SIZES
- #show math.equation.where(): it =>  {
+ show math.equation.where(): it =>  {
   set text(size: 17pt)
   it
  }
-#set math.equation(numbering: "eq. 1", number-align: right)
- #set text(15pt)
+set math.equation(numbering: "eq. 1", number-align: right)
+ set text(15pt)
 
-#show link: set text(fill: color.fuchsia)
+show link: set text(fill: color.fuchsia)
 
- #outline(indent: 2em)
- *Document made with typst:
- #link("https://typst.app/docs/")[Link to typst documentation]*
- #pagebreak()
- #body
-]
+ outline(indent: 2em)
+[*Document made with typst:
+ #link("https://typst.app/docs/")[Link to typst documentation]*]
+ pagebreak()
+ body
+
+}
+
