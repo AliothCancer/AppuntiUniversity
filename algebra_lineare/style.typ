@@ -67,9 +67,9 @@
   rect(fill: yellow, inset: 6pt, radius: 8pt)[
     #text(weight: 700, fill: graphite)[Definizione]
   ]
-  v(-1.05cm)
-  h(3.5cm)
-  [#text(title, weight: 600, size:16pt)]
+  v(-2.4em)
+  h(7em)
+  [#text(title, weight: 600, size:1.2em)]
   rect(fill: aqua, inset: 8pt, radius: 6pt)[
     #text(size: 1em, fill: graphite)[#body]
   ]
