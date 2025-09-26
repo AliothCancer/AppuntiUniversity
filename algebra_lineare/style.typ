@@ -15,26 +15,35 @@
   ]
 }
 
-#let style(body)={
+#let style(body, size: 15pt)={
   set page(
     paper: "a4",
-    margin: (x: 18mm, y: 18mm),
+    margin: (x: 10mm, y: 12mm),
     footer: auto
   )
   set heading(numbering: "1.1",)
   
-  show heading.where(level: 1): it => {
-    if [it] != [Contents]{
-      align(left)[#banner(it)]
-    } else {
-      it
-    }
+  // show heading.where(level: 1, outlined: false): it => {
+  //   //align(left)[#banner(it)]
+  // it.fields()
+  // }
+
+  show heading.where(level: 1, outlined: true): it => {
+    align(left)[#banner(it)]
+    v(1cm)
   }
-  set text(font: "Open Sans", size: 11pt)
+  show heading.where(level: 2, outlined: true): it => {
+    text(size: 18pt)[#it]
+  }
+
+  set text(font: "open sans", size: size)
   show "Missing": it => {
     text("Missing", blue)
   }
-  
+  show math.equation.where(): it =>  {
+  set text(size: 15pt)
+  it
+ }
   show "Esempio": it => {
     text("Esempio", rgb("#13a3d7"))
   }
@@ -49,22 +58,21 @@
 #let ex(body, stroke: blue) = {
   v(-0.1cm)
   rect(stroke: stroke, inset: 8pt, radius: 6pt, fill: paperc)[
-    #text(size: 10.5pt, fill: graphite)[*Esempio:*\ #body]
+    #text(size: 1em,fill: graphite)[*Esempio:*\ #body]
   ]
 }
 // Definizione: titolo (stringa) + corpo (blocco)
-#let def(title, body, example) = {
+#let def(title, body) = {
   v(1cm)
   rect(fill: yellow, inset: 6pt, radius: 8pt)[
-    #text(weight: 700, size: 13pt, fill: graphite)[Definizione]
+    #text(weight: 700, fill: graphite)[Definizione]
   ]
   v(-1.05cm)
   h(3.5cm)
-  [#text(title, size:16pt)]
+  [#text(title, weight: 600, size:16pt)]
   rect(fill: aqua, inset: 8pt, radius: 6pt)[
-    #text(size: 11pt, fill: graphite)[#body]
+    #text(size: 1em, fill: graphite)[#body]
   ]
-  [#ex[#example]]
   
 }
 #let y(body) = text(body, fill: purple)
@@ -73,6 +81,6 @@
 #let nota(body, stroke: coral) = {
   v(-0.3cm)
   rect(stroke: stroke, inset: 8pt, radius: 6pt, fill: paperc)[
-    #text(size: 10.5pt, fill: graphite)[*Nota:*\ #body]
+    #text(fill: graphite)[*Nota:*\ #body]
   ]
 }
