@@ -1,8 +1,39 @@
 #import "../style.typ": *
 
-= VETTORI E MATRICI
+= MATRICI
+== OPERAZIONI
 
-#columns(1)[
+=== Prodotto Matriciale
+#def[Prodotto Matriciale][
+  - $bold(A)$: Mat(m,n)\
+  - $bold(B)$: Mat(n,p)\
+  - *Risultato:* Mat(m,p)
+  - *Sintassi:* $bold(A) bold(B)$
+  - *Ordine dei fattori:* Importante perchè *non vale* la propr. commutativa
+  - *Requisito:* Righe di A == Colonne di B
+
+  L'elemento $c_(i j)$ della matrice risultante è dato dal prodotto scalare del *vettore riga $i$-esimo* di A, per il *vettore colonna $j$-esimo*. 
+]
+#ex[
+  $
+  mat(1, 2; 3,3; 1,1) mat( 3,4,4;4,3,6) eq mat(
+    mat(1, 2) dot mat(3;4), space
+    mat(1, 2) dot mat(4;3), space
+    mat(1, 2) dot mat(4;6);
+
+    mat(3,3) dot mat(3;4), space
+    mat(3,3) dot mat(4;3), space
+    mat(3,3) dot mat(4;6)
+
+  )
+  $
+]
+
+
+
+
+
+//#columns(1)[
 == DEFINIZIONI
 
 #def("Spazio vettoriale")[ 
@@ -41,7 +72,10 @@ I vettori $v_1, dots, v_k in RR^n$ si dicono #underline[*linearmente indipendent
 #def[Span][È lo spazio vettoriale generato dalla combinazione lineare di unsieme di vettori]
 
 #colbreak()
-== MATRICI
+
+#def[ Rango (o caratteristica) ][
+  Numero massimo di vettori riga o vettori colonna della matriche tra loro linearmente indipendenti.
+]
 
 #prop[Rango (o caratteristica)][
 Sia $ bold(A) in "Mat"(m,n)$, si può dimostrare che il massimo numero di righe linearmente indipendenti coincide con il massimo numero di colonne linearmente indipendenti.  
@@ -53,4 +87,4 @@ $mat(1,0,2)$ e $mat(-1,1,0)$ sono linearmente indipendenti (perchè non sono par
 ]
 
 
-]
+//]

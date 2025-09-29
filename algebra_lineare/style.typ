@@ -17,7 +17,8 @@
 
 #let style(body, size: 15pt)={
   set page(
-    paper: "a4",
+    columns: 1,
+    paper: "a3",
     margin: (x: 10mm, y: 12mm),
     footer: auto
   )
