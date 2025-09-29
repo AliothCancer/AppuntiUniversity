@@ -3,7 +3,7 @@
 #let graphite = rgb("#1f1f1f")
 #let coral = rgb("#ff6f61")
 #let paperc = rgb("#fefefe")
-#let yellow = rgb("#ffd16681")
+#let yellow = rgb("#669cffce")
 #let aqua = rgb("#06d69e2a")
 #let purple = rgb("#d059eb")
 // Banner: prende un blocco come contenuto
@@ -64,8 +64,8 @@
 // Definizione: titolo (stringa) + corpo (blocco)
 #let def(title, body) = {
   v(1cm)
-  rect(fill: yellow, inset: 6pt, radius: 8pt)[
-    #text(weight: 700, fill: graphite)[Definizione]
+  rect(fill: oklab(90.61%, -0.133, -0.04, 44.4%), inset: 6pt, radius: 8pt)[
+    #text(weight: 700, fill: rgb("#3680f8"))[Definizione]
   ]
   v(-2.4em)
   h(7em)
@@ -73,8 +73,22 @@
   rect(fill: aqua, inset: 8pt, radius: 6pt)[
     #text(size: 1em, fill: graphite)[#body]
   ]
-  
 }
+
+#let prop(title, body) = {
+  v(1cm)
+  rect(fill: rgb("#1bf8227b"), inset: 6pt, radius: 8pt)[
+    #text(weight: 700, fill: graphite)[Proposizione]
+  ]
+  v(-2.4em)
+  h(7.5em)
+  [#text(title, weight: 600, size:1.2em)]
+  rect(fill: rgb("#84f96f63"), inset: 8pt, radius: 6pt)[
+    #text(size: 1em, fill: graphite)[#body]
+  ]
+}
+
+
 #let y(body) = text(body, fill: purple)
 
 // Nota / box 

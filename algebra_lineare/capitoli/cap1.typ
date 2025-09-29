@@ -43,7 +43,7 @@ I vettori $v_1, dots, v_k in RR^n$ si dicono #underline[*linearmente indipendent
 #colbreak()
 == MATRICI
 
-#def[Rango (o caratteristica)][
+#prop[Rango (o caratteristica)][
 Sia $ bold(A) in "Mat"(m,n)$, si può dimostrare che il massimo numero di righe linearmente indipendenti coincide con il massimo numero di colonne linearmente indipendenti.  
 ]#ex[
 $

@@ -17,3 +17,10 @@ $
   P(z) eq (z - z_0) Q(z)
 $
 ]
+
+#def[ Molteplicità ][
+   La molteplcità di $z_0 in CC$ come radice di un polinomio P, è il massimo numero $m gt.eq 0$ per il quale esiste un polinomio $Q$ tale che: 
+   $
+     P(z) eq (z - z_0)^m Q(z) space space "con" Q(z_0) eq.not 0
+   $ 
+]
