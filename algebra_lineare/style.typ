@@ -37,12 +37,16 @@
     text(size: 18pt)[#it]
   }
 
+  show " - ": [\u{202F}#sym.dash.em\u{202F}]
+  show emph: set text(purple, weight: 500)
+
+
   set text(font: "open sans", size: size)
   show "Missing": it => {
     text("Missing", blue)
   }
   show math.equation.where(): it =>  {
-  set text(size: 15pt)
+  set text(size: 1.2em)
   it
  }
   show "Esempio": it => {
@@ -58,9 +62,9 @@
 
 #let ex(body, stroke: blue) = {
   v(-0.1cm)
-  rect(stroke: stroke, inset: 8pt, radius: 6pt, fill: paperc)[
+  align(left,rect(stroke: stroke, inset: 8pt, radius: 6pt, fill: paperc)[
     #text(size: 1em,fill: graphite)[*Esempio:*\ #body]
-  ]
+  ])
 }
 // Definizione: titolo (stringa) + corpo (blocco)
 #let def(title, body) = {

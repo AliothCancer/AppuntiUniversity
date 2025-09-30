@@ -1,6 +1,7 @@
 #import "../style.typ": *
 
-= MATRICI
+= Vettori e Matrici
+
 == OPERAZIONI
 
 === Prodotto Matriciale
@@ -12,8 +13,9 @@
   - *Ordine dei fattori:* Importante perchè *non vale* la propr. commutativa
   - *Requisito:* Righe di A == Colonne di B
 
-  L'elemento $c_(i j)$ della matrice risultante è dato dal prodotto scalare del *vettore riga $i$-esimo* di A, per il *vettore colonna $j$-esimo*. 
+  L'elemento $c_(i j)$ della matrice risultante è dato dal _prodotto scalare_ del *vettore riga $i$-esimo* di A, per il *vettore colonna $j$-esimo*. 
 ]
+ffrf - dedbeudbe - dde
 #ex[
   $
   mat(1, 2; 3,3; 1,1) mat( 3,4,4;4,3,6) eq mat(
@@ -28,6 +30,23 @@
   )
   $
 ]
+
+== Elemento neutro di un vettore (rispetto al prod. matriciale)
+È pari allo scalare 1.
+#ex[
+  $ 
+vec(a_0,a_1, .,.,.,a_n) dot bold(1) = vec(a_0,a_1, .,.,.,a_n)
+$
+
+]
+
+== Inverso di un vettore
+Non è possibile perchè per un vettore 1xn richiede che l'elemento neutro abbia forma nx1 o 1xn per poter applicare il prodotto matriciale, ma l'elemento neutro è 1x1 per un vettore 1xn.
+
+== Elemento neutro di una Matrice
+
+
+
 
 
 
