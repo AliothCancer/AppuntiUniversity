@@ -1,4 +1,5 @@
 #import "../style.typ": *
+#import "@preview/physica:0.9.6": *
 
 = Vettori e Matrici
 
@@ -44,7 +45,31 @@ $
 Non è possibile perchè per un vettore 1xn richiede che l'elemento neutro abbia forma nx1 o 1xn per poter applicare il prodotto matriciale, ma l'elemento neutro è 1x1 per un vettore 1xn.
 
 == Elemento neutro di una Matrice
+Data una matrice $bold(A)$ nxm l'elemento neutro è quella matrice $bold(I)$ tale che:
+$
+  bold(A) bold(I) eq bold(A)\
+  (n times m) (m times x quest) eq n times m 
+$
 
+Secondo le regole della moltiplicazione matriciale x deve essere pari a m. Quindi $bold(I)$ ha forma mxm.
+
+Spoiler: Contiene una diagonale di 1 e il resto degli elementi è nullo.
+
+#def[ Matrice Identità ][
+  Si indica con $I_n$ dove n indica il numero di elementi nella diagonale, di conseguenza sarà anche il numero di righe e di colonne ed è fatta così:
+  
+  - Se n = 3:
+  $
+    mat(
+    1, 0, 0;
+    0, 1, 0;
+    0, 0, 1; // `;` in the end is optional
+)
+  $
+]
+#nota[
+  La matrice identità è una matrice quadrata e simmetrica
+]
 
 
 
